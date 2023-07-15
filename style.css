@@ -1,15 +1,18 @@
 :root {
     --rojo: #CD533B;
     --verde: #4CAF50;
+    --celeste: #28587B;
+    --celeste-claro: #437C90;
 }
 
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 20px;
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     box-sizing: border-box;
+    background-color: var(--celeste);
 }
 
 h1 {
@@ -63,7 +66,7 @@ h1 {
     margin: auto;
     margin-top: 2rem;
     font-size: 1rem;
-    border: solid #222;
+    border: solid #8A89C0;
     box-shadow: 0 0 2px 2px #888;
     border-radius: 6px;
     padding: 1rem;
@@ -86,18 +89,26 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    /* padding: 2rem; */
+    
 }
 
 .option {
+    color: #fff;
     margin-bottom: .7rem;
-    display: flex;
-    text-align: left;
-    align-items: flex-start;
+    display: block;
     cursor: pointer;
-    padding: .3rem;
+    text-align: left;
+    padding: 0.5rem;
     font-size: 1.2rem;
-    font-weight: 500;
-    width: 100%;
+    font-weight: 600;
+    width: 90%;
+    border: 4px solid #aaa;
+    box-shadow: 0 0 2px 2px #888;
+}
+
+.option:hover {
+    background-color: var(--celeste-claro);
 }
 
 .option-correct {
@@ -107,17 +118,22 @@ h1 {
     background-color: var(--rojo);
 }
 
-/* .option:hover {
-    background-color: #ddd;
-} */
-
 .option-blackout {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background-color: #222;
     opacity: .2;
     z-index: 100000;
+}
+
+.buttons-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .buttons {
@@ -127,6 +143,10 @@ h1 {
     font-size: 2rem;
     box-shadow: 0 0 5px 5px #222;
     cursor: pointer;
+}
+
+#remake-q-btn {
+    background-color: var(--rojo);
 }
 
 .score-marker {
