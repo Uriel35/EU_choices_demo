@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU choices</title>
+    <link rel="stylesheet" type="text/css" href="buscados_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="form-ctn">
+        <form action="" id="formulario" class="formulario">
+            <div class="input-ctn" id="year-input-ctn">
+                <h3>Años</h3>
+                <ul id="year-inputs-ctn">
+                    <input type="checkbox" class="year-input" id="year2016" name="year" value="2016">
+                    <label for="year2016">2016</label>
+
+                    <input type="checkbox" class="year-input" id="year2017" name="year" value="2017">
+                    <label for="year2017">2017</label>
+
+                    <input type="checkbox" class="year-input" id="year2018" name="year" value="2018">
+                    <label for="year2018">2018</label>
+
+                    <input type="checkbox" class="year-input" id="year2019" name="year" value="2019">
+                    <label for="year2019">2019</label>
+
+                    <input type="checkbox" class="year-input" id="year2020" name="year" value="2020">
+                    <label for="year2020">2020</label>
+
+                    <input type="checkbox" class="year-input" id="year2021" name="year" value="2021">
+                    <label for="year2021">2021</label>
+
+                    <input type="checkbox" class="year-input" id="year2022" name="year" value="2022">
+                    <label for="year2022">2022</label>
+
+                    <input type="checkbox" class="year-input" id="year2023" name="year" value="2023">
+                    <label for="year2023">2023</label>
+                </ul>
+            </div>
+            <div class="select-all-years-ctn">
+                <h3>Seleccionar todos</h3>
+                <label class="switch">
+                    <input type="checkbox" id="select-all-years-input" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="input-ctn" id="search-ctn">
+                <input tabindex="2" type="text" id="search-input" class="input-class" placeholder="Especialidad / Tema" autocomplete='off' list="path-suggestions">
+                <datalist id="path-suggestions"></datalist>
+            </div>
+            <div class="buttons-ctn">
+                <button id="confirm-path" form="formulario">Confirmar</button>
+            </div>
+
+        </form>
+        <div class="paths-ctn">
+            <form id="paths-form"></form>
+            <div class="paths-buttons-ctn">
+                <button id="delete-path-button">Eliminar</button>
+                <button id="clean-all-paths-button">Limpiar</button>
+            </div>
+        </div>
+
+        <div class="footer-buttons-ctn">
+            <button type="submit" form="formulario" id="submit-form">Empezar examen</button>
+            <div class="random-switch-ctn">
+                <h3>Orden aleatorio</h3>
+                <label class="random-switch">
+                    <input type="checkbox" id="random-input">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="buscador_script.js"></script>
+    <script type="module" src="./utils/schema_utils.js"></script>
+</body>
+</html>

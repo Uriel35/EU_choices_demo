@@ -6,6 +6,7 @@ const previousButton = document.getElementById('previous-btn')
 const correctMarker = document.getElementById('correct-marker')
 const errorMarker = document.getElementById('error-marker')
 const totalMarker = document.getElementById('total-marker')
+const remakeButton = document.getElementById('remake-q-btn')
 
 document.addEventListener('DOMContentLoaded', function() {
     fetch('./data.json')
@@ -40,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     option.textContent = `${letter}) ${PREGUNTAS[index]['options'][letter]}`
                     option.addEventListener('click', (e) => {
                         id = e.target.id
-                        console.log(doneQuestions)
                         doneQuestions.push({
                             'index': indexNum,
                             'choosen': e.target.id,
@@ -86,6 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     optionBlackOut.className = 'option-blackout'
                     optionsCtn.appendChild(optionBlackOut)
             }
+            
+            function removeBlackOut(){
+                const divEliminar = document.querySelector('.option-blackout');
+                divEliminar.remove();
+            }
 
             function checkIfDonned(index){
                 indexNum = index + 1
@@ -123,13 +128,35 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.stopPropagation()
                 counter = manageCounter(counter, true)
                 checkIfDonned(counter)
-                // showQuestion(counter, false)
             })
             previousButton.addEventListener('click', (e) => {
                 e.stopPropagation()
                 counter = manageCounter(counter, false)
                 checkIfDonned(counter)
-                // showQuestion(counter, false)
+            })
+            remakeButton.addEventListener('click', () => {
+                indexNum = counter + 1
+                let finded = doneQuestions.find((object) => {
+                    return object.index == indexNum
+                })
+                if (finded) {
+                    if (finded.correct == finded.choosen) {
+                        if (CORRECTAS > 0) CORRECTAS--
+                        console.log(CORRECTAS)
+                        correctMarker.textContent = CORRECTAS
+                    } else {
+                        if (ERRORES > 0) ERRORES--
+                        console.log(ERRORES)
+                        errorMarker.textContent = ERRORES
+                    }
+                    TOTAL--
+                    totalMarker.textContent = TOTAL
+                    removeBlackOut()
+                    document.getElementById(indexNum).className = 'circle-neutral-ctn'
+                    document.querySelectorAll('.option-error').forEach(elemento => elemento.classList.remove('option-error'));
+                    document.querySelectorAll('.option-correct').forEach(elemento => elemento.classList.remove('option-correct'));
+                } 
+                doneQuestions = doneQuestions.filter((e) => e.index != indexNum)
             })
 
 

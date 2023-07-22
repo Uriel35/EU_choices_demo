@@ -1,0 +1,13 @@
+To Do's:
+--- Clean paths button
+--- Submit all handler
+--- Shuffle questions handler
+--- Modern Custom
+--- Make modals
+--- Make an READ ME section with instructions
+--- make a HELP ME section
+--- Merge the SCHEMA complete
+--- Make a header
+
+
+Done: 
