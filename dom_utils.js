@@ -53,6 +53,16 @@ function validateYears(yearsInputs, yearsInputsCtn){
     }
 }
 
+function checkIfPathAllreadyAdded(value, formCtn) {
+    let labels = formCtn.getElementsByTagName('label')
+    for (let label of labels){
+        if (label.textContent.toLowerCase() == value.toLowerCase()){
+            return true
+        }
+    }
+    return false
+}
+
 function addPath(value, formCtn) {
     let ctn = document.createElement('div')
     ctn.className = 'path-ctn'
@@ -75,5 +85,6 @@ export default {
     addItemsToSearchList,
     invalidateInput,
     addPath,
-    validateYears
+    validateYears,
+    checkIfPathAllreadyAdded
 }

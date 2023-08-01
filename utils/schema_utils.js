@@ -1,5 +1,3 @@
-
-
 function clean_string_spaces(value){
     value = value.replace(/^\s+/, '')
     value = value.replace(/\s+$/, '')
@@ -104,7 +102,58 @@ function confirmIfPathExists(value, schema) {
     }
 }
 
+
+function getQuestions(paths, schema, years) {
+    let allQuestions = []
+    if (paths.length == 0) {
+        for (let speciality of Object.keys(schema)) {
+            for (let theme of Object.keys(schema[speciality])){
+                for (let question of schema[speciality][theme]['array']) {
+                    if (years.includes(question['origin']['exam'])) {
+                        let questionAlrreadyAdded = allQuestions.find(q => q['id'] === question['id'])
+                        if (!questionAlrreadyAdded) allQuestions.push(question)
+                    }
+                }
+            }
+        }
+    } else {
+        for (let path of paths){
+            let splitted = path.split(/\//)
+            if (splitted.length == 0 || splitted.length > 2 || path == '') return result
+            if (splitted.length == 1) {
+                let speciality = splitted[0]
+                for (let theme of Object.keys(schema[speciality])){
+                    for (let question of schema[speciality][theme]['array']){
+                        if (years.includes(question['origin']['exam'])) {
+                            let questionAlrreadyAdded = allQuestions.find(q => q['id'] === question['id'])
+                            if (!questionAlrreadyAdded) allQuestions.push(question)
+                        }
+                    }
+                }
+            } else if(splitted.length == 2) {
+                let [speciality, theme] = splitted
+                for (let question of schema[speciality][theme]['array']) {
+                    if (years.includes(question['origin']['exam'])) {
+                        let questionAlrreadyAdded = allQuestions.find(q => q['id'] === question['id'])
+                        if (!questionAlrreadyAdded) allQuestions.push(question)
+                    }
+                }
+            }
+        }
+    }
+    function sortQuestions(a, b){
+        if (parseInt(a['origin']['exam']) === parseInt(b['origin']['exam'])) {
+            return a['index'] - b['index']
+        } else {
+            return a['origin']['exam'].localeCompare(b['origin']['exam'])
+        }
+    }
+    allQuestions.sort(sortQuestions)
+    return allQuestions
+}
+
 export default {
     searchInputHandler,
-    confirmIfPathExists
+    confirmIfPathExists,
+    getQuestions
 }
