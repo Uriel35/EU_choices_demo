@@ -17,6 +17,8 @@ const questionOriginText = document.getElementById('origin-text')
 const getBackButton = document.getElementById('get-back-button')
 
 function displayExam(allQuestions) {
+    while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
+
     examModal.classList.add('modal-active')
 
     function manageCounter(counter, nextBool){
@@ -196,16 +198,7 @@ closeImageModalButton.addEventListener('click', (e) => {
 
 imageModal.addEventListener('click', (e) => {
     e.preventDefault()
-    console.log(e.target)
-    // console.log(questionImage)
-    // console.log(e.target.contains(questionImage))
-    console.log(e.target == questionImage)
-
-    if (e.target !== questionImage) {
-        console.log("Se deberia cerrar el modal")
-        imageModal.classList.remove('flex-active')
-    }
-    console.log("------------------")
+    if (e.target !== questionImage) imageModal.classList.remove('flex-active')
 })
 
 
