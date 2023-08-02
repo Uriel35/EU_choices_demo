@@ -18,7 +18,6 @@ const getBackButton = document.getElementById('get-back-button')
 
 function displayExam(allQuestions) {
     while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
-
     examModal.classList.add('modal-active')
 
     function manageCounter(counter, nextBool){
@@ -56,8 +55,8 @@ function displayExam(allQuestions) {
             option.className = 'option'
             option.id = letter
             option.textContent = `${letter}) ${PREGUNTAS[index]['options'][letter]}`
-            option.addEventListener('click', (e) => {
-                let id = e.target.id
+            function optionClickHandler(e) {
+                e.preventDefault()
                 doneQuestions.push({
                     'index': indexNum,
                     'choosen': e.target.id,
@@ -69,13 +68,15 @@ function displayExam(allQuestions) {
                     customMarker(true)
                 }
                 else {
-                    e.target.classList.add('option-error')
-                    document.getElementById(PREGUNTAS[index]['answer'].toLowerCase()).classList.add('option-correct')
-                    document.getElementById(`${indexNum}`).classList.add('circle-error')
+                    e.target.classList.add('option-error');
+                    document.getElementById(PREGUNTAS[index]['answer'].toLowerCase()).classList.add('option-correct');
+                    document.getElementById(`${indexNum}`).classList.add('circle-error');
                     customMarker(false)
                 }
                 createBlackOut()
-            })
+            }
+            option.addEventListener('touchstart', optionClickHandler) // Para la version 'Mobile'
+            option.addEventListener('click', optionClickHandler)
             optionsCtn.appendChild(option)
         } 
         if (disable) {
