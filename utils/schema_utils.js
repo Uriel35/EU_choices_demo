@@ -82,7 +82,6 @@ function getQuestionCounter(speciality, theme, schema, years) {
     return result.length
 }
 
-
 // Parsear el value del searcher y verificar si existe el path en el schema
 function confirmIfPathExists(value, schema) {
     value = clean_string_spaces(value)
@@ -96,7 +95,7 @@ function confirmIfPathExists(value, schema) {
     else if (splitted.length == 2){
         let [sp, th] = splitted
         if (Object.keys(schema).includes(sp)) {
-            if (Object.keys(schema[sp]).includes(th)) return `${sp}/${th}`
+            if (Object.keys(schema[sp]).includes(th)) return `${sp} / ${th}`
             else return false
         } else return false
     }
@@ -141,13 +140,13 @@ function getQuestions(paths, schema, years) {
             }
         }
     }
-    function sortQuestions(a, b){
-        if (parseInt(a['origin']['exam']) === parseInt(b['origin']['exam'])) {
-            return a['index'] - b['index']
-        } else {
-            return a['origin']['exam'].localeCompare(b['origin']['exam'])
-        }
+    function sortQuestions(a, b) {
+    if (parseInt(a['origin']['exam']) === parseInt(b['origin']['exam'])) {
+        return a['index'] - b['index'];
+    } else {
+        return b['origin']['exam'].localeCompare(a['origin']['exam']);
     }
+}
     allQuestions.sort(sortQuestions)
     return allQuestions
 }

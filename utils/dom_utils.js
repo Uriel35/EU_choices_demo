@@ -1,4 +1,4 @@
-const suggestionsPathsDataList = document.getElementById('path-suggestions')
+const pathOptionsCtn = document.getElementById('matched-search-list')
 
 function clean_string_spaces(value){
     value = value.replace(/^\s+/, '')
@@ -17,26 +17,33 @@ function deleteBracketsAndParentesis(value) {
 }
 
 function addItemsToSearchList(result){
-    while (suggestionsPathsDataList.firstChild) suggestionsPathsDataList.removeChild(suggestionsPathsDataList.firstChild);
+    while (pathOptionsCtn.firstChild) pathOptionsCtn.removeChild(pathOptionsCtn.firstChild);
     for (let path of result){
-        let option = document.createElement('option')
+        let option = document.createElement('li')
+        let pAnalogue = document.createElement('p')
         if ('analogo' in path) {
-            option.value = `${path.speciality}/${path.theme}`;
-            option.textContent = `[${path.analogo}] (${path.counter})`
+            option.textContent = `${path.speciality} / ${path.theme}`;
+            pAnalogue.textContent = `[${path.analogo}] (${path.counter}) (tema)`
         } else if ('theme' in path) {
-            option.value = `${path.speciality}/${path.theme}`;
-            option.textContent = `(${path.counter})`
+            option.textContent = `${path.speciality} / ${path.theme}`;
+            pAnalogue.textContent = `(${path.counter}) (tema)`
         } else {
-            option.value = `${path.speciality}`;
-            option.textContent = `(${path.counter})`
+            option.textContent = `${path.speciality}`;
+            path.textContent = `(${path.counter}) (especialidad)`
         }
-        suggestionsPathsDataList.appendChild(option)
+        option.id = option.textContent
+        option.classList.add('path-option')
+        option.appendChild(pAnalogue)
+        pathOptionsCtn.appendChild(option)
     }
 }
 
-function invalidateInput(input){
+function invalidateInput(input, message=undefined){
     input.blur()
     input.classList.add('error-input')
+    if (message) {
+        input.nextElementSibling.textContent = message
+    }
 }
 
 function validateYears(yearsInputs, yearsInputsCtn){
@@ -63,28 +70,36 @@ function checkIfPathAllreadyAdded(value, formCtn) {
     return false
 }
 
-function addPath(value, formCtn) {
+function addPath(value, formCtn, resetQuestionCounterFx) {
     let ctn = document.createElement('div')
     ctn.className = 'path-ctn'
     let radio = document.createElement('input')
+    let trash = document.createElement('i')
+    trash.className = 'fas fa-trash'
     radio.type = 'radio'
     radio.id = value
     radio.name = 'path-radio-inputs'
     radio.className = 'path-radio'
     radio.value = value
     let label = document.createElement('label')
-    label.tabIndex = 0
     label.textContent = value
     label.htmlFor = value
     ctn.appendChild(radio)
     ctn.appendChild(label)
+    ctn.appendChild(trash)
     formCtn.appendChild(ctn)
+    trash.addEventListener('click', (e) => {
+        ctn.remove()
+        resetQuestionCounterFx()
+    })
 }
+
 
 export default {
     addItemsToSearchList,
     invalidateInput,
     addPath,
     validateYears,
-    checkIfPathAllreadyAdded
+    checkIfPathAllreadyAdded,
+    clean_string_spaces
 }

@@ -15,6 +15,7 @@ const questionImage = document.getElementById('question-img')
 const closeImageModalButton = document.getElementById('img-modal-close-button')
 const questionOriginText = document.getElementById('origin-text')
 const getBackButton = document.getElementById('get-back-button')
+const questionErrorMessage = document.getElementById('question-error-message')
 
 function displayExam(allQuestions) {
     while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
@@ -78,7 +79,13 @@ function displayExam(allQuestions) {
             option.addEventListener('touchstart', optionClickHandler) // Para la version 'Mobile'
             option.addEventListener('click', optionClickHandler)
             optionsCtn.appendChild(option)
-        } 
+        }
+        questionErrorMessage.textContent = ''
+        if (PREGUNTAS[index]['answer'] == 'invalid') {
+            createBlackOut('Pregunta oficialmente invalidada')
+        } else if (!['a', 'b', 'c', 'd', 'invalid'].includes(PREGUNTAS[index]['answer'])) {
+            createBlackOut('Pregunta incompleta')
+        }
         if (disable) {
             createBlackOut()
             document.getElementById(PREGUNTAS[index]['answer'].toLowerCase()).classList.add('option-correct')
@@ -98,10 +105,12 @@ function displayExam(allQuestions) {
         totalMarker.textContent = TOTAL
     }
 
-    function createBlackOut(){
+    function createBlackOut(message=undefined){
             const optionBlackOut = document.createElement('div')
             optionBlackOut.className = 'option-blackout'
             optionsCtn.appendChild(optionBlackOut)
+            if (message) questionErrorMessage.textContent = message
+            else questionErrorMessage.textContent = ""
     }
     
     function removeBlackOut(){
@@ -165,11 +174,9 @@ function displayExam(allQuestions) {
         if (finded) {
             if (finded.correct == finded.choosen) {
                 if (CORRECTAS > 0) CORRECTAS--
-                console.log(CORRECTAS)
                 correctMarker.textContent = CORRECTAS
             } else {
                 if (ERRORES > 0) ERRORES--
-                console.log(ERRORES)
                 errorMarker.textContent = ERRORES
             }
             TOTAL--

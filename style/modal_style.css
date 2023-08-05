@@ -1,0 +1,32 @@
+.modal {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(100, 100, 100, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal div {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 5px #333;
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    overflow-y: auto;
+    height: 70vh;
+    word-wrap: break-word;
+}
+
+#readme-modal div {
+}
+
+#readme-modal div p {
+    display: block;
+    white-space: pre-wrap;
+    margin: 0;
+}
