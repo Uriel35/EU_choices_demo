@@ -52,12 +52,12 @@ function validateYears(yearsInputs, yearsInputsCtn){
         if (yearInput.checked) yearsInputsValues.push(yearInput.value);
     })
     if (yearsInputsValues.length == 0) {
-        invalidateInput(yearsInputsCtn)
-        return false;
+        yearsInputs.forEach(yearInput => yearsInputsValues.push(yearInput.value))
+        if (yearsInputsCtn.classList.contains('error-input')) yearsInputsCtn.classList.remove('error-input')
     } else {
         if (yearsInputsCtn.classList.contains('error-input')) yearsInputsCtn.classList.remove('error-input')
-        return yearsInputsValues
     }
+    return yearsInputsValues
 }
 
 function checkIfPathAllreadyAdded(value, formCtn) {

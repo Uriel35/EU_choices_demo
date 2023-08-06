@@ -61,17 +61,18 @@ function displayPage(data){
         setAllQuestionCounter()
     })
 
+    searcher.addEventListener('focusin', (e) => {
+        matchedSearchList.classList.add('flex-active')
+    })
     searcher.addEventListener('input', (e) => {
-        if (e.target.value == '') {
-            matchedSearchList.classList.remove('flex-active')
-        } else {
+        if (e.target.value == '') matchedSearchList.classList.remove('flex-active')
+        else {
             matchedSearchList.classList.add('flex-active')
             if (e.target.classList.contains('error-input')) e.target.classList.remove('error-input')
+
             let years = dom_utils.validateYears(yearsInputs, yearsInputsCtn)
-            if (years) {
-                let result = schema_utils.searchInputHandler(e.target.value, SCHEMA, years);
-                dom_utils.addItemsToSearchList(result)
-            }
+            let result = schema_utils.searchInputHandler(e.target.value, SCHEMA, years);
+            dom_utils.addItemsToSearchList(result)
             const allPathOptions = document.querySelectorAll('.path-option')
             allPathOptions.forEach(pathOption => {
                 pathOption.addEventListener('click', (e) => {
@@ -103,6 +104,7 @@ function displayPage(data){
             }
         }
         setAllQuestionCounter()
+        searcher.value = ''
     }
 
     searchForm.addEventListener('submit', submitSearchInput)
@@ -114,27 +116,30 @@ function displayPage(data){
 
     submitAllButton.addEventListener('click', (e) => {
         let years = dom_utils.validateYears(yearsInputs, yearsInputsCtn)
-        if (years) {
-            let allQuestions = []
-            let paths = []
-            let pathRadios = document.querySelectorAll('.path-radio')
-            if (pathRadios) {
-                pathRadios.forEach(radio => paths.push(dom_utils.clean_string_spaces(radio.value)))
-                for (let path of paths) {
-                    if (!schema_utils.confirmIfPathExists(path, SCHEMA)){
-                        return;
-                    }
+        let allQuestions = []
+        let paths = []
+        let pathRadios = document.querySelectorAll('.path-radio')
+        if (pathRadios) {
+            pathRadios.forEach(radio => paths.push(dom_utils.clean_string_spaces(radio.value)))
+            for (let path of paths) {
+                if (!schema_utils.confirmIfPathExists(path, SCHEMA)){
+                    return;
                 }
-                allQuestions = schema_utils.getQuestions(paths, SCHEMA, years)
-            } else allQuestions = schema_utils.getQuestions([], SCHEMA, years)
-
-            if (shuffleButton.checked) {
-                allQuestions.sort(() => Math.random() - 0.5)
             }
-            exam_script.displayExam(allQuestions)
-        } else {
-            dom_utils.invalidateInput(yearsInputsCtn)
+            allQuestions = schema_utils.getQuestions(paths, SCHEMA, years)
+        } else allQuestions = schema_utils.getQuestions([], SCHEMA, years)
+
+        if (allQuestions.length == 0) {
+            let errorModal = document.getElementById('error-modal')
+            errorModal.classList.add('flex-active')
+            errorModal.querySelector('p').textContent = 'NO hay preguntas sobre esos temas'
+            return;
         }
+
+        if (shuffleButton.checked) {
+            allQuestions.sort(() => Math.random() - 0.5)
+        }
+        exam_script.displayExam(allQuestions)
     })
 
     setAllQuestionCounter()

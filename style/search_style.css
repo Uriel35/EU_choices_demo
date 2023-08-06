@@ -4,11 +4,11 @@
     --button-background: #28587B;
     --background: linear-gradient(135deg, rgba(4,21,31,1) 55%, rgba(18,80,92,1) 100%); 
     --focus-path: red;
-    --font-family: 'Times new roman', sans-serif;
+    --font-family: 'Open sans', sans-serif;
     --foreground-color: #eee;
     --border-focus: 2px solid #000;
     --box-shadow-focus: 0 0 2px 3px #111;
-    --font-size: 16px;
+    --font-size: 14px;
     --question-ctn-background: #ddd;
     --option-button-background: #437c90;
     --on-slide: #2196F3;
@@ -26,6 +26,7 @@ body {
     background: var(--background);
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 p, h1, h2, h3, h4, h5, input, button {
@@ -38,12 +39,12 @@ p {
 }
 
 input {
-    border: 2px solid #111;
-    border-radius: 10px;
-    outline: none;
-    padding: .5rem;
-    margin: 0;
-    text-transform: uppercase;
+  border: 2px solid #111;
+  border-radius: 10px;
+  outline: none;
+  padding: .5rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 label {
@@ -80,7 +81,7 @@ ul, ol {
 
 ::-webkit-scrollbar {
     background-color: #222;
-    height: 4px;
+    height: 15px;
     width: 15px;
 }
 ::-webkit-scrollbar-thumb {
@@ -135,7 +136,7 @@ nav button {
 }
 
 nav button:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 /* --------------- MAIN -------------------- */
@@ -143,6 +144,7 @@ main {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .form-ctn {
@@ -410,7 +412,7 @@ input:checked + .slider::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .all-q-counter-ctn {
@@ -496,7 +498,7 @@ input:checked + .slider::before {
 
 @media (max-width: 767px) {
   :root {
-      --font-size: 10px
+      --font-size: 8px
   }
 
   main {
@@ -504,7 +506,8 @@ input:checked + .slider::before {
   }
 
   ::-webkit-scrollbar {
-      width: 6px;
+    height: 6px;
+    width: 6px;
   }
 
   .form-ctn {

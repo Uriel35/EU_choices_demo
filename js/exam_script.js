@@ -93,7 +93,13 @@ function displayExam(allQuestions) {
         }
     }
 
-    function customMarker(correctBool) {
+    function customMarker(correctBool, reset=false) {
+        if (reset) {
+            correctMarker.textContent = CORRECTAS
+            errorMarker.textContent = ERRORES
+            totalMarker.textContent = TOTAL
+            return;
+        }
         if (correctBool) {
             CORRECTAS++
             correctMarker.textContent = CORRECTAS
@@ -153,6 +159,7 @@ function displayExam(allQuestions) {
         })
         circlesCtn.appendChild(CIRCLE);
     }
+    customMarker(undefined, true)
 
     showQuestion(counter, false)
 

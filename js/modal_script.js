@@ -20,8 +20,8 @@ fetch('./data/readme.txt')
 //         console.error('Error al obtener el archivo:', error);
 // });
 
-function defineModal(openButton, modal, ctn) {
-    openButton.addEventListener('click', () => modal.classList.add('flex-active'))
+function defineModal(openButton=undefined, modal, ctn) {
+    if (openButton) openButton.addEventListener('click', () => modal.classList.add('flex-active'))
     modal.addEventListener('click', (e) => {
         if (e.target.contains(ctn)) modal.classList.remove('flex-active')
     })
@@ -30,3 +30,4 @@ function defineModal(openButton, modal, ctn) {
 
 defineModal(document.getElementById('readme-button'), document.getElementById('readme-modal'), document.getElementById('readme-ctn'))
 // defineModal(document.getElementById('help-me-button'), document.getElementById('help-me-modal'), document.getElementById('help-me-ctn'))
+defineModal(undefined, document.getElementById('error-modal'), document.getElementById('error-modal-ctn'))
