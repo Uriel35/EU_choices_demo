@@ -255,4 +255,9 @@
     :root {
         --font-size: 10px
     }
+
+    .exam-ctn {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
 }
