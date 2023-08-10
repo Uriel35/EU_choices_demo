@@ -11,6 +11,7 @@ En caso de no hayas agregado ningun tema o especialidad, apareceran TODAS las pr
 - Tener en cuenta que algunas preguntas pueden estar en varios archivos a la vez (Ejemplo: Caso de cuadro broncoobstructivo inespecifico puede entrar en 'Asma' y 'EPOC').
 - El examen que se genera NO TIENE PREGUNTAS REPETIDAS (salvo que hayan tomado la misma pregunta en años diferentes).
 - Recomiendo usar la pagina en una COMPUTADORA. En los celulares suele haber problemas.
+- Si buscas 'otros' vas a encontrar preguntas que no supe en que lugar agruparla.
 
 
 **** SEGURIDAD
