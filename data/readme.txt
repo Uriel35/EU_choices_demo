@@ -1,7 +1,7 @@
 **** INSTRUCCIONES
 Basicamente el buscador permite buscar preguntas del examen unico de especialidades y/o temas especificas.
 El buscador suele aceptar nombre de especialidades, temas, abreviaciones (TBC, DBT, HTA, etc...) e incluso [palabras clave] (Ejemplo: 'edad osea' o 'baja talla' entran en Pediatria/Crecimiento)
-Sugiero que le des click a las opciones de la lista del buscador para evitar errores de tipeo, si no, respeta el metodo de 'Tema/Especialidad'. El "/' es importante para poder diferenciar entre Especialidad y tema.
+Sugiero que busques los TEMAS que prefieras ver y le des click a las opciones de la lista del buscador para evitar errores de tipeo, si no, respeta el metodo de 'Tema/Especialidad'. El "/' es importante para poder diferenciar entre Especialidad y tema.
 
 En caso de no hayas agregado ningun tema o especialidad, apareceran TODAS las preguntas en el examen de acuerdo a los años seleccionados.
 
@@ -13,3 +13,5 @@ En caso de no hayas agregado ningun tema o especialidad, apareceran TODAS las pr
 - El examen que se genera NO TIENE PREGUNTAS REPETIDAS (salvo que hayan tomado la misma pregunta en años diferentes).
 
 
+**** CONTACTO
+euchoices@gmail.com
