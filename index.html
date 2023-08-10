@@ -62,8 +62,8 @@
     
                 <div class="input-ctn" id="search-ctn">
                     <input tabindex="2" type="text" id="search-input" class="input-class" placeholder="Especialidad / Tema" autocomplete='off'>
-                    <ul id="matched-search-list" class="matched-search-list"> </ul>
                     <p id="search-error-message" class="error-message">Error</p>
+                    <ul id="matched-search-list" class="matched-search-list"> </ul>
                 </div>
             </form>
             <div class="paths-ctn">
@@ -91,7 +91,10 @@
                 <div class="get-back-button-ctn">
                     <button id="get-back-button"><span>&#x2190;</span> Volver</button>
                 </div>
-                <div id="circles-ctn"></div>
+                <div class="circle-bar-ctn">
+                    <div id="circles-ctn"></div>
+                    <i class="far fa-eye" id="show-circle-modal-button"></i>
+                </div>
                 <div class="questions-ctn">
                     <div id="question-ctn"></div>
                     <div class="img-button-ctn" id="img-button-ctn">
@@ -125,6 +128,7 @@
             <div class="modal-ctn" id="readme-ctn">
                 <p id="readme-output"></p>
             </div>
+            <button class="close-modal-button" id="close-readme-modal">Cerrar</button>
         </div>
         <div id="help-me-modal" class="modal">
             <div class="modal-ctn" id="help-me-ctn">
@@ -136,6 +140,12 @@
                 <h3>Error</h3>
                 <p id="error-modal-message"></p>
             </div>
+        </div>
+        <div id="circle-modal" class="modal">
+            <div class="modal-ctn" id="circles-modal-ctn">
+
+            </div>
+            <button id="close-circles-modal">Cerrar</button>
         </div>
 
     </main>

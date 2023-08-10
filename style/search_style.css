@@ -285,10 +285,6 @@ input:checked + .slider::before {
     font-size: calc(var(--font-size) * 1);
 }
 
-/* #search-input:focus + .matched-search-list {
-  display: flex;
-} */
-
 .error-message {
   display: none;
   color: white;
@@ -414,20 +410,20 @@ input:checked + .slider::before {
     gap: 1.5rem;
 }
 
-.all-q-counter-ctn {
+.all-q-counter-ctn h3 {
   font-size: calc(var(--font-size) * 1.3);
   color: #fff;
 }
 
-.random-switch-ctn{
+.random-switch-ctn {
     display: flex;
     gap: .3rem;
     align-items: center;
-    font-size: calc(var(--font-size) * 1.3);
     color: var(--foreground-color);
 }
 
 .random-switch-ctn h3 {
+    font-size: calc(var(--font-size) * 1.3);
     width: min-content;
 }
 

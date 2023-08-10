@@ -18,6 +18,8 @@ function deleteBracketsAndParentesis(value) {
 
 function addItemsToSearchList(result){
     while (pathOptionsCtn.firstChild) pathOptionsCtn.removeChild(pathOptionsCtn.firstChild);
+
+    result.sort((a, b) => b.counter - a.counter) // Se ordenan segun cantidad de preguntas de cada Path.
     for (let path of result){
         let option = document.createElement('li')
         let pAnalogue = document.createElement('p')
@@ -29,7 +31,7 @@ function addItemsToSearchList(result){
             pAnalogue.textContent = `(${path.counter}) (tema)`
         } else {
             option.textContent = `${path.speciality}`;
-            path.textContent = `(${path.counter}) (especialidad)`
+            pAnalogue.textContent = `(${path.counter}) (especialidad)`
         }
         option.id = option.textContent
         option.classList.add('path-option')

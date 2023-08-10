@@ -8,10 +8,22 @@ function clean_string_spaces(value){
 }
 
 function searchInputHandler(value, schema, years){
+    if (value == undefined || value == '') {
+        let result = []
+        for (let speciality of Object.keys(schema)) {
+            let spCounter = getQuestionCounter(speciality, false, schema, years)
+            result = result.concat({'speciality': speciality, 'counter': spCounter})
+            for (let theme of Object.keys(schema[speciality])) {
+                let qCounter = getQuestionCounter(speciality, theme, schema, years)
+                result = result.concat({'speciality': speciality, 'theme': theme, 'counter': qCounter})
+            }
+        }
+        return result
+    }
     value = clean_string_spaces(value)
     let result = []
     let splitted = value.split(/\//)
-    if (splitted.length == 0 || splitted.length > 2 || value == '') return result
+    if (splitted.length > 2) return result
     if (splitted.length == 1 || value[value.length - 1] == '/'){
         let word = splitted[0]
         let matchedSpecialities = findSpeciality(word, schema, years)

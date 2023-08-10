@@ -7,11 +7,14 @@
     position: fixed;
     background-color: rgba(100, 100, 100, 0.5);
     display: none;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 2000;
+    gap: 1rem;
 }
 
-.modal div {
+.modal .modal-ctn {
     background-color: white;
     padding: .5rem;
     border-radius: 10px;
@@ -19,7 +22,6 @@
     width: 90%;
     display: flex;
     justify-content: start;
-    overflow-y: auto;
     height: 70vh;
     word-wrap: break-word;
 }
@@ -32,6 +34,8 @@
     display: block;
     white-space: pre-wrap;
     margin: 0;
+    height: 100%;  
+    overflow: auto;
 }
 
 #error-modal-ctn {

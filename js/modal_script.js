@@ -20,14 +20,17 @@ fetch('./data/readme.txt')
 //         console.error('Error al obtener el archivo:', error);
 // });
 
-function defineModal(openButton=undefined, modal, ctn) {
+function defineModal(openButton=undefined, modal, ctn, closeButton=undefined) {
     if (openButton) openButton.addEventListener('click', () => modal.classList.add('flex-active'))
     modal.addEventListener('click', (e) => {
         if (e.target.contains(ctn)) modal.classList.remove('flex-active')
     })
+    if(closeButton) closeButton.addEventListener('click', () => modal.classList.remove('flex-active'))
 }
 
 
-defineModal(document.getElementById('readme-button'), document.getElementById('readme-modal'), document.getElementById('readme-ctn'))
+defineModal(document.getElementById('readme-button'), document.getElementById('readme-modal'), document.getElementById('readme-ctn'), document.getElementById('close-readme-modal'))
 // defineModal(document.getElementById('help-me-button'), document.getElementById('help-me-modal'), document.getElementById('help-me-ctn'))
 defineModal(undefined, document.getElementById('error-modal'), document.getElementById('error-modal-ctn'))
+
+defineModal(document.getElementById('show-circle-modal-button'), document.getElementById('circle-modal'), document.getElementById('circles-modal-ctn'), document.getElementById('close-circles-modal'))

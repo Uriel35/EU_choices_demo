@@ -20,7 +20,6 @@
     padding-top: 3.5rem;
     padding: 1rem;
     position: relative;
-    overflow: scroll;
 }
 
 .get-back-button-ctn {
@@ -32,6 +31,19 @@
     cursor: pointer;
     border: none;
     background: var(--button-background);
+}
+
+.circle-bar-ctn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle-bar-ctn i {
+    font-size: calc(var(--font-size)* 1.5);
+    cursor: pointer;
+    color: #eee;
 }
 
 #circles-ctn {
@@ -166,6 +178,7 @@
 
 .option:hover {
     background-color: var(--celeste-claro);
+    color: #222;
 }
 
 .option-correct {
@@ -224,9 +237,6 @@
 }
 
 .score-marker-ctn {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
     width: 100%;
     display: flex;
     justify-content: end;
@@ -240,7 +250,7 @@
 }
 
 .score-marker p {
-    font-size: calc(var(--font-size) * 1.4);
+    font-size: calc(var(--font-size) * 1.5);
     font-weight: 800;
     display: inline-block;
 }
@@ -253,6 +263,16 @@
     color: var(--error-color);
 }
 
+#circles-modal-ctn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-auto-flow: dense; /* Esto es lo que hace que se reorganicen en filas */
+    overflow: auto;
+    align-items: center;
+    justify-items: center;
+    gap: .3rem;
+}
+
 @media (max-width: 767px) {
     :root {
         --font-size: 10px
@@ -261,5 +281,9 @@
     .exam-ctn {
         justify-content: flex-start;
         gap: 1rem;
+    }
+
+    #circles-modal-ctn {
+        gap: 0;
     }
 }

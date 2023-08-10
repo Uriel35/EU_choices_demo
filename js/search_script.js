@@ -61,52 +61,46 @@ function displayPage(data){
         setAllQuestionCounter()
     })
 
-    searcher.addEventListener('focusin', (e) => {
-        matchedSearchList.classList.add('flex-active')
-    })
     document.addEventListener('click', (event) => {
-    if (!matchedSearchList.contains(event.target) && event.target !== searcher) {
-        matchedSearchList.classList.remove('flex-active')
-    }
+        // Para que cada vez que hacemos focus out del searcher desaparezca la lista
+        if (!matchedSearchList.contains(event.target) && event.target !== searcher) {
+            matchedSearchList.classList.remove('flex-active')
+        }
     });
 
-    searcher.addEventListener('input', (e) => {
-        if (e.target.value == '') matchedSearchList.classList.remove('flex-active')
-        else {
-            matchedSearchList.classList.add('flex-active')
-            if (e.target.classList.contains('error-input')) e.target.classList.remove('error-input')
+    function searchHandler(e) {
+        matchedSearchList.classList.add('flex-active')
+        if (e.target.classList.contains('error-input')) e.target.classList.remove('error-input')
 
-            let years = dom_utils.validateYears(yearsInputs, yearsInputsCtn)
-            let result = schema_utils.searchInputHandler(e.target.value, SCHEMA, years);
-            dom_utils.addItemsToSearchList(result)
-            const allPathOptions = document.querySelectorAll('.path-option')
-            allPathOptions.forEach(pathOption => {
-                pathOption.addEventListener('click', (e) => {
-                    searcher.value = pathOption.id
-                    submitSearchInput(e) // Creo que seria mejor intentar que se active el 'submit' event de searchForm
-                    setAllQuestionCounter()
-                })
+        let years = dom_utils.validateYears(yearsInputs, yearsInputsCtn)
+        let result = schema_utils.searchInputHandler(e.target.value, SCHEMA, years);
+        dom_utils.addItemsToSearchList(result)
+        const allPathOptions = document.querySelectorAll('.path-option')
+        allPathOptions.forEach(pathOption => {
+            pathOption.addEventListener('click', (e) => {
+                searcher.value = pathOption.id
+                submitSearchInput(e) // Creo que seria mejor intentar que se active el 'submit' event de searchForm
+                setAllQuestionCounter()
             })
-        }
-    })
+        })
+    }
+    searcher.addEventListener('focusin', searchHandler)
+    searcher.addEventListener('input', searchHandler)
 
     function submitSearchInput(e) {
         e.preventDefault()
         searcher.focus() // Focusear siempre el input
         matchedSearchList.classList.remove('flex-active') // Remover la lista de path-option
-        let years = dom_utils.validateYears(yearsInputs, yearsInputsCtn)
-        if (years) {
-            let pathExists = schema_utils.confirmIfPathExists(searcher.value, SCHEMA)
-            if (!pathExists) {
-                dom_utils.invalidateInput(searcher, 'Especialidad y/o tema NO existente')
-                return;
+        let pathExists = schema_utils.confirmIfPathExists(searcher.value, SCHEMA)
+        if (!pathExists) {
+            dom_utils.invalidateInput(searcher, 'Especialidad y/o tema NO existente')
+            return;
+        } else {
+            let allreadyAdded = dom_utils.checkIfPathAllreadyAdded(pathExists, pathsForm)
+            if (!allreadyAdded) {
+                dom_utils.addPath(pathExists, pathsForm, setAllQuestionCounter)
             } else {
-                let allreadyAdded = dom_utils.checkIfPathAllreadyAdded(pathExists, pathsForm)
-                if (!allreadyAdded) {
-                    dom_utils.addPath(pathExists, pathsForm, setAllQuestionCounter)
-                } else {
-                    dom_utils.invalidateInput(searcher, 'Especialidad y/o tema ya agregado')
-                }
+                dom_utils.invalidateInput(searcher, 'Especialidad y/o tema ya agregado')
             }
         }
         setAllQuestionCounter()
@@ -128,9 +122,7 @@ function displayPage(data){
         if (pathRadios) {
             pathRadios.forEach(radio => paths.push(dom_utils.clean_string_spaces(radio.value)))
             for (let path of paths) {
-                if (!schema_utils.confirmIfPathExists(path, SCHEMA)){
-                    return;
-                }
+                if (!schema_utils.confirmIfPathExists(path, SCHEMA)) return;
             }
             allQuestions = schema_utils.getQuestions(paths, SCHEMA, years)
         } else allQuestions = schema_utils.getQuestions([], SCHEMA, years)
@@ -142,9 +134,8 @@ function displayPage(data){
             return;
         }
 
-        if (shuffleButton.checked) {
-            allQuestions.sort(() => Math.random() - 0.5)
-        }
+        if (shuffleButton.checked) allQuestions.sort(() => Math.random() - 0.5)
+
         exam_script.displayExam(allQuestions)
     })
 

@@ -2,6 +2,8 @@ const examModal = document.getElementById('exam-modal')
 const questionCtn = document.getElementById('question-ctn') 
 const optionsCtn = document.getElementById('options-ctn') 
 const circlesCtn = document.getElementById('circles-ctn') 
+const ciclesModal = document.getElementById('circle-modal')
+const circlesModalCtn = document.getElementById('circles-modal-ctn')
 const nextButton = document.getElementById('next-btn') 
 const previousButton = document.getElementById('previous-btn') 
 const correctMarker = document.getElementById('correct-marker')
@@ -19,6 +21,7 @@ const questionErrorMessage = document.getElementById('question-error-message')
 
 function displayExam(allQuestions) {
     while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
+    while (circlesModalCtn.firstChild) circlesModalCtn.removeChild(circlesModalCtn.firstChild)
     examModal.classList.add('modal-active')
 
     function manageCounter(counter, nextBool){
@@ -38,7 +41,6 @@ function displayExam(allQuestions) {
 
     function showQuestion(index, disable, choosen=undefined){
         let indexNum = index + 1
-        let indexStr = index.toString()
         questionCtn.textContent = ''
         optionsCtn.textContent = ''
         questionCtn.textContent = `${PREGUNTAS[index]['custom-index']}) ${PREGUNTAS[index]['question']}`
@@ -66,12 +68,14 @@ function displayExam(allQuestions) {
                 if (PREGUNTAS[index]['answer'].toLowerCase() == e.target.id){
                     e.target.classList.add('option-correct')
                     document.getElementById(indexNum).classList.add('circle-correct')
+                    document.getElementById(`modal-${indexNum}`).classList.add('circle-correct')
                     customMarker(true)
                 }
                 else {
                     e.target.classList.add('option-error');
                     document.getElementById(PREGUNTAS[index]['answer'].toLowerCase()).classList.add('option-correct');
                     document.getElementById(`${indexNum}`).classList.add('circle-error');
+                    document.getElementById(`modal-${indexNum}`).classList.add('circle-error')
                     customMarker(false)
                 }
                 createBlackOut()
@@ -158,6 +162,19 @@ function displayExam(allQuestions) {
             checkIfDonned(counter)
         })
         circlesCtn.appendChild(CIRCLE);
+
+        const MODAL_CIRCLE = document.createElement('div')
+        MODAL_CIRCLE.classList.add('circle-neutral-ctn');
+        MODAL_CIRCLE.id = `modal-${i}`
+        MODAL_CIRCLE.textContent = i;
+        MODAL_CIRCLE.addEventListener('click', (e) => {
+            console.log(e.target.textContent)
+            counter = parseInt(e.target.textContent) - 1
+            console.log(counter)
+            checkIfDonned(counter)
+            ciclesModal.classList.remove('flex-active')
+        })
+        circlesModalCtn.appendChild(MODAL_CIRCLE);
     }
     customMarker(undefined, true)
 
