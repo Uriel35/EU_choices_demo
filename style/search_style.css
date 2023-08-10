@@ -285,10 +285,9 @@ input:checked + .slider::before {
     font-size: calc(var(--font-size) * 1);
 }
 
-#search-input:focus {
-    border: var(--border-focus);
-    box-shadow: var(--box-shadow-focus);
-}
+/* #search-input:focus + .matched-search-list {
+  display: flex;
+} */
 
 .error-message {
   display: none;
@@ -296,7 +295,7 @@ input:checked + .slider::before {
   font-size: calc(var(--font-size) * .9);
 }
 
-#search-ctn ul {
+#matched-search-list {
   display: none;
   width: 100%;
   height: 45vh;

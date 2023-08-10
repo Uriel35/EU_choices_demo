@@ -64,6 +64,12 @@ function displayPage(data){
     searcher.addEventListener('focusin', (e) => {
         matchedSearchList.classList.add('flex-active')
     })
+    document.addEventListener('click', (event) => {
+    if (!matchedSearchList.contains(event.target) && event.target !== searcher) {
+        matchedSearchList.classList.remove('flex-active')
+    }
+    });
+
     searcher.addEventListener('input', (e) => {
         if (e.target.value == '') matchedSearchList.classList.remove('flex-active')
         else {

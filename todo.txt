@@ -2,11 +2,11 @@ To Do's:
 --- Modern Custom
 --- make a HELP ME section
 --- Highligth the path options matched sequence
---- Change font family
 --- Add analogue 'neurodesarrollo' to 'maduracion neurologica'
 --- Custom correct/mistake/total marker
 
 Done: 
+--- Change font family
 --- Remove the years error when there is no one selected
 --- Handle the 0 questions submit
 --- Handle the questions with null answers
