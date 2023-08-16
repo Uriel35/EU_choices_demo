@@ -16,9 +16,14 @@ function deleteBracketsAndParentesis(value) {
   return value
 }
 
-function addItemsToSearchList(result){
+function addItemsToSearchList(result, value){
     while (pathOptionsCtn.firstChild) pathOptionsCtn.removeChild(pathOptionsCtn.firstChild);
-
+    if (result.length == 0) {
+        let p = document.createElement('p')
+        p.textContent = 'NO se han encontrado especialidades ni temas'
+        pathOptionsCtn.appendChild(p)
+        return;
+    }
     result.sort((a, b) => b.counter - a.counter) // Se ordenan segun cantidad de preguntas de cada Path.
     for (let path of result){
         let option = document.createElement('li')
@@ -35,6 +40,7 @@ function addItemsToSearchList(result){
         }
         option.id = option.textContent
         option.classList.add('path-option')
+        option.setAttribute('tabindex', 0)
         option.appendChild(pAnalogue)
         pathOptionsCtn.appendChild(option)
     }
@@ -96,6 +102,10 @@ function addPath(value, formCtn, resetQuestionCounterFx) {
     })
 }
 
+function keyDownSearcher(){
+    if (pathOptionsCtn.firstChild) pathOptionsCtn.firstChild.focus()
+}
+
 
 export default {
     addItemsToSearchList,
@@ -103,5 +113,6 @@ export default {
     addPath,
     validateYears,
     checkIfPathAllreadyAdded,
-    clean_string_spaces
+    clean_string_spaces,
+    keyDownSearcher
 }

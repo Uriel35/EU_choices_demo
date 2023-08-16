@@ -2,10 +2,20 @@ To Do's:
 --- Modern Custom
 --- make a HELP ME section
 --- Highligth the path options matched sequence
+--- Put empty values in added path list
+--- Create logo
+--- Make footer
+--- Put Google Analysis
+--- Put a report question, conected with email.
+
+Done:
+--- Put empty values in path list
+--- Add 'Down arrow' event in search input
+--- Navegate the path list with arrows
+--- fix qCounter of specialities in search list
 --- Add analogue 'neurodesarrollo' to 'maduracion neurologica'
 --- Custom correct/mistake/total marker
-
-Done: 
+--- Delete the search focus and the value = '' when select an list option
 --- Change font family
 --- Remove the years error when there is no one selected
 --- Handle the 0 questions submit

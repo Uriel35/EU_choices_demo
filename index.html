@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="style/exam_style.css">
     <link rel="stylesheet" type="text/css" href="style/modal_style.css">
     <script src="https://kit.fontawesome.com/c7ec15ff2e.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LN0SMZ3HEN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LN0SMZ3HEN');
+    </script>
 </head>
 <body>
     <header>
@@ -68,7 +76,7 @@
             </form>
             <div class="paths-ctn">
                 <form id="paths-form"></form>
-                <i id="clean-all-paths-button" class="fas fa-broom"></i>
+                <i id="clean-all-paths-button" class="fas fa-broom icon-button"></i>
             </div>
     
             <div class="footer-buttons-ctn">
@@ -93,7 +101,7 @@
                 </div>
                 <div class="circle-bar-ctn">
                     <div id="circles-ctn"></div>
-                    <i class="far fa-eye" id="show-circle-modal-button"></i>
+                    <i class="far fa-eye icon-button" id="show-circle-modal-button"></i>
                 </div>
                 <div class="questions-ctn">
                     <div id="question-ctn"></div>
@@ -116,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div id="img-modal" class="img-modal">
+            <div id="img-modal" class="modal">
                 <div class="img-ctn">
                     <img src="" alt="" id="question-img">
                     <button id="img-modal-close-button">Cerrar</button>

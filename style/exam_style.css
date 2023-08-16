@@ -40,12 +40,6 @@
     gap: 1rem;
 }
 
-.circle-bar-ctn i {
-    font-size: calc(var(--font-size)* 1.5);
-    cursor: pointer;
-    color: #eee;
-}
-
 #circles-ctn {
     width: 90%;
     display: flex;
@@ -124,17 +118,6 @@
     font-size: calc(var(--font-size) * 1.4);
     text-transform: uppercase;
     border: none;
-}
-
-.img-modal {
-    display: none;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 200;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(100, 100, 100, 0.8);
 }
 
 .img-ctn {
@@ -265,12 +248,14 @@
 
 #circles-modal-ctn {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, 50px);
     grid-auto-flow: dense; /* Esto es lo que hace que se reorganicen en filas */
     overflow: auto;
     align-items: center;
     justify-items: center;
     gap: .3rem;
+    max-height: 70vh;
+    height: min-content;
 }
 
 @media (max-width: 767px) {
@@ -281,6 +266,10 @@
     .exam-ctn {
         justify-content: flex-start;
         gap: 1rem;
+    }
+
+    .circle-neutral-ctn {
+        padding: 1rem;
     }
 
     #circles-modal-ctn {

@@ -8,8 +8,8 @@ function clean_string_spaces(value){
 }
 
 function searchInputHandler(value, schema, years){
+    let result = []
     if (value == undefined || value == '') {
-        let result = []
         for (let speciality of Object.keys(schema)) {
             let spCounter = getQuestionCounter(speciality, false, schema, years)
             result = result.concat({'speciality': speciality, 'counter': spCounter})
@@ -20,8 +20,8 @@ function searchInputHandler(value, schema, years){
         }
         return result
     }
+
     value = clean_string_spaces(value)
-    let result = []
     let splitted = value.split(/\//)
     if (splitted.length > 2) return result
     if (splitted.length == 1 || value[value.length - 1] == '/'){
@@ -88,7 +88,9 @@ function getQuestionCounter(speciality, theme, schema, years) {
     if (!theme) {
         for (theme of Object.keys(schema[speciality])){
             let filtered = schema[speciality][theme]['array'].filter(q => years.includes(q['origin']['exam']))
-            result = result.concat(filtered)
+            for (let obj of filtered) {
+                if (!result.some(obj2 => obj.id === obj2.id)) result.push(obj)
+            }
         }
     } else result = schema[speciality][theme]['array'].filter(q=> years.includes(q['origin']['exam'])) 
     return result.length

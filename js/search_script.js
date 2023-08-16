@@ -74,23 +74,35 @@ function displayPage(data){
 
         let years = dom_utils.validateYears(yearsInputs, yearsInputsCtn)
         let result = schema_utils.searchInputHandler(e.target.value, SCHEMA, years);
-        dom_utils.addItemsToSearchList(result)
+        dom_utils.addItemsToSearchList(result, e.target.value)
         const allPathOptions = document.querySelectorAll('.path-option')
         allPathOptions.forEach(pathOption => {
-            pathOption.addEventListener('click', (e) => {
+            function submitOption(e) {
                 searcher.value = pathOption.id
                 submitSearchInput(e) // Creo que seria mejor intentar que se active el 'submit' event de searchForm
                 setAllQuestionCounter()
+            }
+            pathOption.addEventListener('click', submitOption)
+
+            pathOption.addEventListener('keydown', (e) => { 
+                e.preventDefault()
+                if (e.key == 'Enter') submitOption(e)
+                else if (e.key == 'ArrowDown') {
+                    if (e.target.nextSibling) e.target.nextSibling.focus()
+                    else e.target.focus()
+                } else if (e.key == 'ArrowUp') {
+                    if (e.target.previousSibling) e.target.previousSibling.focus()
+                    else searcher.focus()
+                }
             })
         })
     }
+    searcher.addEventListener("keydown", (e) => { if (e.key == 'ArrowDown') dom_utils.keyDownSearcher() })
     searcher.addEventListener('focusin', searchHandler)
     searcher.addEventListener('input', searchHandler)
 
     function submitSearchInput(e) {
         e.preventDefault()
-        searcher.focus() // Focusear siempre el input
-        matchedSearchList.classList.remove('flex-active') // Remover la lista de path-option
         let pathExists = schema_utils.confirmIfPathExists(searcher.value, SCHEMA)
         if (!pathExists) {
             dom_utils.invalidateInput(searcher, 'Especialidad y/o tema NO existente')
@@ -104,7 +116,6 @@ function displayPage(data){
             }
         }
         setAllQuestionCounter()
-        searcher.value = ''
     }
 
     searchForm.addEventListener('submit', submitSearchInput)
@@ -138,6 +149,5 @@ function displayPage(data){
 
         exam_script.displayExam(allQuestions)
     })
-
     setAllQuestionCounter()
 }
