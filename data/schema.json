@@ -1819,24 +1819,6 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n64. \u00bfEn cu\u00e1l de los siguientes cuadros cl\u00ednicos es posible observar ves\u00edculas en el exantema?\na. Rub\u00e9ola.\nb. Stevens-Johnson.\nc. Escarlatina.\nd. Sarampi\u00f3n.",
-                    "question": "\u00bfEn cu\u00e1l de los siguientes cuadros cl\u00ednicos es posible observar ves\u00edculas en el exantema?",
-                    "options": {
-                        "a": "Rub\u00e9ola.",
-                        "b": "Stevens-Johnson.",
-                        "c": "Escarlatina.",
-                        "d": "Sarampi\u00f3n."
-                    },
-                    "id": "bb70cd39-599b-46f6-be91-608621c3f575",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2017"
-                    },
-                    "answer": "b",
-                    "index": 64,
-                    "image": ""
-                },
-                {
                     "question_complete": "\n80) \u00bfCu\u00e1l es el agente etiol\u00f3gico m\u00e1s probable del cuadro cl\u00ednico de una ni\u00f1a de 11 a\u00f1os que consulta en  \nguardia  por  artralgias  en  rodillas  y  codos  y  en  el  examen  f\u00edsico  se  encuentra  febril  (temperatura  axilar \n38\u00baC), la rodilla izquierda est\u00e1 levemente tumefacta, caliente, sin eritema y tiene dolor a la movilizaci\u00f3n \nde  ambos  codos?  La  madre  refiere  que  a  la  ni\u00f1a,  hace  dos  semanas,  se  le  diagnostic\u00f3  un  cuadro  viral \nporque se encontraba febril, con malestar general y presentaba rubicundez en mejillas. En los ex\u00e1menes \nde  laboratorio  de  guardia  se  constata:  recuento  de  gl\u00f3bulos  blancos  8900/  mm3  (neutr\u00f3filos  40%, \nlinfocitos 45%,  monocitos15 %),  Hb 11  g/dl,  plaquetas  472.000 /mm3,  eritosedimentaci\u00f3n 20  mm/  en  la \nprimera hora. \n a) Virus Coxsackie. \n b) Estreptococo Beta hemol\u00edtico del grupo A. \n c) Virus Influenza A. \n d) Parvovirus B19. ",
                     "question": "\u00bfCu\u00e1l es el agente etiol\u00f3gico m\u00e1s probable del cuadro cl\u00ednico de una ni\u00f1a de 11 a\u00f1os que consulta en guardia por artralgias en rodillas y codos y en el examen f\u00edsico se encuentra febril (temperatura axilar 38\u00baC), la rodilla izquierda est\u00e1 levemente tumefacta, caliente, sin eritema y tiene dolor a la movilizaci\u00f3n de ambos codos? La madre refiere que a la ni\u00f1a, hace dos semanas, se le diagnostic\u00f3 un cuadro viral porque se encontraba febril, con malestar general y presentaba rubicundez en mejillas. En los ex\u00e1menes de laboratorio de guardia se constata: recuento de gl\u00f3bulos blancos 8900/ mm3 (neutr\u00f3filos 40%, linfocitos 45%, monocitos15 %), Hb 11 g/dl, plaquetas 472.000 /mm3, eritosedimentaci\u00f3n 20 mm/ en la primera hora. ",
                     "options": {
@@ -3163,7 +3145,9 @@
                 "diarrea aguda",
                 "diarrea cronica",
                 "disenteria",
-                "esteatorrea"
+                "esteatorrea",
+                "parasitosis",
+                "diarrea cronica inespecifica"
             ]
         },
         "celiaquia": {
@@ -3417,24 +3401,6 @@
         },
         "purpuras": {
             "array": [
-                {
-                    "question_complete": "\n16) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 12 a\u00f1os que se encuentra internado por presentar \nun s\u00edndrome de Guillain Barr\u00e9 posterior a un s\u00edndrome febril de varios d\u00edas de evoluci\u00f3n, acompa\u00f1ado de \nadenopat\u00edas generalizadas y esplenomegalia? En los ex\u00e1menes de laboratorio presenta: trombocitopenia, \ny anemia hemol\u00edtica Coombs positiva y con crioaglutininas espec\u00edficas para el ant\u00edgeno i de los eritrocitos. \n a) Artritis idiop\u00e1tica juvenil. \n b) Mononucleosis infecciosa. \n c) Leucemia linfobl\u00e1stica aguda. \n d) Infecci\u00f3n por Mycoplasma pneumoniae. ",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 12 a\u00f1os que se encuentra internado por presentar un s\u00edndrome de Guillain Barr\u00e9 posterior a un s\u00edndrome febril de varios d\u00edas de evoluci\u00f3n, acompa\u00f1ado de adenopat\u00edas generalizadas y esplenomegalia? En los ex\u00e1menes de laboratorio presenta: trombocitopenia, y anemia hemol\u00edtica Coombs positiva y con crioaglutininas espec\u00edficas para el ant\u00edgeno i de los eritrocitos. ",
-                    "options": {
-                        "a": "Artritis idiop\u00e1tica juvenil.",
-                        "b": "Mononucleosis infecciosa.",
-                        "c": "Leucemia linfobl\u00e1stica aguda.",
-                        "d": "Infecci\u00f3n por Mycoplasma pneumoniae."
-                    },
-                    "id": "b6c1ce06-7569-403e-96ea-08ad732bc780",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "b",
-                    "index": 16,
-                    "image": ""
-                },
                 {
                     "question_complete": "\n29. \u00bfC\u00f3mo interpretar\u00eda el cuadro cl\u00ednico de un ni\u00f1o de 7 a\u00f1os que es tra\u00eddo el control por una\nneumon\u00eda tuberculosa y est\u00e1 en tratamiento desde hace 25 d\u00edas con isoniacida, rifampicina,\netambutol y pirazinamida? Tiene hemogramas con plaquetopenia sin otras alteraciones en el\nexamen de sangre perif\u00e9rica.\nEn el examen f\u00edsico se observan lesiones purp\u00faricas y especiales en miembros inferiores de\nreciente aparici\u00f3n, sin linfadenopat\u00edas ni hepatoesplenomegalia.\na. P\u00farpura trombocitop\u00e9nica inmune (PTI) por pirazinamida.\nb. P\u00farpura trombocitop\u00e9nica inmune (PTI) por rifampicina.\nc. Vasculitis por hipersensibilidad a isoniacida.\nd. Vasculitis por hipersensibilidad a etambutol.",
                     "question": "\u00bfC\u00f3mo interpretar\u00eda el cuadro cl\u00ednico de un ni\u00f1o de 7 a\u00f1os que es tra\u00eddo el control por una neumon\u00eda tuberculosa y est\u00e1 en tratamiento desde hace 25 d\u00edas con isoniacida, rifampicina, etambutol y pirazinamida? Tiene hemogramas con plaquetopenia sin otras alteraciones en el examen de sangre perif\u00e9rica. En el examen f\u00edsico se observan lesiones purp\u00faricas y especiales en miembros inferiores de reciente aparici\u00f3n, sin linfadenopat\u00edas ni hepatoesplenomegalia.",
@@ -4847,76 +4813,6 @@
                 "hernia crural"
             ]
         },
-        "hernia inguinal": {
-            "array": [
-                {
-                    "question_complete": "\n26) \u00bfCu\u00e1l es la caracter\u00edstica de las hernias inguinales indirectas o intra inguinales? \n a) Ingresan en el conducto inguinal a trav\u00e9s del orificio inguinal profundo, por fuera de los vasos epig\u00e1stricos \n b) Protruyen en la pared anterior del abdomen por dentro y fuera de los vasos epig\u00e1stricos \n c) El saco herniario protruye en la pared abdominal anterior por dentro de los vasos epig\u00e1stricos \n d) El saco herniario no tiene relaci\u00f3n con los vasos epig\u00e1stricos \n",
-                    "question": "\u00bfCu\u00e1l es la caracter\u00edstica de las hernias inguinales indirectas o intra inguinales? ",
-                    "options": {
-                        "a": "Ingresan en el conducto inguinal a trav\u00e9s del orificio inguinal profundo, por fuera de los vasos epig\u00e1stricos",
-                        "b": "Protruyen en la pared anterior del abdomen por dentro y fuera de los vasos epig\u00e1stricos",
-                        "c": "El saco herniario protruye en la pared abdominal anterior por dentro de los vasos epig\u00e1stricos",
-                        "d": "El saco herniario no tiene relaci\u00f3n con los vasos epig\u00e1stricos"
-                    },
-                    "id": "609ee0e7-ca9c-41e4-840a-4cb1f49ec1e9",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2022"
-                    },
-                    "answer": "a",
-                    "index": 26,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n63) Pregunta: \nVicente de 80 a\u00f1os de edad consulta por dolor inguinal de 8 horas de evoluci\u00f3n asociado a \ndistensi\u00f3n abdominal y v\u00f3mitos desde hace 2 horas. En el laboratorio de ingreso el paciente \npresenta 14000 gl\u00f3bulos blancos/mm3 y acidosis metab\u00f3lica. Al examen f\u00edsico se constata una \nhernia inguinal izquierda dolorosa al tacto con calor y eritema, y distensi\u00f3n abdominal con dolor \ndifuso sin signos de irritaci\u00f3n peritoneal. \u00bfCu\u00e1l es la conducta adecuada a seguir? \nA. colocaci\u00f3n de sonda nasog\u00e1strica de descompresi\u00f3n, hidrataci\u00f3n y reevaluaci\u00f3n a \nlas 12 hs \nB. indicar relajantes musculares, intentar reducci\u00f3n manual de la hernia \nC. colocaci\u00f3n de sonda nasog\u00e1strica de descompresi\u00f3n e iniciar cx de urgencia \nD. solicitar eco de regi\u00f3n inguinal \nC ",
-                    "question": "Vicente de 80 a\u00f1os de edad consulta por dolor inguinal de 8 horas de evoluci\u00f3n asociado a distensi\u00f3n abdominal y v\u00f3mitos desde hace 2 horas. En el laboratorio de ingreso el paciente presenta 14000 gl\u00f3bulos blancos/mm3 y acidosis metab\u00f3lica. Al examen f\u00edsico se constata una hernia inguinal izquierda dolorosa al tacto con calor y eritema, y distensi\u00f3n abdominal con dolor difuso sin signos de irritaci\u00f3n peritoneal. \u00bfCu\u00e1l es la conducta adecuada a seguir? ",
-                    "options": {
-                        "a": "colocaci\u00f3n de sonda nasog\u00e1strica de descompresi\u00f3n, hidrataci\u00f3n y reevaluaci\u00f3n a  las 12 hs",
-                        "b": "indicar relajantes musculares, intentar reducci\u00f3n manual de la hernia",
-                        "c": "colocaci\u00f3n de sonda nasog\u00e1strica de descompresi\u00f3n e iniciar cx de urgencia",
-                        "d": "solicitar eco de regi\u00f3n inguinal  "
-                    },
-                    "id": "7379b4e6-c20d-42fd-b8b9-871c4140869d",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "c",
-                    "index": 63,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "",
-            "analogos": [
-                "hernias"
-            ]
-        },
-        "hernia hiatal": {
-            "array": [
-                {
-                    "question_complete": "\n45) Pregunta: Una mujer de 60 a\u00f1os, postmenop\u00e1usica, consulta por astenia y disnea de esfuerzo \nasociada a pirosis ocasional. En la videoendoscop\u00eda digestiva alta se observa una peque\u00f1a hernia \nhiatal por deslizamiento sin signos de esofagitis y tiene los siguientes estudios hematol\u00f3gicos: \nhemoglobina 8 gr%, VCM 69 fl (80-100 fl), ferremia 13 mcg/dl, ferritina 4 ngr/ml. \u00bfCu\u00e1l es la \nconducta m\u00e1s adecuada?  \nA) Indicar tratamiento con hierro oral y reevaluar en tres meses. \nB) Indicar tratamiento con inhibidores de la bomba de protones y reevaluar en un mes. \nC) Solicitar un estudio con capsula endoscopica. \nD) Solicitar una videocolonoscopia. \n",
-                    "question": "Una mujer de 60 a\u00f1os, postmenop\u00e1usica, consulta por astenia y disnea de esfuerzo asociada a pirosis ocasional. En la videoendoscop\u00eda digestiva alta se observa una peque\u00f1a hernia hiatal por deslizamiento sin signos de esofagitis y tiene los siguientes estudios hematol\u00f3gicos: hemoglobina 8 gr%, VCM 69 fl (80-100 fl), ferremia 13 mcg/dl, ferritina 4 ngr/ml. \u00bfCu\u00e1l es la conducta m\u00e1s adecuada? ",
-                    "options": {
-                        "a": "Indicar tratamiento con hierro oral y reevaluar en tres meses.",
-                        "b": "Indicar tratamiento con inhibidores de la bomba de protones y reevaluar en un mes.",
-                        "c": "Solicitar un estudio con capsula endoscopica.",
-                        "d": "Solicitar una videocolonoscopia."
-                    },
-                    "id": "e00491e4-51fa-4275-a187-fdeb0d4708e0",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2020"
-                    },
-                    "answer": "d",
-                    "index": 45,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "",
-            "analogos": [
-                "hernias"
-            ]
-        },
         "eventracion": {
             "array": [
                 {
@@ -5890,45 +5786,6 @@
                 "quilotorax"
             ]
         },
-        "cancer de higado": {
-            "array": [
-                {
-                    "question_complete": "\n87) Pregunta: \nAndr\u00e9s de 59 a\u00f1os es una persona con consumo problem\u00e1tico de alcohol que presenta una \ncirrosis hep\u00e1tica y como antecedentes tiene al padre fallecido por c\u00e1ncer de colon. En una \necograf\u00eda de control se encuentra una lesi\u00f3n hep\u00e1tica nueva, s\u00f3lida, de 2 cm de di\u00e1metro. \u00bfCu\u00e1l es \nel diagn\u00f3stico m\u00e1s probable? \nA. colangiocarcinoma hiliar \nB. sarcoma hepatico \nC. hepatocarcinoma \nD. mts unica de cancer colorectal \nC ",
-                    "question": "Andr\u00e9s de 59 a\u00f1os es una persona con consumo problem\u00e1tico de alcohol que presenta una cirrosis hep\u00e1tica y como antecedentes tiene al padre fallecido por c\u00e1ncer de colon. En una ecograf\u00eda de control se encuentra una lesi\u00f3n hep\u00e1tica nueva, s\u00f3lida, de 2 cm de di\u00e1metro. \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable? ",
-                    "options": {
-                        "a": "colangiocarcinoma hiliar",
-                        "b": "sarcoma hepatico",
-                        "c": "hepatocarcinoma",
-                        "d": "mts unica de cancer colorectal  "
-                    },
-                    "id": "ab9a9f7a-35e1-4351-8dec-f3642af3589d",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "c",
-                    "index": 87,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "Cancer de higado: Entra hepatocarcinoma, colangiocarcinoma hepatico, tumor de klatskin...",
-            "analogos": [
-                "cancer hepatico",
-                "cx hepatico",
-                "cx de higado",
-                "colangiocarcinoma",
-                "hepatocarcinoma",
-                "tumor de klatskin"
-            ]
-        },
-        "higado benigno": {
-            "array": [],
-            "aclaracion": "",
-            "analogos": [
-                "hemangioma hepatico",
-                "adenoma hepatico"
-            ]
-        },
         "pancreas maligno": {
             "array": [
                 {
@@ -6013,30 +5870,7 @@
                     "answer": "d",
                     "index": 77,
                     "image": ""
-                }
-            ],
-            "aclaracion": "Pancreatitis: Tanto aguda como cronica",
-            "analogos": [
-                "pancreatitis aguda",
-                "pancreatitis cronica"
-            ]
-        },
-        "cirugia bariatrica": {
-            "array": [],
-            "aclaracion": "",
-            "analogos": [
-                "obesidad"
-            ]
-        },
-        "oclusion intestinal": {
-            "array": [],
-            "aclaracion": "",
-            "analogos": [
-                "obstruccion intestinal"
-            ]
-        },
-        "litiasis biliar": {
-            "array": [
+                },
                 {
                     "question_complete": "\n86) Pregunta: \nIngresa por guardia Esteban de 71 a\u00f1os de edad con un dolor abdominal agudo. La ecograf\u00eda \nmuestra litiasis vesicular m\u00faltiple. El laboratorio muestra leve alteraci\u00f3n de las enzimas hep\u00e1ticas \nsin ictericia y elevaci\u00f3n de la amilasa s\u00e9rica 10 veces, por encima del valor m\u00e1ximo normal. Se\u00f1ale \nel momento \u00f3ptimo para realizar la cirug\u00eda laparosc\u00f3pica: \nA. al ingreso y diagn\u00f3stico de pancreatitis aguda \nB. a los 3 meses del episodio agudo \nC. cuando los s\u00edntomas remiten \nD. a los 5 meses del episodio agudo  \nC ",
                     "question": "Ingresa por guardia Esteban de 71 a\u00f1os de edad con un dolor abdominal agudo. La ecograf\u00eda muestra litiasis vesicular m\u00faltiple. El laboratorio muestra leve alteraci\u00f3n de las enzimas hep\u00e1ticas sin ictericia y elevaci\u00f3n de la amilasa s\u00e9rica 10 veces, por encima del valor m\u00e1ximo normal. Se\u00f1ale el momento \u00f3ptimo para realizar la cirug\u00eda laparosc\u00f3pica: ",
@@ -6056,6 +5890,21 @@
                     "image": ""
                 }
             ],
+            "aclaracion": "Pancreatitis: Tanto aguda como cronica",
+            "analogos": [
+                "pancreatitis aguda",
+                "pancreatitis cronica"
+            ]
+        },
+        "oclusion intestinal": {
+            "array": [],
+            "aclaracion": "",
+            "analogos": [
+                "obstruccion intestinal"
+            ]
+        },
+        "litiasis biliar": {
+            "array": [],
             "aclaracion": "Litiasis biliar: De cualquier ubicacion (vesicular, coledoco, cistico, etc)",
             "analogos": [
                 "litiasis vesicular",
@@ -6065,26 +5914,7 @@
             ]
         },
         "colangitis aguda": {
-            "array": [
-                {
-                    "question_complete": "\n96. \u00bfCu\u00e1l considera puede ser la causa m\u00e1s probable por la que un paciente de 25 a\u00f1os que fue\nsometido a una colecistectom\u00eda laparosc\u00f3pica hace 10 horas, comienza con d\u00e9bito bilioso por el\ndrenaje abdominal? Se encuentra afebril y son dolor abdominal.\na. Lesi\u00f3n intestinal.\nb. Deslizamiento de la ligadura del conducto c\u00edstico o bilirragia de los conductos aberrantes.\nc. Ligadura inadvertida de arteria hep\u00e1tica.\nd. Estenosis de v\u00eda biliar por lesi\u00f3n t\u00e9rmica de la misma.",
-                    "question": "\u00bfCu\u00e1l considera puede ser la causa m\u00e1s probable por la que un paciente de 25 a\u00f1os que fue sometido a una colecistectom\u00eda laparosc\u00f3pica hace 10 horas, comienza con d\u00e9bito bilioso por el drenaje abdominal? Se encuentra afebril y son dolor abdominal.",
-                    "options": {
-                        "a": "Lesi\u00f3n intestinal.",
-                        "b": "Deslizamiento de la ligadura del conducto c\u00edstico o bilirragia de los conductos aberrantes.",
-                        "c": "Ligadura inadvertida de arteria hep\u00e1tica.",
-                        "d": "Estenosis de v\u00eda biliar por lesi\u00f3n t\u00e9rmica de la misma."
-                    },
-                    "id": "4a8fe6c9-6c11-4ea5-a412-944102f31828",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2017"
-                    },
-                    "answer": "b",
-                    "index": 96,
-                    "image": ""
-                }
-            ],
+            "array": [],
             "aclaracion": "",
             "analogos": [
                 "biliar"
@@ -6165,29 +5995,6 @@
                 "cancer via biliar",
                 "tumor de klatskin"
             ]
-        },
-        "traqueostomia": {
-            "array": [
-                {
-                    "question_complete": "\n83) En la valoraci\u00f3n inicial del paciente politraumatizado es prioritario asegurar la permeabilidad de la v\u00eda \nrespiratoria. \u00bfCu\u00e1l es la principal indicaci\u00f3n de la cricotiroideotomia? \n a) Edema agudo de pulm\u00f3n. \n b) Shock hemorr\u00e1gico. \n c) Obstrucci\u00f3n de la v\u00eda a\u00e9rea. \n d) Enfisema pulmonar. ",
-                    "question": "En la valoraci\u00f3n inicial del paciente politraumatizado es prioritario asegurar la permeabilidad de la v\u00eda respiratoria. \u00bfCu\u00e1l es la principal indicaci\u00f3n de la cricotiroideotomia? ",
-                    "options": {
-                        "a": "Edema agudo de pulm\u00f3n.",
-                        "b": "Shock hemorr\u00e1gico.",
-                        "c": "Obstrucci\u00f3n de la v\u00eda a\u00e9rea.",
-                        "d": "Enfisema pulmonar."
-                    },
-                    "id": "0816b8f2-93e8-4d33-b14e-9ee16b5cc953",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2019"
-                    },
-                    "answer": "c",
-                    "index": 83,
-                    "image": ""
-                }
-            ],
-            "aclaracion": ""
         },
         "anal benigno": {
             "array": [],
@@ -6325,32 +6132,6 @@
                 "riesgo quirurgico",
                 "riesgo qx",
                 "pre-quirurgico"
-            ]
-        },
-        "atelectasia": {
-            "array": [
-                {
-                    "question_complete": "\n80) \u00bfA cu\u00e1l de los siguientes cuadros respiratorios corresponde una radiograf\u00eda de t\u00f3rax en la que se observa \nopacidad del hemit\u00f3rax izquierdo, con elevaci\u00f3n del diafragma ipsolateral, desviaci\u00f3n del hilio y mediastino \nhacia la izquierda? \n a) Atelectasia pulmonar total. \n b) Derrame pleural izquierdo. \n c) Neumon\u00eda con compromiso de ambos  l\u00f3bulos. \n d) Neumot\u00f3rax completo. ",
-                    "question": "\u00bfA cu\u00e1l de los siguientes cuadros respiratorios corresponde una radiograf\u00eda de t\u00f3rax en la que se observa opacidad del hemit\u00f3rax izquierdo, con elevaci\u00f3n del diafragma ipsolateral, desviaci\u00f3n del hilio y mediastino hacia la izquierda? ",
-                    "options": {
-                        "a": "Atelectasia pulmonar total.",
-                        "b": "Derrame pleural izquierdo.",
-                        "c": "Neumon\u00eda con compromiso de ambos  l\u00f3bulos.",
-                        "d": "Neumot\u00f3rax completo."
-                    },
-                    "id": "9237cadf-738e-4199-8c26-baa071917602",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2016"
-                    },
-                    "answer": "a",
-                    "index": 80,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "",
-            "analogos": [
-                ""
             ]
         }
     },
@@ -7955,14 +7736,6 @@
         }
     },
     "gastroenterologia": {
-        "esofagitis": {
-            "array": [],
-            "aclaracion": ""
-        },
-        "acalasia": {
-            "array": [],
-            "aclaracion": ""
-        },
         "reflujo gastroesofagico": {
             "array": [
                 {
@@ -7988,197 +7761,6 @@
             "analogos": [
                 "rge",
                 "reflujo gastro-esofagico"
-            ]
-        },
-        "hemorragia digestiva baja": {
-            "array": [
-                {
-                    "question_complete": "\n32) Pregunta: \u00bfCu\u00e1l es la fuente col\u00f3nica m\u00e1s com\u00fan de hematoquecia grave?  \nA) Hemorroides internas. \nB) Colitis isquemica. \nC) Diverticulosis. \nD) Angiodisplasia col\u00f3nica. \n",
-                    "question": "\u00bfCu\u00e1l es la fuente col\u00f3nica m\u00e1s com\u00fan de hematoquecia grave? ",
-                    "options": {
-                        "a": "Hemorroides internas.",
-                        "b": "Colitis isquemica.",
-                        "c": "Diverticulosis.",
-                        "d": "Angiodisplasia col\u00f3nica."
-                    },
-                    "id": "26c41963-c711-42ca-82b3-e4e90569db5a",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2020"
-                    },
-                    "answer": "c",
-                    "index": 32,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n89) Pregunta: \nUna paciente de 58 a\u00f1os de edad concurre a la consulta para un control con el siguiente laboratorio:  \nhemoglobinemia de 10.5 g/dl, hematocrito 33 %, recuento de hemat\u00edes 4.200.000/mm3, leucocitos \n5500/mm3, volumen corpuscular medio (VCM) 77 fl, hemoglobina corpuscular media 24.9 mg/dL, ferritina\n5.3 ng/ml. Observaciones: leve anisocitosis, microcitosis e hipocrom\u00eda. Presenta colonoscop\u00eda n ormal \nde hace 5 a\u00f1os realizada por rastreo \u00bfCu\u00e1l es la conducta correcta?  \nA. consulta con hematologia para caracterizacion y manejo de la anemia \nB. sulfato ferroso vo y nuevo control en 3 m \nC. solicitar veda y videocolono para estudiar anemia \nD. solicitar internacion para transfusion gr \nC ",
-                    "question": "Una paciente de 58 a\u00f1os de edad concurre a la consulta para un control con el siguiente laboratorio: hemoglobinemia de 10.5 g/dl, hematocrito 33 %, recuento de hemat\u00edes 4.200.000/mm3, leucocitos 5500/mm3, volumen corpuscular medio (VCM) 77 fl, hemoglobina corpuscular media 24.9 mg/dL, ferritina 5.3 ng/ml. Observaciones: leve anisocitosis, microcitosis e hipocrom\u00eda. Presenta colonoscop\u00eda n ormal de hace 5 a\u00f1os realizada por rastreo \u00bfCu\u00e1l es la conducta correcta? ",
-                    "options": {
-                        "a": "consulta con hematologia para caracterizacion y manejo de la anemia",
-                        "b": "sulfato ferroso vo y nuevo control en 3 m",
-                        "c": "solicitar veda y videocolono para estudiar anemia",
-                        "d": "solicitar internacion para transfusion gr  "
-                    },
-                    "id": "fb02a966-10d9-448a-8772-4a305d42eff6",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "c",
-                    "index": 89,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "Hemorragia digestiva baja: Cualquier causa de ella...",
-            "analogos": [
-                "hdb",
-                "hematoquecia"
-            ]
-        },
-        "hemorragia digestiva alta": {
-            "array": [
-                {
-                    "question_complete": "\n27) Pregunta: Un var\u00f3n de 45 a\u00f1os tiene s\u00edndrome asc\u00edtico edematoso y se le realiza una \nvideoendoscop\u00eda alta en la cual se observan algunas v\u00e1rices peque\u00f1as en tercio inferior de es\u00f3fago, \nsin signos de sangrado activo. \u00bfCu\u00e1l es la conducta m\u00e1s adecuada?  \nA) Colocar balon de Sengstaken Blakemore \nB) Indicar control endoscopico en 12 meses. \nC) Indicar banding. \nD) Indicar tratamiento con propranolol. \n",
-                    "question": "Un var\u00f3n de 45 a\u00f1os tiene s\u00edndrome asc\u00edtico edematoso y se le realiza una videoendoscop\u00eda alta en la cual se observan algunas v\u00e1rices peque\u00f1as en tercio inferior de es\u00f3fago, sin signos de sangrado activo. \u00bfCu\u00e1l es la conducta m\u00e1s adecuada? ",
-                    "options": {
-                        "a": "Colocar balon de Sengstaken Blakemore",
-                        "b": "Indicar control endoscopico en 12 meses.",
-                        "c": "Indicar banding.",
-                        "d": "Indicar tratamiento con propranolol."
-                    },
-                    "id": "81c34be6-74f3-4735-8911-7d4dc77a0743",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2020"
-                    },
-                    "answer": "b",
-                    "index": 27,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n89) Pregunta: \nUna paciente de 58 a\u00f1os de edad concurre a la consulta para un control con el siguiente laboratorio:  \nhemoglobinemia de 10.5 g/dl, hematocrito 33 %, recuento de hemat\u00edes 4.200.000/mm3, leucocitos \n5500/mm3, volumen corpuscular medio (VCM) 77 fl, hemoglobina corpuscular media 24.9 mg/dL, ferritina\n5.3 ng/ml. Observaciones: leve anisocitosis, microcitosis e hipocrom\u00eda. Presenta colonoscop\u00eda n ormal \nde hace 5 a\u00f1os realizada por rastreo \u00bfCu\u00e1l es la conducta correcta?  \nA. consulta con hematologia para caracterizacion y manejo de la anemia \nB. sulfato ferroso vo y nuevo control en 3 m \nC. solicitar veda y videocolono para estudiar anemia \nD. solicitar internacion para transfusion gr \nC ",
-                    "question": "Una paciente de 58 a\u00f1os de edad concurre a la consulta para un control con el siguiente laboratorio: hemoglobinemia de 10.5 g/dl, hematocrito 33 %, recuento de hemat\u00edes 4.200.000/mm3, leucocitos 5500/mm3, volumen corpuscular medio (VCM) 77 fl, hemoglobina corpuscular media 24.9 mg/dL, ferritina 5.3 ng/ml. Observaciones: leve anisocitosis, microcitosis e hipocrom\u00eda. Presenta colonoscop\u00eda n ormal de hace 5 a\u00f1os realizada por rastreo \u00bfCu\u00e1l es la conducta correcta? ",
-                    "options": {
-                        "a": "consulta con hematologia para caracterizacion y manejo de la anemia",
-                        "b": "sulfato ferroso vo y nuevo control en 3 m",
-                        "c": "solicitar veda y videocolono para estudiar anemia",
-                        "d": "solicitar internacion para transfusion gr  "
-                    },
-                    "id": "fb02a966-10d9-448a-8772-4a305d42eff6",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "c",
-                    "index": 89,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "Hemorragia digestiva alta: Cualquier causa de ella (ulcera, varices esofagicas...)",
-            "analogos": [
-                "hda",
-                "ulcera peptica",
-                "varices esofagicas",
-                "melena"
-            ]
-        },
-        "ulcera gastrica o duodenal": {
-            "array": [
-                {
-                    "question_complete": "\n43) Pregunta: Un var\u00f3n de 34 a\u00f1os consulta por 3 a 4 episodios semanales de pirosis y regurgitaci\u00f3n \ndesde hace 4 meses, que se acent\u00faan por la noche al acostarse y que no mejoraron luego de un mes \nde intentar cambios en su estilo de vida, dieta y cesaci\u00f3n tab\u00e1quica. Presenta un consumo de tabaco \nde 20 cigarrillos por d\u00eda desde los 24 a\u00f1os y obesidad grado II. \u00bfCu\u00e1l es la conducta m\u00e1s adecuada? \nA) Indicar tratamiento con antihistam\u00ednicos (antagonistas H2) \nB) Indicar tratamiento con inhibidores de la bomba de protones. \nC) Realizar videoendoscopia digestiva alta e IBP. \nD) Continuar con los cambios en el estilo de vida, dieta, cesaci\u00f3n tab\u00e1quica por 60 d\u00edas y evaluar. \n",
-                    "question": "Un var\u00f3n de 34 a\u00f1os consulta por 3 a 4 episodios semanales de pirosis y regurgitaci\u00f3n desde hace 4 meses, que se acent\u00faan por la noche al acostarse y que no mejoraron luego de un mes de intentar cambios en su estilo de vida, dieta y cesaci\u00f3n tab\u00e1quica. Presenta un consumo de tabaco de 20 cigarrillos por d\u00eda desde los 24 a\u00f1os y obesidad grado II. \u00bfCu\u00e1l es la conducta m\u00e1s adecuada? ",
-                    "options": {
-                        "a": "Indicar tratamiento con antihistam\u00ednicos (antagonistas H2)",
-                        "b": "Indicar tratamiento con inhibidores de la bomba de protones.",
-                        "c": "Realizar videoendoscopia digestiva alta e IBP.",
-                        "d": "Continuar con los cambios en el estilo de vida, dieta, cesaci\u00f3n tab\u00e1quica por 60 d\u00edas y evaluar."
-                    },
-                    "id": "772b93fa-ca55-49e3-956f-cb7b3dfc0a17",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2020"
-                    },
-                    "answer": "b",
-                    "index": 43,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n14) \u00bfCu\u00e1l es la conducta m\u00e1s adecuada con un se\u00f1or de 34 a\u00f1os, tabaquista de 10 cigarrillos diarios, que \nconsulta  por  acidez y  dolor  epig\u00e1strico  de  un mes de  evoluci\u00f3n,  que  en  ocasiones  cede con  la  ingesta y  \nque  empeor\u00f3  en  los  \u00faltimos  d\u00edas? No  tiene  antecedentes  patol\u00f3gicos  y  est\u00e1  preocupado  por  problemas \necon\u00f3micos familiares. \n a) Promover la cesaci\u00f3n tab\u00e1quica y solicitar videoendoscop\u00eda digestiva alta. \n b) Indicar tratamiento con anti\u00e1cidos y procin\u00e9ticos durante un mes y evaluar nuevamente. \n c) Promover la cesaci\u00f3n tab\u00e1quica, solicitar serolog\u00eda para Helicobacter pylori. \n d) Promover la cesaci\u00f3n tab\u00e1quica e indicar anti\u00e1cidos durante un mes y evaluar nuevamente. ",
-                    "question": "\u00bfCu\u00e1l es la conducta m\u00e1s adecuada con un se\u00f1or de 34 a\u00f1os, tabaquista de 10 cigarrillos diarios, que consulta por acidez y dolor epig\u00e1strico de un mes de evoluci\u00f3n, que en ocasiones cede con la ingesta y que empeor\u00f3 en los \u00faltimos d\u00edas? No tiene antecedentes patol\u00f3gicos y est\u00e1 preocupado por problemas econ\u00f3micos familiares. ",
-                    "options": {
-                        "a": "Promover la cesaci\u00f3n tab\u00e1quica y solicitar videoendoscop\u00eda digestiva alta.",
-                        "b": "Indicar tratamiento con anti\u00e1cidos y procin\u00e9ticos durante un mes y evaluar nuevamente.",
-                        "c": "Promover la cesaci\u00f3n tab\u00e1quica, solicitar serolog\u00eda para Helicobacter pylori.",
-                        "d": "Promover la cesaci\u00f3n tab\u00e1quica e indicar anti\u00e1cidos durante un mes y evaluar nuevamente."
-                    },
-                    "id": "fba2ab8b-23b7-468f-a9f6-5398d8ff1b4f",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "d",
-                    "index": 14,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n19)  \u00bfCu\u00e1l  es  el  diagn\u00f3stico  m\u00e1s  probable  de  un  se\u00f1or  de  40  a\u00f1os,  sin  antecedentes  patol\u00f3gicos,    que \nconcurre  a  guardia  por  un  intenso  dolor  de  comienzo  brusco  en  flanco  izquierdo  que  irradia  a  la  zona \ntesticular,  acompa\u00f1ado  de  estado  nauseoso?  El  dolor  es  de  intensidad  moderada  y  el  paciente  no \nencuentra una posici\u00f3n ant\u00e1lgica. \n a) C\u00f3lico renal. \n b) Pancreatitis aguda. \n c) \u00dalcera g\u00e1strica. \n d) Infarto mesent\u00e9rico. ",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un se\u00f1or de 40 a\u00f1os, sin antecedentes patol\u00f3gicos, que concurre a guardia por un intenso dolor de comienzo brusco en flanco izquierdo que irradia a la zona testicular, acompa\u00f1ado de estado nauseoso? El dolor es de intensidad moderada y el paciente no encuentra una posici\u00f3n ant\u00e1lgica. ",
-                    "options": {
-                        "a": "C\u00f3lico renal.",
-                        "b": "Pancreatitis aguda.",
-                        "c": "\u00dalcera g\u00e1strica.",
-                        "d": "Infarto mesent\u00e9rico."
-                    },
-                    "id": "7cf877dc-08c4-4153-8f7c-221d465df69d",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "a",
-                    "index": 19,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n46. \u00bfCu\u00e1l de las siguientes es una medida que favorece la curaci\u00f3n de la \u00falcera gastroduodenal?\na. Evitar comidas \u00e1cidas.\nb. Evitar el tabaquismo.\nc. Realizar dieta blanda.\nd. Evitar el consumo de caf\u00e9 o t\u00e9.",
-                    "question": "\u00bfCu\u00e1l de las siguientes es una medida que favorece la curaci\u00f3n de la \u00falcera gastroduodenal?",
-                    "options": {
-                        "a": "Evitar comidas \u00e1cidas.",
-                        "b": "Evitar el tabaquismo.",
-                        "c": "Realizar dieta blanda.",
-                        "d": "Evitar el consumo de caf\u00e9 o t\u00e9."
-                    },
-                    "id": "3b77b015-27fa-46f0-a890-2e156359ccf9",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2017"
-                    },
-                    "answer": "b",
-                    "index": 46,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n10) \u00bfQu\u00e9 estudio solicitar\u00eda a un paciente de 47 a\u00f1os, tabaquista de 25 cigarrillos d\u00eda, que consulta por dolor \nurente  epig\u00e1strico  que  aparece  1  hora  despu\u00e9s  de  comer,  a  veces  acompa\u00f1ado  de  n\u00e1useas  y  que  cede  al \nvolver a comer? Se encuentra en buen estado general y no tiene otros s\u00edntomas. \n a) Seriada gastroesof\u00e1gica. \n b) Endoscop\u00eda digestiva alta. \n c) Gastrina y acidimetr\u00eda g\u00e1strica. \n d) Prueba de urea espirada. ",
-                    "question": "\u00bfQu\u00e9 estudio solicitar\u00eda a un paciente de 47 a\u00f1os, tabaquista de 25 cigarrillos d\u00eda, que consulta por dolor urente epig\u00e1strico que aparece 1 hora despu\u00e9s de comer, a veces acompa\u00f1ado de n\u00e1useas y que cede al volver a comer? Se encuentra en buen estado general y no tiene otros s\u00edntomas. ",
-                    "options": {
-                        "a": "Seriada gastroesof\u00e1gica.",
-                        "b": "Endoscop\u00eda digestiva alta.",
-                        "c": "Gastrina y acidimetr\u00eda g\u00e1strica.",
-                        "d": "Prueba de urea espirada."
-                    },
-                    "id": "010cdffd-f26e-46ed-bc2c-26e1ae99ee3c",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2016"
-                    },
-                    "answer": "b",
-                    "index": 10,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "",
-            "analogos": [
-                "ulcera gastrica",
-                "ulcera duodenal"
             ]
         },
         "gastritis": {
@@ -8254,57 +7836,6 @@
                 }
             ],
             "aclaracion": ""
-        },
-        "diarrea": {
-            "array": [],
-            "aclaracion": "Diarrea: Tanto AGUDA como CRONICA",
-            "analogos": [
-                "diarrea aguda",
-                "diarrea cronica",
-                "diarreas"
-            ]
-        },
-        "pancreatitis": {
-            "array": [
-                {
-                    "question_complete": "\n77)  \u00bfCu\u00e1l  es  la  conducta  m\u00e1s  adecuada  con  un  paciente  de  35  a\u00f1os  que  a  los  10  d\u00edas  de  una  pancreatitis \naguda, al iniciar con la alimentaci\u00f3n por v\u00eda oral comienza con recurrencia del dolor abdominal? Se le realiz\u00f3 \nuna ecograf\u00eda en la cual se observa colecci\u00f3n de 4 cm de di\u00e1metro, cercana a la cola del p\u00e1ncreas. Contin\u00faa \ncon nutrici\u00f3n parenteral. \n a) Desbridamiento quir\u00fargico y drenaje externo. \n b) Drenaje percut\u00e1neo guiado por tomograf\u00eda computada. \n c) Drenaje por cistogastrostom\u00eda laparosc\u00f3pica. \n d) Observaci\u00f3n y evaluar evoluci\u00f3n. ",
-                    "question": "\u00bfCu\u00e1l es la conducta m\u00e1s adecuada con un paciente de 35 a\u00f1os que a los 10 d\u00edas de una pancreatitis aguda, al iniciar con la alimentaci\u00f3n por v\u00eda oral comienza con recurrencia del dolor abdominal? Se le realiz\u00f3 una ecograf\u00eda en la cual se observa colecci\u00f3n de 4 cm de di\u00e1metro, cercana a la cola del p\u00e1ncreas. Contin\u00faa con nutrici\u00f3n parenteral. ",
-                    "options": {
-                        "a": "Desbridamiento quir\u00fargico y drenaje externo.",
-                        "b": "Drenaje percut\u00e1neo guiado por tomograf\u00eda computada.",
-                        "c": "Drenaje por cistogastrostom\u00eda laparosc\u00f3pica.",
-                        "d": "Observaci\u00f3n y evaluar evoluci\u00f3n."
-                    },
-                    "id": "cc7b13a5-f81d-450e-ab63-6e3cd7c147e5",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2016"
-                    },
-                    "answer": "d",
-                    "index": 77,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "Pancreatitis: Tanto aguda como cronica",
-            "analogos": [
-                "pancreatitis aguda",
-                "pancreatitis cronica"
-            ]
-        },
-        "colangitis aguda": {
-            "array": [],
-            "aclaracion": "",
-            "analogos": [
-                "biliar"
-            ]
-        },
-        "colecistitis": {
-            "array": [],
-            "aclaracion": "",
-            "analogos": [
-                "colecistitis aguda",
-                "biliar"
-            ]
         },
         "cirrosis": {
             "array": [
@@ -10062,24 +9593,6 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n16) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 12 a\u00f1os que se encuentra internado por presentar \nun s\u00edndrome de Guillain Barr\u00e9 posterior a un s\u00edndrome febril de varios d\u00edas de evoluci\u00f3n, acompa\u00f1ado de \nadenopat\u00edas generalizadas y esplenomegalia? En los ex\u00e1menes de laboratorio presenta: trombocitopenia, \ny anemia hemol\u00edtica Coombs positiva y con crioaglutininas espec\u00edficas para el ant\u00edgeno i de los eritrocitos. \n a) Artritis idiop\u00e1tica juvenil. \n b) Mononucleosis infecciosa. \n c) Leucemia linfobl\u00e1stica aguda. \n d) Infecci\u00f3n por Mycoplasma pneumoniae. ",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 12 a\u00f1os que se encuentra internado por presentar un s\u00edndrome de Guillain Barr\u00e9 posterior a un s\u00edndrome febril de varios d\u00edas de evoluci\u00f3n, acompa\u00f1ado de adenopat\u00edas generalizadas y esplenomegalia? En los ex\u00e1menes de laboratorio presenta: trombocitopenia, y anemia hemol\u00edtica Coombs positiva y con crioaglutininas espec\u00edficas para el ant\u00edgeno i de los eritrocitos. ",
-                    "options": {
-                        "a": "Artritis idiop\u00e1tica juvenil.",
-                        "b": "Mononucleosis infecciosa.",
-                        "c": "Leucemia linfobl\u00e1stica aguda.",
-                        "d": "Infecci\u00f3n por Mycoplasma pneumoniae."
-                    },
-                    "id": "b6c1ce06-7569-403e-96ea-08ad732bc780",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "b",
-                    "index": 16,
-                    "image": ""
-                },
-                {
                     "question_complete": "\n39. \u00bfCu\u00e1l de las siguientes es la causa m\u00e1s probable de anemia a un paciente de 45 a\u00f1os que fue\nsometido a la antrectom\u00eda por carcinoma de est\u00f3mago?\na. Deficiencia de hierro.\nb. Aplasia medular.\nc. Anemia siderobl\u00e1stica.\nd. Deficiencia de vitamina B12.",
                     "question": "\u00bfCu\u00e1l de las siguientes es la causa m\u00e1s probable de anemia a un paciente de 45 a\u00f1os que fue sometido a la antrectom\u00eda por carcinoma de est\u00f3mago?",
                     "options": {
@@ -10223,39 +9736,6 @@
         "mieloproliferativo": {
             "array": [
                 {
-                    "question_complete": "\n16) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 12 a\u00f1os que se encuentra internado por presentar \nun s\u00edndrome de Guillain Barr\u00e9 posterior a un s\u00edndrome febril de varios d\u00edas de evoluci\u00f3n, acompa\u00f1ado de \nadenopat\u00edas generalizadas y esplenomegalia? En los ex\u00e1menes de laboratorio presenta: trombocitopenia, \ny anemia hemol\u00edtica Coombs positiva y con crioaglutininas espec\u00edficas para el ant\u00edgeno i de los eritrocitos. \n a) Artritis idiop\u00e1tica juvenil. \n b) Mononucleosis infecciosa. \n c) Leucemia linfobl\u00e1stica aguda. \n d) Infecci\u00f3n por Mycoplasma pneumoniae. ",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 12 a\u00f1os que se encuentra internado por presentar un s\u00edndrome de Guillain Barr\u00e9 posterior a un s\u00edndrome febril de varios d\u00edas de evoluci\u00f3n, acompa\u00f1ado de adenopat\u00edas generalizadas y esplenomegalia? En los ex\u00e1menes de laboratorio presenta: trombocitopenia, y anemia hemol\u00edtica Coombs positiva y con crioaglutininas espec\u00edficas para el ant\u00edgeno i de los eritrocitos. ",
-                    "options": {
-                        "a": "Artritis idiop\u00e1tica juvenil.",
-                        "b": "Mononucleosis infecciosa.",
-                        "c": "Leucemia linfobl\u00e1stica aguda.",
-                        "d": "Infecci\u00f3n por Mycoplasma pneumoniae."
-                    },
-                    "id": "b6c1ce06-7569-403e-96ea-08ad732bc780",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "b",
-                    "index": 16,
-                    "image": ""
-                }
-            ],
-            "aclaracion": "Mieloproliferativo: Cualquier tipo de neoplasia mieloproliferativa, como leucemias, trombocitemia esencial, policiteia vera, mielofibrosis primaria, leucemia linfoblastica",
-            "analogos": [
-                "oncohematologia",
-                "policitemia vera",
-                "mielofibrosis primaria",
-                "trombocitemia esencial",
-                "leucemia mieloide cronica",
-                "leucemia mieloide aguda",
-                "lma",
-                "leucemia linfoblastica"
-            ]
-        },
-        "leucemia mieloide aguda": {
-            "array": [
-                {
                     "question_complete": "\n19) Pregunta: \nJuan de 10 a\u00f1os de edad es tra\u00eddo a guardia por presentar hematomas generalizados, hipertrofia gingival \ny sangrado de enc\u00edas. Marcado cansancio. Comenz\u00f3 hace unas horas con s\u00edndrome confusional. En el \nlaboratorio presenta: gl\u00f3bulos blancos 10.000, hematocrito 25%, hemogrobina 8 g/dL, plaquetas \n15.000/mm3; coagulograma: tiempo de protrombina 45% RIN 1.5 KPTT 30 segundos. \u00bfCu\u00e1l es su \nprincipal sospecha diagn\u00f3stica? \nA. LMC \nB. LLA \nC. tumor de snc \nD. LMA \nD ",
                     "question": "Juan de 10 a\u00f1os de edad es tra\u00eddo a guardia por presentar hematomas generalizados, hipertrofia gingival y sangrado de enc\u00edas. Marcado cansancio. Comenz\u00f3 hace unas horas con s\u00edndrome confusional. En el laboratorio presenta: gl\u00f3bulos blancos 10.000, hematocrito 25%, hemogrobina 8 g/dL, plaquetas 15.000/mm3; coagulograma: tiempo de protrombina 45% RIN 1.5 KPTT 30 segundos. \u00bfCu\u00e1l es su principal sospecha diagn\u00f3stica? ",
                     "options": {
@@ -10274,26 +9754,26 @@
                     "image": ""
                 }
             ],
-            "aclaracion": "",
+            "aclaracion": "Mieloproliferativo: Cualquier tipo de neoplasia mieloproliferativa, como leucemias, trombocitemia esencial, policiteia vera, mielofibrosis primaria, leucemia linfoblastica",
             "analogos": [
-                "lma"
+                "oncohematologia",
+                "policitemia vera",
+                "mielofibrosis primaria",
+                "trombocitemia esencial",
+                "leucemia mieloide cronica",
+                "leucemia mieloide aguda",
+                "lma",
+                "lmc",
+                "leucemia linfoblastica"
             ]
         },
-        "leucemia mieloide cronica": {
-            "array": [],
-            "aclaracion": "",
-            "analogos": [
-                "lmc"
-            ]
-        },
-        "linfoma": {
+        "linfoproliferativos": {
             "array": [],
             "aclaracion": "Linfoma: Tanto Hodkin como NO hodgkin",
             "analogos": [
                 "oncohematologia",
                 "linfoma hodgkin",
-                "linfoma no hodgkin",
-                "linfoproliferativo"
+                "linfoma no hodgkin"
             ]
         },
         "mieloma multiple": {
@@ -10976,7 +10456,11 @@
                     "image": ""
                 }
             ],
-            "aclaracion": ""
+            "aclaracion": "",
+            "analogos": [
+                "enfermedad de alzheimer",
+                "demencia de alzheimer"
+            ]
         },
         "parkinson": {
             "array": [
@@ -15488,26 +14972,7 @@
             ]
         },
         "medicamentos psiquiatricos": {
-            "array": [
-                {
-                    "question_complete": "\n25) Pregunta: Una mujer de 22 a\u00f1os, con antecedentes de enfermedad bipolar, ingresa a guardia \ncon deterioro del sensorio, v\u00f3mitos, inestabilidad hemodin\u00e1mica, hipertermia y rigidez. \u00bfCu\u00e1l es el \ndiagn\u00f3stico probable?  \nA) Sindrome anticolin\u00e9rgico secundario a intoxicaci\u00f3n por biperideno. \nB) Sindrome neurol\u00e9ptico maligno secundario a intoxicaci\u00f3n por litio. \nC) Intoxicci\u00f3n por benzodiacepinas. \nD) Sindrome simpaticomim\u00e9tico secundario a intoxicaci\u00f3n por coca\u00edna. \n",
-                    "question": "Una mujer de 22 a\u00f1os, con antecedentes de enfermedad bipolar, ingresa a guardia con deterioro del sensorio, v\u00f3mitos, inestabilidad hemodin\u00e1mica, hipertermia y rigidez. \u00bfCu\u00e1l es el diagn\u00f3stico probable? ",
-                    "options": {
-                        "a": "Sindrome anticolin\u00e9rgico secundario a intoxicaci\u00f3n por biperideno.",
-                        "b": "Sindrome neurol\u00e9ptico maligno secundario a intoxicaci\u00f3n por litio.",
-                        "c": "Intoxicci\u00f3n por benzodiacepinas.",
-                        "d": "Sindrome simpaticomim\u00e9tico secundario a intoxicaci\u00f3n por coca\u00edna."
-                    },
-                    "id": "614235cf-007c-46cd-9803-f34eb0bd0c13",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2020"
-                    },
-                    "answer": "b",
-                    "index": 25,
-                    "image": ""
-                }
-            ],
+            "array": [],
             "aclaracion": "",
             "analogos": [
                 ""
@@ -15728,24 +15193,6 @@
                     "answer": "b",
                     "index": 25,
                     "image": ""
-                },
-                {
-                    "question_complete": "\n2) \u00bfCu\u00e1l de las siguientes sustancias puede haber consumido un adolescente de 13 a\u00f1os, que ingresa a la \nguardia  por  un  cuadro  de  \"ebriedad\"  acompa\u00f1ado  de  alucinaciones  y  en  el  examen  f\u00edsico  presenta \nfrecuencia  cardiaca  de  180  latidos  por  minuto  y  en  los  ex\u00e1menes  de  laboratorio  presenta  anemia  y \nleucopenia? \n a) LSD. \n b) Pegamentos. \n c) PACO. \n d) \u00c9xtasis. ",
-                    "question": "\u00bfCu\u00e1l de las siguientes sustancias puede haber consumido un adolescente de 13 a\u00f1os, que ingresa a la guardia por un cuadro de \"ebriedad\" acompa\u00f1ado de alucinaciones y en el examen f\u00edsico presenta frecuencia cardiaca de 180 latidos por minuto y en los ex\u00e1menes de laboratorio presenta anemia y leucopenia? ",
-                    "options": {
-                        "a": "LSD.",
-                        "b": "Pegamentos.",
-                        "c": "PACO.",
-                        "d": "\u00c9xtasis."
-                    },
-                    "id": "5bdb92d9-bb9a-48e0-833d-64a28e350372",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "b",
-                    "index": 2,
-                    "image": ""
                 }
             ],
             "aclaracion": "Cocaina: Entra ademas los 'body packers'",
@@ -15758,24 +15205,6 @@
         },
         "bdz": {
             "array": [
-                {
-                    "question_complete": "\n25) Pregunta: Una mujer de 22 a\u00f1os, con antecedentes de enfermedad bipolar, ingresa a guardia \ncon deterioro del sensorio, v\u00f3mitos, inestabilidad hemodin\u00e1mica, hipertermia y rigidez. \u00bfCu\u00e1l es el \ndiagn\u00f3stico probable?  \nA) Sindrome anticolin\u00e9rgico secundario a intoxicaci\u00f3n por biperideno. \nB) Sindrome neurol\u00e9ptico maligno secundario a intoxicaci\u00f3n por litio. \nC) Intoxicci\u00f3n por benzodiacepinas. \nD) Sindrome simpaticomim\u00e9tico secundario a intoxicaci\u00f3n por coca\u00edna. \n",
-                    "question": "Una mujer de 22 a\u00f1os, con antecedentes de enfermedad bipolar, ingresa a guardia con deterioro del sensorio, v\u00f3mitos, inestabilidad hemodin\u00e1mica, hipertermia y rigidez. \u00bfCu\u00e1l es el diagn\u00f3stico probable? ",
-                    "options": {
-                        "a": "Sindrome anticolin\u00e9rgico secundario a intoxicaci\u00f3n por biperideno.",
-                        "b": "Sindrome neurol\u00e9ptico maligno secundario a intoxicaci\u00f3n por litio.",
-                        "c": "Intoxicci\u00f3n por benzodiacepinas.",
-                        "d": "Sindrome simpaticomim\u00e9tico secundario a intoxicaci\u00f3n por coca\u00edna."
-                    },
-                    "id": "614235cf-007c-46cd-9803-f34eb0bd0c13",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2020"
-                    },
-                    "answer": "b",
-                    "index": 25,
-                    "image": ""
-                },
                 {
                     "question_complete": "73) Se atiende por guardia a un paciente de 3 a\u00f1os de edad, que ingiri\u00f3 comprimidos de clonazepam \nque encontr\u00f3 en una mesa. El examen de orina di\u00f3 positivo para benzodiacepinas, se realiza lavado \ng\u00e1strico y se indica plan de hidrataci\u00f3n parenteral. Sin embargo, la mejor\u00eda es escasa y entra en \ndepresi\u00f3n respiratoria, \u00bfcu\u00e1l es el ant\u00eddoto recomendado en \u00e9ste caso? \n a) Piridoxina \n b) Naloxona \n c) Flumazenil \n d) N-acetilciste\u00edna",
                     "question": "Se atiende por guardia a un paciente de 3 a\u00f1os de edad, que ingiri\u00f3 comprimidos de clonazepam que encontr\u00f3 en una mesa. El examen de orina di\u00f3 positivo para benzodiacepinas, se realiza lavado g\u00e1strico y se indica plan de hidrataci\u00f3n parenteral. Sin embargo, la mejor\u00eda es escasa y entra en depresi\u00f3n respiratoria, \u00bfcu\u00e1l es el ant\u00eddoto recomendado en \u00e9ste caso? ",
@@ -16489,24 +15918,6 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n38)  \u00bfCu\u00e1l  es  el  diagn\u00f3stico  m\u00e1s  probable  de  un  ni\u00f1o  de  4  a\u00f1os,  eutr\u00f3fico,  que  presenta  hace \naproximadamente  un  mes,  episodios  intermitentes  de  diarrea  no  disent\u00e9rica,  dolor  abdominal  e \nhiporexia? Tiene como antecedentes inmunodeficiencia por d\u00e9ficit de Ig A. \n a) Enfermedad de Crohn. \n b) Enfermedad cel\u00edaca. \n c) Giardiasis. \n d) Diarrea cr\u00f3nica inespec\u00edfica.\n",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 4 a\u00f1os, eutr\u00f3fico, que presenta hace aproximadamente un mes, episodios intermitentes de diarrea no disent\u00e9rica, dolor abdominal e hiporexia? Tiene como antecedentes inmunodeficiencia por d\u00e9ficit de Ig A. ",
-                    "options": {
-                        "a": "Enfermedad de Crohn.",
-                        "b": "Enfermedad cel\u00edaca.",
-                        "c": "Giardiasis.",
-                        "d": "Diarrea cr\u00f3nica inespec\u00edfica."
-                    },
-                    "id": "7e202915-038a-4538-b099-a9786fb6cf8d",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "c",
-                    "index": 38,
-                    "image": ""
-                },
-                {
                     "question_complete": "\n10) Pregunta: \nUna paciente de 2 a\u00f1os concurre a control de salud. Su padre refiere que presenta prurito anal nocturno. \nNo han observado cambios en las deposiciones. El examen f\u00edsico es normal. \u00bfCu\u00e1l de los siguientes \nestudios se debe solicitar para confirmar el diagn\u00f3stico? \nA. conteo de huevos de helmintos \nB. escobillado anal y graham \nC. cultivo mf \nD. metodo baermann \nB ",
                     "question": "Una paciente de 2 a\u00f1os concurre a control de salud. Su padre refiere que presenta prurito anal nocturno. No han observado cambios en las deposiciones. El examen f\u00edsico es normal. \u00bfCu\u00e1l de los siguientes estudios se debe solicitar para confirmar el diagn\u00f3stico? ",
                     "options": {
@@ -16591,24 +16002,6 @@
                     },
                     "answer": "b",
                     "index": 16,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n95) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un joven sano de 28 a\u00f1os, residente en la ciudad de C\u00f3rdoba que \nconsulta por fiebre de 48 horas de evoluci\u00f3n, cefalea, dolor retro-ocular, erupci\u00f3n cut\u00e1nea en tronco, n\u00e1useas \ny  dolor  de  espalda?  Trabaja  como  empleado  administrativo,  no  ha  viajado  en  el  \u00faltimo  a\u00f1o.  En  el  examen \nf\u00edsico  se  encuentra  en  regular  estado  general,  febril,  con  leve  inyecci\u00f3n  conjuntival,  sin  signos men\u00edngeos  y \ncon erupci\u00f3n macular tenue en tronco. \n a) Infecci\u00f3n por enterovirus. \n b) Dengue. \n c) Fiebre hemorr\u00e1gica argentina. \n d) S\u00edfilis secundaria. ",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un joven sano de 28 a\u00f1os, residente en la ciudad de C\u00f3rdoba que consulta por fiebre de 48 horas de evoluci\u00f3n, cefalea, dolor retro-ocular, erupci\u00f3n cut\u00e1nea en tronco, n\u00e1useas y dolor de espalda? Trabaja como empleado administrativo, no ha viajado en el \u00faltimo a\u00f1o. En el examen f\u00edsico se encuentra en regular estado general, febril, con leve inyecci\u00f3n conjuntival, sin signos men\u00edngeos y con erupci\u00f3n macular tenue en tronco. ",
-                    "options": {
-                        "a": "Infecci\u00f3n por enterovirus.",
-                        "b": "Dengue.",
-                        "c": "Fiebre hemorr\u00e1gica argentina.",
-                        "d": "S\u00edfilis secundaria."
-                    },
-                    "id": "77a31f4c-eddf-40ab-8fe7-0a21b0fb8f2b",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2016"
-                    },
-                    "answer": "b",
-                    "index": 95,
                     "image": ""
                 }
             ],
@@ -17033,7 +16426,8 @@
             "aclaracion": "Infeccion nosocomial: Tales como infeccion de herida quirurgica, bacteriemia nosocomial, neumonia nosocomial, etc.",
             "analogos": [
                 "infecciones nosocomiales",
-                "herida quirurgica"
+                "herida quirurgica",
+                "infeccion intrahospitalaria"
             ]
         },
         "inmunodepresion no hiv": {
@@ -17448,6 +16842,42 @@
                     },
                     "answer": "a",
                     "index": 1,
+                    "image": ""
+                },
+                {
+                    "question_complete": "\n80. \u00bfQu\u00e9 observa en la radiograf\u00eda de t\u00f3rax? Ver imagen 4 del anexo\na. Derrame pleural izquierdo.\nb. Atelectasia del l\u00f3bulo inferior izquierdo.\nc. Consolidaci\u00f3n del l\u00f3bulo inferior izquierdo.\nd. Hidroneumot\u00f3rax izquierdo.",
+                    "question": "\u00bfQu\u00e9 observa en la radiograf\u00eda de t\u00f3rax? Ver imagen 4 del anexo",
+                    "options": {
+                        "a": "Derrame pleural izquierdo.",
+                        "b": "Atelectasia del l\u00f3bulo inferior izquierdo.",
+                        "c": "Consolidaci\u00f3n del l\u00f3bulo inferior izquierdo.",
+                        "d": "Hidroneumot\u00f3rax izquierdo."
+                    },
+                    "id": "4d770e08-c0c0-4f49-bc3d-e104a70eec92",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2017"
+                    },
+                    "answer": "a",
+                    "index": 80,
+                    "image": "eu_2017_q80"
+                },
+                {
+                    "question_complete": "\n80) \u00bfA cu\u00e1l de los siguientes cuadros respiratorios corresponde una radiograf\u00eda de t\u00f3rax en la que se observa \nopacidad del hemit\u00f3rax izquierdo, con elevaci\u00f3n del diafragma ipsolateral, desviaci\u00f3n del hilio y mediastino \nhacia la izquierda? \n a) Atelectasia pulmonar total. \n b) Derrame pleural izquierdo. \n c) Neumon\u00eda con compromiso de ambos  l\u00f3bulos. \n d) Neumot\u00f3rax completo. ",
+                    "question": "\u00bfA cu\u00e1l de los siguientes cuadros respiratorios corresponde una radiograf\u00eda de t\u00f3rax en la que se observa opacidad del hemit\u00f3rax izquierdo, con elevaci\u00f3n del diafragma ipsolateral, desviaci\u00f3n del hilio y mediastino hacia la izquierda? ",
+                    "options": {
+                        "a": "Atelectasia pulmonar total.",
+                        "b": "Derrame pleural izquierdo.",
+                        "c": "Neumon\u00eda con compromiso de ambos  l\u00f3bulos.",
+                        "d": "Neumot\u00f3rax completo."
+                    },
+                    "id": "9237cadf-738e-4199-8c26-baa071917602",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2016"
+                    },
+                    "answer": "a",
+                    "index": 80,
                     "image": ""
                 }
             ],
@@ -18873,24 +18303,6 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n38)  \u00bfCu\u00e1l  es  el  diagn\u00f3stico  m\u00e1s  probable  de  un  ni\u00f1o  de  4  a\u00f1os,  eutr\u00f3fico,  que  presenta  hace \naproximadamente  un  mes,  episodios  intermitentes  de  diarrea  no  disent\u00e9rica,  dolor  abdominal  e \nhiporexia? Tiene como antecedentes inmunodeficiencia por d\u00e9ficit de Ig A. \n a) Enfermedad de Crohn. \n b) Enfermedad cel\u00edaca. \n c) Giardiasis. \n d) Diarrea cr\u00f3nica inespec\u00edfica.\n",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o de 4 a\u00f1os, eutr\u00f3fico, que presenta hace aproximadamente un mes, episodios intermitentes de diarrea no disent\u00e9rica, dolor abdominal e hiporexia? Tiene como antecedentes inmunodeficiencia por d\u00e9ficit de Ig A. ",
-                    "options": {
-                        "a": "Enfermedad de Crohn.",
-                        "b": "Enfermedad cel\u00edaca.",
-                        "c": "Giardiasis.",
-                        "d": "Diarrea cr\u00f3nica inespec\u00edfica."
-                    },
-                    "id": "7e202915-038a-4538-b099-a9786fb6cf8d",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "c",
-                    "index": 38,
-                    "image": ""
-                },
-                {
                     "question_complete": "\n55) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable  de un adolescente de 19 a\u00f1os que presenta un prurito intenso \nque  empeora  por  la  noche  y  en  el  examen  f\u00edsico  se  observan  \u00e1reas  de  p\u00e1pulas  excoriadas  en  el  \u00e1rea \ninterdigital? \n a) Sarna. \n b) Larva migrante cut\u00e1nea. \n c) Imp\u00e9tigo. \n d) Oxiuriasis. ",
                     "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un adolescente de 19 a\u00f1os que presenta un prurito intenso que empeora por la noche y en el examen f\u00edsico se observan \u00e1reas de p\u00e1pulas excoriadas en el \u00e1rea interdigital? ",
                     "options": {
@@ -19126,29 +18538,6 @@
                 "artritis bacteriana",
                 "artritis viral"
             ]
-        },
-        "artrosis": {
-            "array": [
-                {
-                    "question_complete": "\n85) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un paciente de 60 a\u00f1os, que consulta por dolor articular en la \nprimera  falange  metatarsiana  e  interfal\u00e1ngicas  distales,  que  presenta  rigidez  matinal  de  menos  de  15 \nminutos  de  duraci\u00f3n  y  el  reposo  alivia  los  s\u00edntomas?  Trae  un  examen  de  laboratorio  con  factor \nreumatoideo positivo d\u00e9bil. \n a) Artritis reumatoidea. \n b) Gota. \n c) Artrosis. \n d) Fiebre reum\u00e1tica.\n",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un paciente de 60 a\u00f1os, que consulta por dolor articular en la primera falange metatarsiana e interfal\u00e1ngicas distales, que presenta rigidez matinal de menos de 15 minutos de duraci\u00f3n y el reposo alivia los s\u00edntomas? Trae un examen de laboratorio con factor reumatoideo positivo d\u00e9bil. ",
-                    "options": {
-                        "a": "Artritis reumatoidea.",
-                        "b": "Gota.",
-                        "c": "Artrosis.",
-                        "d": "Fiebre reum\u00e1tica."
-                    },
-                    "id": "8f525b77-3449-4bba-b7c4-6a7d94701705",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "c",
-                    "index": 85,
-                    "image": ""
-                }
-            ],
-            "aclaracion": ""
         },
         "osteoporosis": {
             "array": [
@@ -19794,24 +19183,6 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n27) \u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o asm\u00e1tico de 8 a\u00f1os que es tra\u00eddo a la consulta por tos y \ndificultad respiratoria de aparici\u00f3n brusca, que no cede con la administraci\u00f3n de varias dosis de salbutamol \ninhalado?  En  los  \u00faltimos  d\u00edas  ha  necesitado  frecuentemente  salbutamol  de  rescate.  En  el  examen  f\u00edsico  se \nencuentra l\u00facido, en regular estado general, con tos seca persistente, cianosis perioral, t\u00f3rax hiperinsuflado, \ntiraje  generalizado  y  aleteo  nasal.  En  la  auscultaci\u00f3n  pulmonar  tiene  disminuci\u00f3n  de  ruidos  respiratorios, \nescasas sibilancias inspiratorias y espiratorias. Signos vitales: FR 40 r/m, FC 125 l/m, tensi\u00f3n arterial normal. \n a) Neumot\u00f3rax a tensi\u00f3n. \n b) Crisis asm\u00e1tica. \n c) Bronquiolitis. \n d) Neumon\u00eda.\n",
-                    "question": "\u00bfCu\u00e1l es el diagn\u00f3stico m\u00e1s probable de un ni\u00f1o asm\u00e1tico de 8 a\u00f1os que es tra\u00eddo a la consulta por tos y dificultad respiratoria de aparici\u00f3n brusca, que no cede con la administraci\u00f3n de varias dosis de salbutamol inhalado? En los \u00faltimos d\u00edas ha necesitado frecuentemente salbutamol de rescate. En el examen f\u00edsico se encuentra l\u00facido, en regular estado general, con tos seca persistente, cianosis perioral, t\u00f3rax hiperinsuflado, tiraje generalizado y aleteo nasal. En la auscultaci\u00f3n pulmonar tiene disminuci\u00f3n de ruidos respiratorios, escasas sibilancias inspiratorias y espiratorias. Signos vitales: FR 40 r/m, FC 125 l/m, tensi\u00f3n arterial normal. ",
-                    "options": {
-                        "a": "Neumot\u00f3rax a tensi\u00f3n.",
-                        "b": "Crisis asm\u00e1tica.",
-                        "c": "Bronquiolitis.",
-                        "d": "Neumon\u00eda."
-                    },
-                    "id": "3b3855de-c7e8-4a44-90c3-5d5bc7b09b6b",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2016"
-                    },
-                    "answer": "b",
-                    "index": 27,
-                    "image": ""
-                },
-                {
                     "question_complete": "88) \u00bfCu\u00e1l es el principal redito diagn\u00f3stico de la espirometr\u00eda en la evaluaci\u00f3n de afecciones \nrespiratorias? \n a) Alto valor predictivo negativo para patolog\u00eda obstructiva de la v\u00eda a\u00e9rea \n b) Confirma asma en cualquiera de sus formas cl\u00ednicas \n c) Alto valor predictivo positivo para compromiso respiratorio secundario a enfermedades del tejido conectivo \n d) Alta sensibilidad y especificidad para infecciones respiratorias con ocupaci\u00f3n del espacio alveolar",
                     "question": "\u00bfCu\u00e1l es el principal redito diagn\u00f3stico de la espirometr\u00eda en la evaluaci\u00f3n de afecciones respiratorias? ",
                     "options": {
@@ -20285,6 +19656,42 @@
                     "answer": "a",
                     "index": 80,
                     "image": ""
+                },
+                {
+                    "question_complete": "\n40) \u00bfQu\u00e9 imagen observa en la siguiente radiograf\u00eda de t\u00f3rax? (VER IMAGEN 2) \n a) Consolidaci\u00f3n que muestra broncograma a\u00e9reo, sin signos de derrame pleural. \n b) Consolidaci\u00f3n que muestra broncograma a\u00e9reo, con signos de derrame pleural. \n c) Atelectasia sin signos de derrame pleural. \n d) Atelectasia con signos de derrame pleural. ",
+                    "question": "\u00bfQu\u00e9 imagen observa en la siguiente radiograf\u00eda de t\u00f3rax? (VER IMAGEN 2) ",
+                    "options": {
+                        "a": "Consolidaci\u00f3n que muestra broncograma a\u00e9reo, sin signos de derrame pleural.",
+                        "b": "Consolidaci\u00f3n que muestra broncograma a\u00e9reo, con signos de derrame pleural.",
+                        "c": "Atelectasia sin signos de derrame pleural.",
+                        "d": "Atelectasia con signos de derrame pleural."
+                    },
+                    "id": "c3abc238-9e51-4e73-9fb3-36d4079d0da1",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2019"
+                    },
+                    "answer": "a",
+                    "index": 40,
+                    "image": "eu_2019_q40"
+                },
+                {
+                    "question_complete": "\n80. \u00bfQu\u00e9 observa en la radiograf\u00eda de t\u00f3rax? Ver imagen 4 del anexo\na. Derrame pleural izquierdo.\nb. Atelectasia del l\u00f3bulo inferior izquierdo.\nc. Consolidaci\u00f3n del l\u00f3bulo inferior izquierdo.\nd. Hidroneumot\u00f3rax izquierdo.",
+                    "question": "\u00bfQu\u00e9 observa en la radiograf\u00eda de t\u00f3rax? Ver imagen 4 del anexo",
+                    "options": {
+                        "a": "Derrame pleural izquierdo.",
+                        "b": "Atelectasia del l\u00f3bulo inferior izquierdo.",
+                        "c": "Consolidaci\u00f3n del l\u00f3bulo inferior izquierdo.",
+                        "d": "Hidroneumot\u00f3rax izquierdo."
+                    },
+                    "id": "4d770e08-c0c0-4f49-bc3d-e104a70eec92",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2017"
+                    },
+                    "answer": "a",
+                    "index": 80,
+                    "image": "eu_2017_q80"
                 }
             ],
             "aclaracion": "",
@@ -21501,60 +20908,6 @@
                     "answer": "d",
                     "index": 72,
                     "image": ""
-                },
-                {
-                    "question_complete": "\n80) Un ni\u00f1o de 3 a\u00f1os es tra\u00eddo a la .guardia por presentar tos \"perruna\" y afon\u00eda. Refiere el padre que los \nd\u00edas previos present\u00f3 rinorrea, tos leve y febr\u00edcula. En el d\u00eda de hoy empeoraron los s\u00edntomas respiratorios \ny lo notaron agitado. Al examen f\u00edsico, el paciente se encuentra en buen estado general, afebril, estable \ncl\u00ednicamente.  Presenta  frecuencia  respiratoria  de  30,  saturaci\u00f3n  97%  aire  ambiente.  Fauces  levemente \neritematosas.  Tos  seca  y  afon\u00eda.  Buena  entrada  de  aire  bilateral.  Ante  este  cuadro  cl\u00ednico,  \u00bfcu\u00e1l  es  el \ntratamiento de elecci\u00f3n? \n a) Vaporterapia con soluci\u00f3n fisiol\u00f3gica fr\u00eda. \n b) Amoxicilina-clavul\u00e1nico v\u00eda oral, por 5 d\u00edas. \n c) Corticoides v\u00eda oral, dosis \u00fanica. \n d) Adrenalina nebulizada, cada 20 minutos.\n",
-                    "question": "Un ni\u00f1o de 3 a\u00f1os es tra\u00eddo a la .guardia por presentar tos \"perruna\" y afon\u00eda. Refiere el padre que los d\u00edas previos present\u00f3 rinorrea, tos leve y febr\u00edcula. En el d\u00eda de hoy empeoraron los s\u00edntomas respiratorios y lo notaron agitado. Al examen f\u00edsico, el paciente se encuentra en buen estado general, afebril, estable cl\u00ednicamente. Presenta frecuencia respiratoria de 30, saturaci\u00f3n 97% aire ambiente. Fauces levemente eritematosas. Tos seca y afon\u00eda. Buena entrada de aire bilateral. Ante este cuadro cl\u00ednico, \u00bfcu\u00e1l es el tratamiento de elecci\u00f3n? ",
-                    "options": {
-                        "a": "Vaporterapia con soluci\u00f3n fisiol\u00f3gica fr\u00eda.",
-                        "b": "Amoxicilina-clavul\u00e1nico v\u00eda oral, por 5 d\u00edas.",
-                        "c": "Corticoides v\u00eda oral, dosis \u00fanica.",
-                        "d": "Adrenalina nebulizada, cada 20 minutos."
-                    },
-                    "id": "deba9aa4-054d-4742-a749-ad4306f20cf5",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2019"
-                    },
-                    "answer": "c",
-                    "index": 80,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n21) Pregunta: \nUn paciente de 4 meses de vida es tra\u00eddo a la guardia por presentar accesos de tos. Sus padres refieren \nque hace una semana presenta tos. Hace 5 d\u00edas realizaron hisopado para COVID19 y fue negativo. \nRelatan que el ni\u00f1o presenta episodios parox\u00edsticos de tos que en ocasiones le producen v\u00f3mitos. \nDurante la consulta, usted observa uno de estos episodios caracterizado por un acceso de tos seguido \npor estridor inspiratorio. \u00bfCu\u00e1l es el estudio diagn\u00f3stico de primera elecci\u00f3n para confirmar la sospecha \ncl\u00ednica? \nA. cultivo de secreciones nasofaringeas \nB. serologia igg e igm especificas \nC. pcr de secreciones nasofar\u00edngeas\nA ",
-                    "question": "Un paciente de 4 meses de vida es tra\u00eddo a la guardia por presentar accesos de tos. Sus padres refieren que hace una semana presenta tos. Hace 5 d\u00edas realizaron hisopado para COVID19 y fue negativo. Relatan que el ni\u00f1o presenta episodios parox\u00edsticos de tos que en ocasiones le producen v\u00f3mitos. Durante la consulta, usted observa uno de estos episodios caracterizado por un acceso de tos seguido por estridor inspiratorio. \u00bfCu\u00e1l es el estudio diagn\u00f3stico de primera elecci\u00f3n para confirmar la sospecha cl\u00ednica? ",
-                    "options": {
-                        "a": "cultivo de secreciones nasofaringeas",
-                        "b": "serologia igg e igm especificas",
-                        "c": "pcr de secreciones nasofar\u00edngeas",
-                        "d": ""
-                    },
-                    "id": "60b5e5a8-9d46-43b8-8e29-e78dc813e45d",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "a",
-                    "index": 21,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n49) Pregunta: \nRecibe en guardia una ni\u00f1a de 4 a\u00f1os tra\u00edda por sus padres porque la notan agitada y \u201ccon un \nruido al respirar\u201d. Hace cinco d\u00edas presenta rinorrea y hace 24 hs tos no productiva. Tuvo registros \nsubfebriles aislados. Al examen f\u00edsico constata estridor inspiratorio marcado, tiraje supraesternal \ny supraclavicular, accesos de tos no productiva frecuentes, buena entrada de aire bilateral. \u00bfCu\u00e1l \nes la conducta indicada? \nA. Indica nebulizaci\u00f3n con adrenalina y observaci\u00f3n \nB. Indica nebulizaci\u00f3n con budesonida de en el hogar \nC. Indica dosis de carga intramuscular de corticoides \nD. Indica corticoides por v\u00eda oral y valora la respuesta \nA ",
-                    "question": "Recibe en guardia una ni\u00f1a de 4 a\u00f1os tra\u00edda por sus padres porque la notan agitada y \u201ccon un ruido al respirar\u201d. Hace cinco d\u00edas presenta rinorrea y hace 24 hs tos no productiva. Tuvo registros subfebriles aislados. Al examen f\u00edsico constata estridor inspiratorio marcado, tiraje supraesternal y supraclavicular, accesos de tos no productiva frecuentes, buena entrada de aire bilateral. \u00bfCu\u00e1l es la conducta indicada? ",
-                    "options": {
-                        "a": "Indica nebulizaci\u00f3n con adrenalina y observaci\u00f3n",
-                        "b": "Indica nebulizaci\u00f3n con budesonida de en el hogar",
-                        "c": "Indica dosis de carga intramuscular de corticoides",
-                        "d": "Indica corticoides por v\u00eda oral y valora la respuesta  "
-                    },
-                    "id": "09a14d65-4a8e-4b3b-ac73-8a54bf4b51ab",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "a",
-                    "index": 49,
-                    "image": ""
                 }
             ],
             "aclaracion": "Laringitis: De cualquier evolucion (aguda o cronica) y localizacion (epiglotica, glotica, subglotica)",
@@ -21577,44 +20930,7 @@
             ]
         },
         "sola": {
-            "array": [
-                {
-                    "question_complete": "\n24) \u00bfCu\u00e1l es el tratamiento m\u00e1s adecuado para un ni\u00f1o de 4 a\u00f1os, al\u00e9rgico a la prote\u00edna de la leche, que \ningiere por error una cucharada de yogur y luego de 5 minutos presenta edema en cara, irritaci\u00f3n ocular, \ncongesti\u00f3n  nasal  y  ronquera?  En  el  examen  f\u00edsico  se  encuentra  p\u00e1lido,  sudoroso,  con  leve  hipotensi\u00f3n \narterial,  frecuencia card\u00edaca de  110 latidos por minuto,  tiene sibilancias diseminadas en ambos campos \npulmonares y saturaci\u00f3n de O2 93%. \n a) Adrenalina 1/1000 endovenosa. \n b) Adrenalina 1/1000 intramuscular. \n c) Dexametasona Intramuscular. \n d) Difenhidramina endovenosa. ",
-                    "question": "\u00bfCu\u00e1l es el tratamiento m\u00e1s adecuado para un ni\u00f1o de 4 a\u00f1os, al\u00e9rgico a la prote\u00edna de la leche, que ingiere por error una cucharada de yogur y luego de 5 minutos presenta edema en cara, irritaci\u00f3n ocular, congesti\u00f3n nasal y ronquera? En el examen f\u00edsico se encuentra p\u00e1lido, sudoroso, con leve hipotensi\u00f3n arterial, frecuencia card\u00edaca de 110 latidos por minuto, tiene sibilancias diseminadas en ambos campos pulmonares y saturaci\u00f3n de O2 93%. ",
-                    "options": {
-                        "a": "Adrenalina 1/1000 endovenosa.",
-                        "b": "Adrenalina 1/1000 intramuscular.",
-                        "c": "Dexametasona Intramuscular.",
-                        "d": "Difenhidramina endovenosa."
-                    },
-                    "id": "f00e1ec5-6755-46ab-8367-3f7ad896a8ca",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "b",
-                    "index": 24,
-                    "image": ""
-                },
-                {
-                    "question_complete": "\n49) Pregunta: \nRecibe en guardia una ni\u00f1a de 4 a\u00f1os tra\u00edda por sus padres porque la notan agitada y \u201ccon un \nruido al respirar\u201d. Hace cinco d\u00edas presenta rinorrea y hace 24 hs tos no productiva. Tuvo registros \nsubfebriles aislados. Al examen f\u00edsico constata estridor inspiratorio marcado, tiraje supraesternal \ny supraclavicular, accesos de tos no productiva frecuentes, buena entrada de aire bilateral. \u00bfCu\u00e1l \nes la conducta indicada? \nA. Indica nebulizaci\u00f3n con adrenalina y observaci\u00f3n \nB. Indica nebulizaci\u00f3n con budesonida de en el hogar \nC. Indica dosis de carga intramuscular de corticoides \nD. Indica corticoides por v\u00eda oral y valora la respuesta \nA ",
-                    "question": "Recibe en guardia una ni\u00f1a de 4 a\u00f1os tra\u00edda por sus padres porque la notan agitada y \u201ccon un ruido al respirar\u201d. Hace cinco d\u00edas presenta rinorrea y hace 24 hs tos no productiva. Tuvo registros subfebriles aislados. Al examen f\u00edsico constata estridor inspiratorio marcado, tiraje supraesternal y supraclavicular, accesos de tos no productiva frecuentes, buena entrada de aire bilateral. \u00bfCu\u00e1l es la conducta indicada? ",
-                    "options": {
-                        "a": "Indica nebulizaci\u00f3n con adrenalina y observaci\u00f3n",
-                        "b": "Indica nebulizaci\u00f3n con budesonida de en el hogar",
-                        "c": "Indica dosis de carga intramuscular de corticoides",
-                        "d": "Indica corticoides por v\u00eda oral y valora la respuesta  "
-                    },
-                    "id": "09a14d65-4a8e-4b3b-ac73-8a54bf4b51ab",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2021"
-                    },
-                    "answer": "a",
-                    "index": 49,
-                    "image": ""
-                }
-            ],
+            "array": [],
             "aclaracion": "Sindrome de obstruccion laringea aguda (SOLA)",
             "analogos": [
                 "traqueostomia",
@@ -23805,7 +23121,7 @@
         }
     },
     "medicina familiar": {
-        "prevencion": {
+        "rastreos": {
             "array": [
                 {
                     "question_complete": "\n87) \u00bfCu\u00e1l es un ejemplo de Prevenci\u00f3n Cuaternaria? \n a) Realizar Test de VPH reci\u00e9n a partir de los 30 a\u00f1os \n b) Rastreo de EPOC con espirometr\u00eda en personas asintom\u00e1ticas \n c) Rehabilitaci\u00f3n motriz en pacientes que presentaron Accidente Cerebrovascular \n d) Cuidados paliativos en pacientes con c\u00e1ncer de p\u00e1ncreas \n",
@@ -23988,24 +23304,6 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n7)  \u00bfCu\u00e1l  es  la  conducta  m\u00e1s  adecuada  con  un  se\u00f1or  de  56  a\u00f1os,  asintom\u00e1tico,  que  consulta  porque  le \ndetectaron  anemia  en  un  an\u00e1lisis  de  rutina?  No  tiene  antecedentes  patol\u00f3gicos  y  no  toma  ninguna \nmedicaci\u00f3n. \n a) Conducta expectante y repetir el hemograma en 6 meses. \n b) Asumir que es una anemia ferrop\u00e9nica por la edad y administrar hierro. \n c) Tipificar la anemia y realizar estudios para definir su causa. \n d) Solicitar endoscop\u00eda digestiva. ",
-                    "question": "\u00bfCu\u00e1l es la conducta m\u00e1s adecuada con un se\u00f1or de 56 a\u00f1os, asintom\u00e1tico, que consulta porque le detectaron anemia en un an\u00e1lisis de rutina? No tiene antecedentes patol\u00f3gicos y no toma ninguna medicaci\u00f3n. ",
-                    "options": {
-                        "a": "Conducta expectante y repetir el hemograma en 6 meses.",
-                        "b": "Asumir que es una anemia ferrop\u00e9nica por la edad y administrar hierro.",
-                        "c": "Tipificar la anemia y realizar estudios para definir su causa.",
-                        "d": "Solicitar endoscop\u00eda digestiva."
-                    },
-                    "id": "b86c0a7f-a80b-4984-9b34-70e88becf1a0",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2018"
-                    },
-                    "answer": "c",
-                    "index": 7,
-                    "image": ""
-                },
-                {
                     "question_complete": "10) Paciente de 55 a\u00f1os, postmenop\u00e1usica, consulta por astenia y disnea de esfuerzo. En la anamnesis \nrefer\u00eda ligera epigastralgia y pirosis ocasional. No metrorragias. Laboratorio: Hb 6 g/dl, VCM 69 fl, \nFerremia 13 microgramos/dl, ferritina 4 ng/ml. Endoscopia digestiva alta: peque\u00f1a hernia hiatal por \ndeslizamiento sin signos de esofagitis. \u00bfQu\u00e9 se le sugiere a la paciente? \n a) Realizaci\u00f3n de una videocolonoscop\u00eda \n b) Tratamiento m\u00e9dico con hierro v\u00eda oral \n c) Tratamiento con inhibidores de la bomba de protones \n d) Interconsulta con ginec\u00f3loga",
                     "question": "Paciente de 55 a\u00f1os, postmenop\u00e1usica, consulta por astenia y disnea de esfuerzo. En la anamnesis refer\u00eda ligera epigastralgia y pirosis ocasional. No metrorragias. Laboratorio: Hb 6 g/dl, VCM 69 fl, Ferremia 13 microgramos/dl, ferritina 4 ng/ml. Endoscopia digestiva alta: peque\u00f1a hernia hiatal por deslizamiento sin signos de esofagitis. \u00bfQu\u00e9 se le sugiere a la paciente? ",
                     "options": {
@@ -24088,7 +23386,6 @@
                 "prevencion secundaria",
                 "prevencion terciaria",
                 "prevencion cuaternaria",
-                "rastreos",
                 "rastreo cancer de colon",
                 "rastreo cx colon",
                 "rastreo cancer colorrectal",

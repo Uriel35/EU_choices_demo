@@ -16,7 +16,6 @@ En caso de no hayas agregado ningun tema o especialidad, apareceran TODAS las pr
 
 **** SEGURIDAD
 - Esta pagina NO te va a pedir NINGUN dato tuyo.
-- Solo uso 'Google Analytics' para poder registrar cuantas personas visitan esta pagina.
 
 
 **** CONTACTO
