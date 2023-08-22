@@ -5,10 +5,10 @@ To Do's:
 --- Put empty values in added path list
 --- Create logo
 --- Make footer
---- Put Google Analysis
 --- Put a report question, conected with email.
 
 Done:
+--- Statistics
 --- Put empty values in path list
 --- Add 'Down arrow' event in search input
 --- Navegate the path list with arrows

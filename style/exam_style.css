@@ -104,6 +104,7 @@
     text-align: left;
     font-weight: 600;
     font-size: calc(var(--font-size) * 1.4);
+    width: 100%;
 }
 
 .img-button-ctn {
@@ -226,10 +227,11 @@
 }
 
 .score-marker {
-    background: #fff;
+    background: #222;
+    padding: .7rem;
+    border-radius: 10px;
+    border: 2px solid var(--on-slide);
     width: max-content;
-    padding: .5rem;
-    border-radius: 20px;
 }
 
 .score-marker p {
@@ -244,6 +246,10 @@
 
 #error-marker {
     color: var(--error-color);
+}
+
+#total-marker {
+    color: #fff;
 }
 
 #circles-modal-ctn {

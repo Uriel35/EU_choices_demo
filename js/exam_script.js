@@ -44,7 +44,7 @@ function displayExam(allQuestions) {
         questionCtn.textContent = ''
         optionsCtn.textContent = ''
         questionCtn.textContent = `${PREGUNTAS[index]['custom-index']}) ${PREGUNTAS[index]['question']}`
-        questionOriginText.textContent = `Examen unico ${PREGUNTAS[index]['origin']['exam']}, pregunta ${PREGUNTAS[index]['index']})`
+        questionOriginText.textContent = `Examen unico ${PREGUNTAS[index]['origin']['exam']}, pregunta ${PREGUNTAS[index]['index']}), tema 'A'`
 
         if (PREGUNTAS[index]['image'] == '') {
             if (questionImageButtonCtn.classList.contains('flex-active')) questionImageButtonCtn.classList.remove('flex-active')
@@ -168,9 +168,7 @@ function displayExam(allQuestions) {
         MODAL_CIRCLE.id = `modal-${i}`
         MODAL_CIRCLE.textContent = i;
         MODAL_CIRCLE.addEventListener('click', (e) => {
-            console.log(e.target.textContent)
             counter = parseInt(e.target.textContent) - 1
-            console.log(counter)
             checkIfDonned(counter)
             ciclesModal.classList.remove('flex-active')
         })
@@ -180,16 +178,29 @@ function displayExam(allQuestions) {
 
     showQuestion(counter, false)
 
-    nextButton.addEventListener('click', (e) => {
+    function nextQuestionHandler(e){
         e.stopPropagation()
         counter = manageCounter(counter, true)
         checkIfDonned(counter)
-    })
-    previousButton.addEventListener('click', (e) => {
+    }
+
+    function previousQuestionHandler(e){
         e.stopPropagation()
         counter = manageCounter(counter, false)
         checkIfDonned(counter)
+    }
+
+    // const examCtn = document.querySelector('.questions-ctn')
+    // console.log(examCtn)
+
+    nextButton.addEventListener('click', nextQuestionHandler)
+    // examModal.addEventListener("keydown", (e) => { if (e.key == 'ArrowRigth') nextQuestionHandler(e)})
+    document.addEventListener('keydown', (e) => {
+        if (e.key == 'ArrowLeft') previousQuestionHandler(e)
+        else if (e.key == 'ArrowRight') nextQuestionHandler(e)
     })
+    previousButton.addEventListener('click', previousQuestionHandler)
+    // examModal.addEventListener("keydown", (e) => { if (e.key == 'ArrowLeft') previousQuestionHandler(e)})
     remakeButton.addEventListener('click', () => {
         let indexNum = counter + 1
         let finded = doneQuestions.find((object) => {

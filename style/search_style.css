@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     outline: none;
+    position: relative;
 }
 
 body {
@@ -94,6 +95,18 @@ ul, ol {
 
 ::-webkit-scrollbar-thumb:active {
     background-color: #333; /* Color of the thumb when active */
+}
+
+.new {
+  background-color: #FF5733; /* Color de fondo del cartel */
+  color: white; /* Color del texto del cartel */
+  font-weight: bold;
+  font-size: calc(var(--font-size) * .8);
+  padding: 2px 8px; /* Espaciado dentro del cartel */
+  border-radius: 4px;
+  position: absolute;
+  bottom: -7px;
+  right: -20px;
 }
 
 /* ------------- HEADER ---------------- */
@@ -207,10 +220,11 @@ main {
   cursor: pointer;
   border-radius: 5px;
   font-size: calc(var(--font-size) * 1.5);
+  background: #222;
 }
 
 input[type="checkbox"]:checked + label {
-  background-color: var(--on-slide);
+  background: var(--on-slide) !important;
   color: #fff;
   border-color: var(--on-slide);
 }
@@ -366,6 +380,13 @@ input[type="checkbox"]:checked + label {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+}
+
+.all-q-counter-ctn {
+  background: #222;
+  padding: .7rem;
+  border-radius: 10px;
+  border: 2px solid var(--on-slide);
 }
 
 .all-q-counter-ctn h3 {
