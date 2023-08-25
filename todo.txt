@@ -5,9 +5,10 @@ To Do's:
 --- Put empty values in added path list
 --- Create logo
 --- Make footer
---- Put a report question, conected with email.
 
 Done:
+--- Put a report question, conected with email.
+--- Multiple display exam bug fixed
 --- Statistics
 --- Put empty values in path list
 --- Add 'Down arrow' event in search input

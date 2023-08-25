@@ -35,3 +35,4 @@ defineModal(document.getElementById('statistics-button'), document.getElementByI
 defineModal(undefined, document.getElementById('error-modal'), document.getElementById('error-modal-ctn'))
 
 defineModal(document.getElementById('show-circle-modal-button'), document.getElementById('circle-modal'), document.getElementById('circles-modal-ctn'), document.getElementById('close-circles-modal'))
+defineModal(document.getElementById('report-question-button'), document.getElementById('report-question-modal'), document.getElementById('report-question-modal-ctn'), document.getElementById('close-report-question-modal'))

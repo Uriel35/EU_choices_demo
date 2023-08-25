@@ -63,10 +63,12 @@
     padding: 1.5rem;
 }
 
-.circle-active {
-    background-color: #999;
-    color: #222;
-    box-shadow: 0 0 2px 5px #333;
+.circle-neutral-ctn:hover {
+    box-shadow: 0 0 10px 4px #444;
+}
+
+.circle-actual {
+    box-shadow: 0 0 2px 5px #fff !important;
 }
 
 .circle-correct {
@@ -204,11 +206,17 @@
     gap: 1rem;
 }
 
-.buttons {
-    border-radius: 6px;
-    padding: .5rem;
-    font-size: calc(var(--font-size) * 1.3);
+.arrow-buttons {
+    background-color: #090909;
+    color: #ddd;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: calc(var(--font-size) * 1.5);
     cursor: pointer;
+}
+
+.arrow-buttons:hover {
+    background-color: #333;
 }
 
 #remake-q-btn {
@@ -218,6 +226,10 @@
 #remake-q-btn:hover {
     color: var(--error-color);
     background-color: #ddd;
+}
+
+#report-question-button {
+    padding: 1rem;
 }
 
 .score-marker-ctn {
@@ -232,6 +244,7 @@
     border-radius: 10px;
     border: 2px solid var(--on-slide);
     width: max-content;
+    color: #fff;
 }
 
 .score-marker p {
@@ -263,6 +276,7 @@
     max-height: 70vh;
     height: min-content;
 }
+
 
 @media (max-width: 767px) {
     :root {

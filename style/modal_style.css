@@ -48,18 +48,17 @@
 }
 
 #statistics-ctn {
-    height: max-content;
-    min-width: 50%;
     justify-content: space-around;
     align-items: center;
+    width: max-content;
+    height: max-content;
     gap: 2rem;
     padding: 1rem;
 }
 
 #statistics-ctn a {
-    text-decoration: none;
-    height: max-content;
     width: 30%;
+    text-decoration: none;
     border: none;
     outline: none;
     padding: .5rem;
@@ -72,8 +71,72 @@
     color: var(--foreground-color);
     font-weight: 600;
 }
+
 #statistics-ctn a:hover {
     box-shadow: 0 0 6px 5px #222;
+}
+
+#report-question-modal-ctn {
+    max-width: 90%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#report-question-modal-ctn form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#report-question-modal-ctn form div {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(var(--font-size) * 1.4);
+}
+#report-question-modal-ctn form div h2 {
+    width: 100%;
+    text-align: center;
+    background: var(--button-background);
+    padding: 1rem;
+    color: var(--foreground-color);
+}
+
+#report-question-modal-ctn form div p {
+    font-size: calc(var(--font-size) * 1.2);
+}
+#report-question-modal-ctn form div p span {
+    font-weight: 700;
+}
+
+#report-question-modal-ctn form div label {
+    font-size: calc(var(--font-size) * 1.4);
+    font-weight: 600;
+}
+
+#report-question-modal-ctn form div label:hover{
+    background: transparent;
+}
+
+#report-question-modal-ctn form div input {
+    width: 60%;
+    /* font-size: calc(var(--font-size) * 1.1); */
+}
+
+#report-question-modal-ctn form button {
+    background-color: var(--icon-button-fg);
+    color: var(--icon-button-bg);
+
+}
+#report-question-modal-ctn form div textarea {
+    width: 100%;
+    min-height: 5rem;
+    padding: .6rem;
+    font-size: calc(var(--font-size) * 1.1);
+}
+
+#report-question-modal-ctn form #reported-question-info {
+    display: none;
 }
 
 @keyframes modal-active {
@@ -82,5 +145,18 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media (max-width: 767px) {
+    #statistics-ctn {
+        width: 80%;
+    }
+    #statistics-ctn a {
+        width: inherit;
+    }
+
+    #report-question-modal-ctn form div input {
+        width: 100%;
     }
 }

@@ -1,5 +1,5 @@
 :root {
-    --error-color: #CD533B;
+    --error-color: #FF331F;
     --correct-color: #4CAF50;
     --button-background: #28587B;
     --background: linear-gradient(135deg, rgba(4,21,31,1) 55%, rgba(18,80,92,1) 100%); 
@@ -12,6 +12,8 @@
     --question-ctn-background: #ddd;
     --option-button-background: #437c90;
     --on-slide: #2196F3;
+    --icon-button-fg: #FBFF12;
+    --icon-button-bg: #090909;
 }
 
 *, *::after, *::before {
@@ -98,15 +100,15 @@ ul, ol {
 }
 
 .new {
-  background-color: #FF5733; /* Color de fondo del cartel */
+  background-color: #FF5733; 
   color: white; /* Color del texto del cartel */
   font-weight: bold;
-  font-size: calc(var(--font-size) * .8);
+  font-size: calc(var(--font-size) * 1.2);
   padding: 2px 8px; /* Espaciado dentro del cartel */
   border-radius: 4px;
   position: absolute;
-  bottom: -7px;
-  right: -20px;
+  bottom: calc(var(--font-size) * -1.1);
+  right: calc(var(--font-size) * -2.5);
 }
 
 /* ------------- HEADER ---------------- */
@@ -359,8 +361,8 @@ input[type="checkbox"]:checked + label {
 }
 
 .icon-button {
-  color: yellow;
-  background-color: #000;
+  color: var(--icon-button-fg);
+  background-color: var(--icon-button-bg);
   padding: .5rem;
   border-radius: 5px;
   cursor: pointer;
@@ -370,7 +372,7 @@ input[type="checkbox"]:checked + label {
 
 .icon-button:hover {
   background-color: white;
-  color: #9D8420;
+  color: var(--icon-button-fg);
 }
 
 .footer-buttons-ctn {

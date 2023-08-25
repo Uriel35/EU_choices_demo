@@ -88,7 +88,7 @@
         </div>
 
         <div class="exam-modal" id="exam-modal">
-            <div class="exam-ctn">
+            <div class="exam-ctn" id="exam-ctn">
                 <div class="get-back-button-ctn">
                     <button id="get-back-button"><span>&#x2190;</span> Volver</button>
                 </div>
@@ -97,19 +97,20 @@
                     <i class="far fa-eye icon-button" id="show-circle-modal-button"></i>
                 </div>
                 <div class="questions-ctn">
-                    <div id="question-ctn"></div>
-                    <div class="img-button-ctn" id="img-button-ctn">
+                    <div id="question-ctn" class="scroll-item"></div>
+                    <div class="img-button-ctn scroll-item" id="img-button-ctn">
                         <button id="display-img-modal-button">Ver imagen <span>&#x1F4F7;</span></button>
                     </div>
-                    <div id="options-ctn"></div>
-                    <p id="question-error-message"></p>
-                    <p id="origin-text">Examen unico año, index</p>
+                    <div id="options-ctn" class="scroll-item"></div>
+                    <p id="question-error-message" class="scroll-item"></p>
+                    <p id="origin-text" class="scroll-item">Examen unico año, index</p>
                 </div>
             
                 <div class="buttons-ctn">
-                    <button id="previous-btn" class="buttons">Anterior</button>
-                    <button id="next-btn" class="buttons">Siguiente</button>
+                    <i class="fas fa-arrow-left arrow-buttons" id="previous-btn"></i>
                     <button id="remake-q-btn" class="buttons">Deshacer</button>
+                    <i class="fas fa-arrow-right arrow-buttons" id="next-btn"></i>
+                    <i class="fas fa-exclamation icon-button" id="report-question-button"><div class="new">Nuevo</div></i>
                 </div>
                 <div class="score-marker-ctn">
                     <div class="score-marker">
@@ -155,6 +156,31 @@
             </div>
             <button id="close-circles-modal">Cerrar</button>
         </div>
+
+        <div class="modal" id="report-question-modal">
+            <div class="modal-ctn" id="report-question-modal-ctn">
+                <form action="https://formspree.io/f/mgejkpgw" method="POST">
+                    <div>
+                        <h2>Reportar pregunta</h2>
+                        <p>Enviame un mensaje explicando el error de esta pregunta <span id="reported-question-span"></span>, ya sea que esta mal redactada o mal archivada.
+                        <br>Prometo leerlo cuanto antes.</p>
+                    </div>
+                    <textarea name="info" id="reported-question-info"></textarea>
+                    <div>
+                        <label for="report-question-email">Email (Opcional)</label>
+                        <input type="email" id="report-question-email" name="email">
+                    </div>
+                    <div>
+                        <label for="report-question-message">Mensaje</label>
+                        <textarea name="message" id="report-question-message" required></textarea>
+                    </div>
+                    <p>El formulario te redireccionara a otra pagina que me permite enviarme el mail.<br>Podras volver normalmente a la pagina.</p>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <button id="close-report-question-modal">Cerrar</button>
+        </div>
+    
 
     </main>
     <script type="module" src="js/search_script.js"></script>
