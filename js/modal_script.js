@@ -1,25 +1,3 @@
-
-fetch('./data/readme.txt') 
-    .then(response => response.text())
-    .then(content => {
-        const outputElement = document.getElementById('readme-output');
-        outputElement.textContent = content;
-    })
-    .catch(error => {
-        console.error('Error al obtener el archivo:', error);
-});
-
-// fetch('./data/helpme.txt') 
-//     .then(response => response.text())
-//     .then(content => {
-//         const outputElement = document.getElementById('help-me-output');
-//         content = content.replace(/\n/g, '<br>');
-//         outputElement.innerHTML = content;
-//     })
-//     .catch(error => {
-//         console.error('Error al obtener el archivo:', error);
-// });
-
 function defineModal(openButton=undefined, modal, ctn, closeButton=undefined) {
     if (openButton) openButton.addEventListener('click', () => modal.classList.add('flex-active'))
     modal.addEventListener('click', (e) => {

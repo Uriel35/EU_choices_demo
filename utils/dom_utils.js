@@ -28,14 +28,42 @@ function addItemsToSearchList(result, value){
     for (let path of result){
         let option = document.createElement('li')
         let pAnalogue = document.createElement('p')
+        let pre = document.createTextNode('')
+        let matchedSpan = document.createElement('span')
+        let post = document.createTextNode('')
+        matchedSpan.classList.add('highligth')
         if ('analogo' in path) {
             option.textContent = `${path.speciality} / ${path.theme}`;
-            pAnalogue.textContent = `[${path.analogo}] (${path.counter}) (tema)`
+            pre.textContent = `[${path.analogo.substring(0, path.analogo.indexOf(value))}`
+            matchedSpan.textContent = path.analogo.substring(path.analogo.indexOf(value), path.analogo.indexOf(value) + value.length)
+            post.textContent = `${path.analogo.substring(path.analogo.indexOf(value) + value.length, path.analogo.length)}] (${path.counter}) (tema)`
+            pAnalogue.appendChild(pre)
+            pAnalogue.appendChild(matchedSpan)
+            pAnalogue.appendChild(post)
         } else if ('theme' in path) {
-            option.textContent = `${path.speciality} / ${path.theme}`;
+            if (path.theme.indexOf(value) != -1) {
+                pre.textContent = `${path.speciality} / ${path.theme.substring(0, path.theme.indexOf(value))}`
+                matchedSpan.textContent = path.theme.substring(path.theme.indexOf(value), path.theme.indexOf(value) + value.length)
+                post.textContent = `${path.theme.substring(path.theme.indexOf(value) + value.length, path.theme.length)}`
+                option.appendChild(pre)
+                option.appendChild(matchedSpan)
+                option.appendChild(post)
+            } else {
+                pre.textContent = `${path.speciality.substring(0, path.speciality.indexOf(value))}`
+                matchedSpan.textContent = path.speciality.substring(path.speciality.indexOf(value), path.speciality.indexOf(value) + value.length)
+                post.textContent = `${path.speciality.substring(path.speciality.indexOf(value) + value.length, path.speciality.length)} / ${path.theme}`
+                option.appendChild(pre)
+                option.appendChild(matchedSpan)
+                option.appendChild(post)
+            }
             pAnalogue.textContent = `(${path.counter}) (tema)`
         } else {
-            option.textContent = `${path.speciality}`;
+            pre.textContent = `${path.speciality.substring(0, path.speciality.indexOf(value))}`
+            matchedSpan.textContent = path.speciality.substring(path.speciality.indexOf(value), path.speciality.indexOf(value) + value.length)
+            post.textContent = `${path.speciality.substring(path.speciality.indexOf(value) + value.length, path.speciality.length)}`
+            option.appendChild(pre)
+            option.appendChild(matchedSpan)
+            option.appendChild(post)
             pAnalogue.textContent = `(${path.counter}) (especialidad)`
         }
         option.id = option.textContent

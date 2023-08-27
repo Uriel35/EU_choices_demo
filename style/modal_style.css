@@ -1,4 +1,4 @@
-@import './search_style.css';
+@import './general_style.css';
 
 .modal {
     top: 0;
@@ -16,27 +16,66 @@
 
 .modal .modal-ctn {
     background-color: white;
-    padding: .5rem;
     border-radius: 10px;
     box-shadow: 0 0 2px 5px #333;
     width: 90%;
     display: flex;
     justify-content: start;
-    height: 70vh;
+    min-height: max-content;
+    max-height: 70vh;
     word-wrap: break-word;
+    position: relative;
+}
+
+.modal-title {
+    width: 100%;
+    text-align: center;
+    background: var(--button-background);
+    color: var(--foreground-color);
+    padding: 1rem;
+}
+
+.close-modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--font-size) * 5);
+    width: calc(var(--font-size) * 5);
+    height: calc(var(--font-size) * 5);
+    text-align: center;
+    font-weight: 800;
+    background: #000;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #exam-modal {
     animation: modal-active 1s ease-out;
 }
 
-#readme-modal div p {
-    display: block;
-    white-space: pre-wrap;
-    margin: 0;
-    height: 100%;  
-    overflow: auto;
-    padding: .3rem .5rem;
+#readme-ctn {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 0;
+}
+
+#readme-ctn p, #readme-ctn li {
+    font-size: calc(var(--font-size) * 1.2);
+}
+
+#readme-ctn div {
+    padding: 1rem;
+}
+
+#readme-ctn .readme-dark {
+    background: #a8a8a8;
+}
+
+#readme-ctn ul {
+    padding-left: calc(var(--font-size) * 1);
+    list-style:disc;
 }
 
 #error-modal-ctn {
@@ -48,19 +87,29 @@
 }
 
 #statistics-ctn {
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     width: max-content;
     height: max-content;
     gap: 2rem;
+}
+
+#statistics-ctn p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+#statistics-ctn .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
     padding: 1rem;
 }
 
 #statistics-ctn a {
     width: 30%;
     text-decoration: none;
-    border: none;
-    outline: none;
     padding: .5rem;
     cursor: pointer;
     font-size: calc(var(--font-size) * 1.2);
@@ -70,6 +119,10 @@
     background-color: var(--button-background);
     color: var(--foreground-color);
     font-weight: 600;
+    height: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 #statistics-ctn a:hover {
@@ -83,10 +136,12 @@
     align-items: center;
     justify-content: center;
 }
+
 #report-question-modal-ctn form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 1rem;
 }
 
 #report-question-modal-ctn form div {
@@ -94,6 +149,7 @@
     flex-direction: column;
     font-size: calc(var(--font-size) * 1.4);
 }
+
 #report-question-modal-ctn form div h2 {
     width: 100%;
     text-align: center;
@@ -120,7 +176,10 @@
 
 #report-question-modal-ctn form div input {
     width: 60%;
-    /* font-size: calc(var(--font-size) * 1.1); */
+}
+
+#report-question-modal-ctn form div input:focus {
+    box-shadow: 0 0 2px 2px #333;
 }
 
 #report-question-modal-ctn form button {
@@ -133,6 +192,10 @@
     min-height: 5rem;
     padding: .6rem;
     font-size: calc(var(--font-size) * 1.1);
+}
+
+#report-question-modal-ctn form div textarea:focus {
+    box-shadow: 0 0 2px 2px #333;
 }
 
 #report-question-modal-ctn form #reported-question-info {

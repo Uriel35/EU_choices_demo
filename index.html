@@ -1,22 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EU choices</title>
+    <link rel="stylesheet" type="text/css" href="style/general_style.css">
     <link rel="stylesheet" type="text/css" href="style/search_style.css">
     <link rel="stylesheet" type="text/css" href="style/exam_style.css">
     <link rel="stylesheet" type="text/css" href="style/modal_style.css">
+    <link rel="stylesheet" type="text/css" href="style/footer_style.css">
     <script src="https://kit.fontawesome.com/c7ec15ff2e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1>EU Choices</h1>
+            <h1>EU choices</h1>
             <nav>
                 <button id="readme-button">Leeme</button>
                 <button id="statistics-button">Estadisticas<span class="new">Nuevo</span></button>
-                <!-- <button id="help-me-button">Ayudame</button> -->
+                <!-- <button id="help-me-button">ayudame</button> -->
             </nav>
         </div>
     </header>
@@ -29,25 +31,18 @@
                         <ul id="year-inputs-ctn">
                             <input type="checkbox" class="year-input" id="year2016" name="year" value="2016">
                             <label for="year2016">2016</label>
-        
                             <input type="checkbox" class="year-input" id="year2017" name="year" value="2017">
                             <label for="year2017">2017</label>
-        
                             <input type="checkbox" class="year-input" id="year2018" name="year" value="2018">
                             <label for="year2018">2018</label>
-        
                             <input type="checkbox" class="year-input" id="year2019" name="year" value="2019">
                             <label for="year2019">2019</label>
-        
                             <input type="checkbox" class="year-input" id="year2020" name="year" value="2020">
                             <label for="year2020">2020</label>
-        
                             <input type="checkbox" class="year-input" id="year2021" name="year" value="2021">
                             <label for="year2021">2021</label>
-        
                             <input type="checkbox" class="year-input" id="year2022" name="year" value="2022">
                             <label for="year2022">2022</label>
-        
                             <input type="checkbox" class="year-input" id="year2023" name="year" value="2023">
                             <label for="year2023">2023</label>
                         </ul>
@@ -62,7 +57,7 @@
                 </div>
     
                 <div class="input-ctn" id="search-ctn">
-                    <input tabindex="2" type="text" id="search-input" class="input-class" placeholder="Especialidad / Tema" autocomplete='off'>
+                    <input tabindex="2" type="text" id="search-input" class="input-class" placeholder="especialidad / tema" autocomplete='off'>
                     <p id="search-error-message" class="error-message">Error</p>
                     <ul id="matched-search-list" class="matched-search-list"> </ul>
                 </div>
@@ -99,7 +94,7 @@
                 <div class="questions-ctn">
                     <div id="question-ctn" class="scroll-item"></div>
                     <div class="img-button-ctn scroll-item" id="img-button-ctn">
-                        <button id="display-img-modal-button">Ver imagen <span>&#x1F4F7;</span></button>
+                        <button id="display-img-modal-button">Ver imagen <span>&#x1f4f7;</span></button>
                     </div>
                     <div id="options-ctn" class="scroll-item"></div>
                     <p id="question-error-message" class="scroll-item"></p>
@@ -121,23 +116,56 @@
             <div id="img-modal" class="modal">
                 <div class="img-ctn">
                     <img src="" alt="" id="question-img">
-                    <button id="img-modal-close-button">Cerrar</button>
+                    <span id="img-modal-close-button" class="close-modal-button">&#215;</span>
                 </div>
             </div>
         </div>
     
         <div id="readme-modal" class="modal">
             <div class="modal-ctn" id="readme-ctn">
-                <p id="readme-output"></p>
+                <h2 class="modal-title">Leeme</h2>
+                <div class="readme-ligth">
+                    <h3>Instrucciones</h3>
+                    <p>
+                        Basicamente esta pagina permite buscar preguntas del examen unico de especialidades y/o temas especificas. <br>
+                        El buscador suele aceptar nombre de especialidades, temas, abreviaciones (tbc, dbt, hta, etc...) e incluso [palabras clave] (ejemplo: 'edad osea' o 'baja talla' entran en pediatria/crecimiento). <br>
+                        Sugiero que busques los temas que prefieras ver y le des click a las opciones de la lista del buscador para evitar errores de tipeo, si no, respeta el metodo de 'tema/especialidad'. el "/' es importante para poder diferenciar entre especialidad y tema. <br>
+                        En caso de no hayas agregado ningun tema o especialidad, apareceran todas las preguntas en el examen de acuerdo a los años seleccionados. <br>
+                    </p>
+                </div>
+                <div class="readme-dark">
+                    <h3>Aclaraciones</h3>
+                    <p>
+                        <ul>
+                            <li> Las preguntas y respuestas fueron sacadas del sitio oficial del examen unico (el examen unico del 2021 no pude sacarlo del sitio oficial) y fueron archivadas de forma subjetiva. <br> </li>
+                            <li> Tener en cuenta que algunas preguntas pueden estar en varios archivos a la vez (ejemplo: caso de cuadro broncoobstructivo inespecifico puede entrar en 'asma' y 'epoc'). <br> </li>
+                            <li> El examen que se genera no tiene preguntas repetidas (salvo que hayan tomado la misma pregunta en años diferentes). <br> </li>
+                            <li> Recomiendo usar la pagina en una computadora. en los celulares suele haber problemas. <br> </li>
+                            <li> Si buscas 'otros' vas a encontrar preguntas que no supe en que lugar agruparla.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="readme-ligth">
+                    <h3>Seguridad</h3>
+                    <p> Esta pagina no te va a pedir ningun dato tuyo.</p>
+                </div>
+                <div class="readme-dark">
+                    <h3>Contacto</h3>
+                    <a class="copy-email-button">euchoices@gmail.com<i class="far fa-copy"></i></a>
+                </div>
             </div>
-            <button class="close-modal-button" id="close-readme-modal">Cerrar</button>
+            <span id="close-readme-modal" class="close-modal-button">&#215;</span>
         </div>
         <div id="statistics-modal" class="modal">
             <div class="modal-ctn" id="statistics-ctn">
-                <a href="https://drive.google.com/file/d/1fXHMXWYyTLtK0flXaqGMEL7YCa5DJ1IM/view?usp=sharing" id="eu-stats" target="_blank">Estadisticas del examen unico</a>
-                <a href="https://drive.google.com/file/d/1Pj6Zv85e_tlLYHoVXgV739V11gXHPzgV/view?usp=sharing" id="applicants-stats" target="_blank">Estadisticas sobre postulantes a residencias medicas</a>
+                <h2 class="modal-title">Estadisticas</h2>
+                <p>Estos links te abriran una pestaña hacia un PDF de google drive</p>
+                <div class="container">
+                    <a href="https://drive.google.com/file/d/1fxhmxwyytltk0flxaqgmel7yca5dj1im/view?usp=sharing" id="eu-stats" target="_blank">Estadisticas del examen unico</a>
+                    <a href="https://drive.google.com/file/d/1pj6zv85e_tllyhovxgv739v11gxhpzgv/view?usp=sharing" id="applicants-stats" target="_blank">Estadisticas sobre postulantes a residencias medicas</a>
+                </div>
             </div>
-            <button class="close-modal-button" id="close-statistics-modal">Cerrar</button>
+            <span class="close-modal-button" id="close-statistics-modal">&#215;</span>
         </div>
         <div id="help-me-modal" class="modal">
             <div class="modal-ctn" id="help-me-ctn">
@@ -151,15 +179,13 @@
             </div>
         </div>
         <div id="circle-modal" class="modal">
-            <div class="modal-ctn" id="circles-modal-ctn">
-
-            </div>
-            <button id="close-circles-modal">Cerrar</button>
+            <div class="modal-ctn" id="circles-modal-ctn"></div>
+            <span id="close-circles-modal" class="close-modal-button">&#215;</span>
         </div>
 
         <div class="modal" id="report-question-modal">
             <div class="modal-ctn" id="report-question-modal-ctn">
-                <form action="https://formspree.io/f/mgejkpgw" method="POST">
+                <form action="https://formspree.io/f/mgejkpgw" method="post">
                     <div>
                         <h2>Reportar pregunta</h2>
                         <p>Enviame un mensaje explicando el error de esta pregunta <span id="reported-question-span"></span>, ya sea que esta mal redactada o mal archivada.
@@ -167,22 +193,41 @@
                     </div>
                     <textarea name="info" id="reported-question-info"></textarea>
                     <div>
-                        <label for="report-question-email">Email (Opcional)</label>
+                        <label for="report-question-email">Email (opcional)</label>
                         <input type="email" id="report-question-email" name="email">
                     </div>
                     <div>
                         <label for="report-question-message">Mensaje</label>
-                        <textarea name="message" id="report-question-message" required></textarea>
+                        <textarea name="message" id="report-question-message" class="formspree-textarea" required></textarea>
                     </div>
-                    <p>El formulario te redireccionara a otra pagina que me permite enviarme el mail.<br>Podras volver normalmente a la pagina.</p>
-                    <button type="submit">Enviar</button>
+                    <p>El formulario te redireccionara a otra pagina que me permite enviarme el mail.<br>podras volver normalmente a la pagina.</p>
+                    <button type="submit" class="formspree-submit-buttons">Enviar</button>
                 </form>
             </div>
-            <button id="close-report-question-modal">Cerrar</button>
+            <span id="close-report-question-modal" class="close-modal-button">&#215;</span>
         </div>
-    
-
     </main>
+    <footer>
+        <form action="https://formspree.io/f/mgejkpgw" class="footer-suggestions-form" method="post">
+            <h2>Dame tu opinion</h2>
+            <textarea name="suggestion" class="formspree-textarea" id="" placeholder="Es anonimo si asi lo deseas.&#10;Te va a redireccionar a otra pagina para enviarme el email." required></textarea>
+            <button id="submit-suggestion" class="formspree-submit-buttons" type="submit">Enviar</button>
+        </form>
+        <div class="footer-contact-ctn">
+            <!-- <a href="https://www.instagram.com/urielespada/" target="_blank" class="link-ctn">
+                <i class="fa fa-instagram"></i>
+                <p>@urielespada</p>
+            </a>
+            <a href="https://www.facebook.com/uriel.espada" target="_blank" class="link-ctn">
+                <i class="fa fa-facebook"></i>
+                <p>/uriel.espada</p>
+            </a> -->
+            <a href="#" class="link-ctn copy-email-button" id="copy-email-button">
+                <i class="fa fa-envelope"></i>
+                <p>euchoices@gmail.com</p>
+            </a>
+        </div>
+    </footer>
     <script type="module" src="js/search_script.js"></script>
     <script type="module" src="./utils/schema_utils.js"></script>
     <script type="module" src="js/exam_script.js"></script>

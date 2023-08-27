@@ -14,6 +14,16 @@ const cleanAllPathsButton = document.getElementById('clean-all-paths-button')
 const shuffleButton = document.getElementById('random-input')
 const allQuestionsCounter = document.getElementById('all-q-counter')
 
+document.addEventListener('keydown', (e) => {
+    if (e.key == '/') {
+        if (!document.getElementById('exam-modal').classList.contains('flex-active') && document.activeElement.tagName != 'INPUT' && document.activeElement.tagName !== "TEXTAREA") {
+            e.preventDefault()
+            searcher.focus()
+        }
+    }
+})
+
+
 document.addEventListener('DOMContentLoaded', function() {
     fetch('./data/schema.json')
         .then(response => response.json())
@@ -23,6 +33,16 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
             console.error('Error al obtener los datos JSON:', error);
         });
+});
+
+let emailLinks = document.querySelectorAll('.copy-email-button')
+emailLinks.forEach(e => {
+    e.addEventListener('click', (e) => {
+        try {
+            navigator.clipboard.writeText(e.target.textContent);
+            alert("Copiaste el email: " + e.target.textContent);
+        } catch (err) {console.log(err)}
+    })
 });
 
 function displayPage(data){
@@ -35,9 +55,7 @@ function displayPage(data){
             if (pathRadios) {
                 pathRadios.forEach(radio => paths.push(dom_utils.clean_string_spaces(radio.value)))
                 for (let path of paths) {
-                    if (!schema_utils.confirmIfPathExists(path, SCHEMA)){
-                        return;
-                    }
+                    if (!schema_utils.confirmIfPathExists(path, SCHEMA)) return;
                 }
                 allQuestions = schema_utils.getQuestions(paths, SCHEMA, years)
                 allQuestionsCounter.textContent = `${allQuestions.length} preguntas`

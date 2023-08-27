@@ -33,7 +33,7 @@ let counter = 0
 function displayExam(allQuestions) {
     while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
     while (circlesModalCtn.firstChild) circlesModalCtn.removeChild(circlesModalCtn.firstChild)
-    examModal.classList.add('modal-active')
+    examModal.classList.add('flex-active')
 
     let customCounter = 1
     allQuestions = allQuestions.map(q => {
@@ -228,8 +228,8 @@ questionsCtn.addEventListener('touchend', (event) => {
 });
 
 getBackButton.addEventListener('click', () => {
-    if (examModal.classList.contains('modal-active')) {
-        examModal.classList.remove('modal-active')
+    if (examModal.classList.contains('flex-active')) {
+        examModal.classList.remove('flex-active')
     }
 })
 
@@ -250,7 +250,7 @@ document.addEventListener('keydown', (e) => {
     const allModals = document.querySelectorAll('.modal')
     let anyModalActive = false
     allModals.forEach(modal => { if (modal.classList.contains('flex-active')) anyModalActive = true })
-    if (!examModal.classList.contains('modal-active') || anyModalActive) return;
+    if (!examModal.classList.contains('flex-active') || anyModalActive) return;
     if (e.key == 'ArrowLeft') previousQuestionHandler(e)
     else if (e.key == 'ArrowRight') nextQuestionHandler(e)
 })
