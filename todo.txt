@@ -4,6 +4,9 @@ To Do's:
 --- Create logo
 
 Done:
+--- Circle bar scroll handler
+--- Highligth list bug fixed
+--- Stats links fixed
 --- Make footer
 --- Put empty values in added path list
 --- Highligth the path options matched sequence

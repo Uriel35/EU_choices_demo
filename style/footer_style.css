@@ -51,4 +51,8 @@ footer .footer-contact-ctn i p {
         flex-direction: column;
         height: 70vh;
     }
+
+    .footer-suggestions-form {
+        width: 100%;
+    }
 }

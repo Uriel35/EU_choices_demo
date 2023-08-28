@@ -1,6 +1,7 @@
 const pathOptionsCtn = document.getElementById('matched-search-list')
 
 function clean_string_spaces(value){
+    // console.log(value)
     value = value.replace(/^\s+/, '')
     value = value.replace(/\s+$/, '')
     value = value.replace(/\s+{2, }/, ' ')
@@ -33,28 +34,82 @@ function addItemsToSearchList(result, value){
         let post = document.createTextNode('')
         matchedSpan.classList.add('highligth')
         if ('analogo' in path) {
-            option.textContent = `${path.speciality} / ${path.theme}`;
-            pre.textContent = `[${path.analogo.substring(0, path.analogo.indexOf(value))}`
-            matchedSpan.textContent = path.analogo.substring(path.analogo.indexOf(value), path.analogo.indexOf(value) + value.length)
-            post.textContent = `${path.analogo.substring(path.analogo.indexOf(value) + value.length, path.analogo.length)}] (${path.counter}) (tema)`
-            pAnalogue.appendChild(pre)
-            pAnalogue.appendChild(matchedSpan)
-            pAnalogue.appendChild(post)
-        } else if ('theme' in path) {
-            if (path.theme.indexOf(value) != -1) {
-                pre.textContent = `${path.speciality} / ${path.theme.substring(0, path.theme.indexOf(value))}`
-                matchedSpan.textContent = path.theme.substring(path.theme.indexOf(value), path.theme.indexOf(value) + value.length)
-                post.textContent = `${path.theme.substring(path.theme.indexOf(value) + value.length, path.theme.length)}`
-                option.appendChild(pre)
-                option.appendChild(matchedSpan)
-                option.appendChild(post)
+            let splitted = value.split(/\//)
+            if (splitted.length == 2) {
+                let speciality_str = splitted[0].trim()
+                let analoge_str = splitted[1].trim()
+
+                let specialityPre = document.createTextNode('')
+                let specialitySpan = document.createElement('span')
+                specialitySpan.classList.add('highligth')
+                let specialityPost = document.createTextNode('')
+                specialityPre.textContent = `${path.speciality.substring(0, path.speciality.indexOf(speciality_str))}`
+                specialitySpan.textContent = `${path.speciality.substring(path.speciality.indexOf(speciality_str), path.speciality.indexOf(speciality_str) + speciality_str.length)}`
+                specialityPost.textContent = `${path.speciality.substring(path.speciality.indexOf(speciality_str) + speciality_str.length, path.speciality.length)}`
+                let themeText = document.createTextNode(` / ${path.theme}`)
+
+                option.appendChild(specialityPre)
+                option.appendChild(specialitySpan)
+                option.appendChild(specialityPost)
+                option.appendChild(themeText)
+
+                pre.textContent = `[${path.analogo.substring(0, path.analogo.indexOf(analoge_str))}`
+                matchedSpan.textContent = `${path.analogo.substring(path.analogo.indexOf(analoge_str), path.analogo.indexOf(analoge_str) + analoge_str.length)}`
+                post.textContent = `${path.analogo.substring(path.analogo.indexOf(analoge_str) + analoge_str.length, path.analogo.length)}] (${path.counter}) (tema)`
+                pAnalogue.appendChild(pre)
+                pAnalogue.appendChild(matchedSpan)
+                pAnalogue.appendChild(post)
             } else {
-                pre.textContent = `${path.speciality.substring(0, path.speciality.indexOf(value))}`
-                matchedSpan.textContent = path.speciality.substring(path.speciality.indexOf(value), path.speciality.indexOf(value) + value.length)
-                post.textContent = `${path.speciality.substring(path.speciality.indexOf(value) + value.length, path.speciality.length)} / ${path.theme}`
-                option.appendChild(pre)
-                option.appendChild(matchedSpan)
-                option.appendChild(post)
+                option.textContent = `${path.speciality} / ${path.theme}`;
+                pre.textContent = `[${path.analogo.substring(0, path.analogo.indexOf(value))}`
+                matchedSpan.textContent = path.analogo.substring(path.analogo.indexOf(value), path.analogo.indexOf(value) + value.length)
+                post.textContent = `${path.analogo.substring(path.analogo.indexOf(value) + value.length, path.analogo.length)}] (${path.counter}) (tema)`
+                pAnalogue.appendChild(pre)
+                pAnalogue.appendChild(matchedSpan)
+                pAnalogue.appendChild(post)
+            }
+        } else if ('theme' in path) {
+            let splitted = value.split(/\//)
+            if (splitted.length == 2) {
+                let speciality_str = splitted[0].trim()
+                let theme_str = splitted[1].trim()
+                let specialityPre = document.createTextNode('')
+                let specialitySpan = document.createElement('span')
+                specialitySpan.classList.add('highligth')
+                let specialityPost = document.createTextNode('')
+                specialityPre.textContent = `${path.speciality.substring(0, path.speciality.indexOf(speciality_str))}`
+                specialitySpan.textContent = `${path.speciality.substring(path.speciality.indexOf(speciality_str), path.speciality.indexOf(speciality_str) + speciality_str.length)}`
+                specialityPost.textContent = `${path.speciality.substring(path.speciality.indexOf(speciality_str) + speciality_str.length, path.speciality.length)} / `
+                let themePre = document.createTextNode('')
+                let themeSpan = document.createElement('span')
+                themeSpan.classList.add('highligth')
+                let themePost = document.createTextNode('')
+                themePre.textContent = `${path.theme.substring(0, path.theme.indexOf(theme_str))}`
+                themeSpan.textContent = `${path.theme.substring(path.theme.indexOf(theme_str), path.theme.indexOf(theme_str) + theme_str.length)}`
+                themePost.textContent = `${path.theme.substring(path.theme.indexOf(theme_str) + theme_str.length, path.theme.length)}`
+                option.appendChild(specialityPre)
+                option.appendChild(specialitySpan)
+                option.appendChild(specialityPost)
+                option.appendChild(themePre)
+                option.appendChild(themeSpan)
+                option.appendChild(themePost)
+
+            } else {
+                if (path.theme.indexOf(value) != -1) {
+                    pre.textContent = `${path.speciality} / ${path.theme.substring(0, path.theme.indexOf(value))}`
+                    matchedSpan.textContent = path.theme.substring(path.theme.indexOf(value), path.theme.indexOf(value) + value.length)
+                    post.textContent = `${path.theme.substring(path.theme.indexOf(value) + value.length, path.theme.length)}`
+                    option.appendChild(pre)
+                    option.appendChild(matchedSpan)
+                    option.appendChild(post)
+                } else {
+                    pre.textContent = `${path.speciality.substring(0, path.speciality.indexOf(value))}`
+                    matchedSpan.textContent = path.speciality.substring(path.speciality.indexOf(value), path.speciality.indexOf(value) + value.length)
+                    post.textContent = `${path.speciality.substring(path.speciality.indexOf(value) + value.length, path.speciality.length)} / ${path.theme}`
+                    option.appendChild(pre)
+                    option.appendChild(matchedSpan)
+                    option.appendChild(post)
+                }
             }
             pAnalogue.textContent = `(${path.counter}) (tema)`
         } else {

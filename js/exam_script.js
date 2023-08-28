@@ -110,8 +110,17 @@ function showQuestion(index, disable, choosen=undefined){
         questionImage.setAttribute('src', `img/${PREGUNTAS[index]['image']}.png`)
     }
 
+    // Circle Bar scroll Handler
     if (document.querySelector('.circle-actual')) document.querySelector('.circle-actual').classList.remove('circle-actual')
-    document.getElementById(indexNum).classList.add('circle-actual')
+    const circleActual = document.getElementById(indexNum)
+    circleActual.classList.add('circle-actual')
+    const contenidoWidth = circlesCtn.scrollWidth;
+    const contenedorWidth = circlesCtn.clientWidth;
+    const barrasDeslizadorasActivas = contenidoWidth > contenedorWidth;
+    if (barrasDeslizadorasActivas) {
+        let actualPosition = circleActual.offsetLeft
+        circlesCtn.scrollLeft = actualPosition - contenedorWidth / 2
+    }
     
     for (let letter of ['a', 'b', 'c', 'd']){
         let option = document.createElement('div')
@@ -119,7 +128,6 @@ function showQuestion(index, disable, choosen=undefined){
         option.id = letter
         option.textContent = `${letter}) ${PREGUNTAS[index]['options'][letter]}`
         function optionClickHandler(e) {
-            e.preventDefault()
             doneQuestions.push({
                 'index': indexNum,
                 'choosen': e.target.id,
@@ -223,8 +231,8 @@ questionsCtn.addEventListener('touchend', (event) => {
     const touchX = event.changedTouches[0].clientX;
     const deltaX = startX - touchX;
     startX = touchX;
-    if (deltaX > 0 && deltaX > 60) nextQuestionHandler(event)
-    else if (deltaX < 0 && deltaX < -60) previousQuestionHandler(event)
+    if (deltaX > 0 && deltaX > 100) nextQuestionHandler(event)
+    else if (deltaX < 0 && deltaX < -100) previousQuestionHandler(event)
 });
 
 getBackButton.addEventListener('click', () => {
