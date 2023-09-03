@@ -23,7 +23,6 @@ document.addEventListener('keydown', (e) => {
     }
 })
 
-
 document.addEventListener('DOMContentLoaded', function() {
     fetch('./data/schema.json')
         .then(response => response.json())
@@ -35,14 +34,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
+const EMAIL = 'euchoices@gmail.com'
 let emailLinks = document.querySelectorAll('.copy-email-button')
-emailLinks.forEach(e => {
-    e.addEventListener('click', (e) => {
+function copyEmailHandler(e) {
         try {
-            navigator.clipboard.writeText(e.target.textContent);
-            alert("Copiaste el email: " + e.target.textContent);
-        } catch (err) {console.log(err)}
-    })
+            navigator.clipboard.writeText(EMAIL);
+            alert("Copiaste el email: " + EMAIL);
+        } catch (err) {
+            alert(`Se intento copiar el email en el portapapeles pero hubo un error:\n${err}`)
+        }
+}
+
+emailLinks.forEach(e => {
+    e.addEventListener('click', copyEmailHandler)
+    e.addEventListener('touchstart', copyEmailHandler)
 });
 
 function displayPage(data){
@@ -68,7 +73,15 @@ function displayPage(data){
     yearsInputs.forEach(input => {
         input.checked = true
         input.addEventListener('change', (e) => {
-            selectAllYearsInputs.checked = false
+            let allChecked = true;
+            yearsInputs.forEach(input => {
+                if (input.checked == false) {
+                    allChecked = false
+                    return;
+                }
+            })
+            if (allChecked) selectAllYearsInputs.checked = true
+            else selectAllYearsInputs.checked = false
             setAllQuestionCounter()
         })
     })
@@ -96,12 +109,13 @@ function displayPage(data){
         const allPathOptions = document.querySelectorAll('.path-option')
         allPathOptions.forEach(pathOption => {
             function submitOption(e) {
+                let saveValue = searcher.value
                 searcher.value = pathOption.id
                 submitSearchInput(e) // Creo que seria mejor intentar que se active el 'submit' event de searchForm
                 setAllQuestionCounter()
+                searcher.value = saveValue
             }
             pathOption.addEventListener('click', submitOption)
-
             pathOption.addEventListener('keydown', (e) => { 
                 e.preventDefault()
                 if (e.key == 'Enter') submitOption(e)
@@ -115,7 +129,13 @@ function displayPage(data){
             })
         })
     }
-    searcher.addEventListener("keydown", (e) => { if (e.key == 'ArrowDown') dom_utils.keyDownSearcher() })
+
+    searcher.addEventListener("keydown", (e) => {
+        if (e.key == 'ArrowDown') {
+            dom_utils.keyDownSearcher()
+            e.preventDefault()
+        }
+    })
     searcher.addEventListener('focusin', searchHandler)
     searcher.addEventListener('input', searchHandler)
 
@@ -129,6 +149,7 @@ function displayPage(data){
             let allreadyAdded = dom_utils.checkIfPathAllreadyAdded(pathExists, pathsForm)
             if (!allreadyAdded) {
                 dom_utils.addPath(pathExists, pathsForm, setAllQuestionCounter)
+                searcher.classList.remove('error-input')
             } else {
                 dom_utils.invalidateInput(searcher, 'Especialidad y/o tema ya agregado')
             }

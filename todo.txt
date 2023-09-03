@@ -4,6 +4,8 @@ To Do's:
 --- Create logo
 
 Done:
+--- All year inputs fixed
+--- Search error message position
 --- Circle bar scroll handler
 --- Highligth list bug fixed
 --- Stats links fixed

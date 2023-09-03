@@ -117,10 +117,7 @@ function showQuestion(index, disable, choosen=undefined){
     const contenidoWidth = circlesCtn.scrollWidth;
     const contenedorWidth = circlesCtn.clientWidth;
     const barrasDeslizadorasActivas = contenidoWidth > contenedorWidth;
-    if (barrasDeslizadorasActivas) {
-        let actualPosition = circleActual.offsetLeft
-        circlesCtn.scrollLeft = actualPosition - contenedorWidth / 2
-    }
+    if (barrasDeslizadorasActivas) { circlesCtn.scrollLeft = circleActual.offsetLeft - contenedorWidth / 2 }
     
     for (let letter of ['a', 'b', 'c', 'd']){
         let option = document.createElement('div')

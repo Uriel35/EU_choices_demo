@@ -131,6 +131,7 @@ input[type="checkbox"]:checked + label {
     width: 100%;
     gap: .5rem;
     position: relative;
+    margin-top: 24px;
 }
 
 #search-input {
@@ -143,6 +144,8 @@ input[type="checkbox"]:checked + label {
   display: none;
   color: white;
   font-size: calc(var(--font-size) * .9);
+  position: absolute;
+  top: -24px;
 }
 
 #matched-search-list {
@@ -358,7 +361,7 @@ input:checked + .slider::before {
     box-shadow: 0 0 2px 2px red;
 }
 
-.error-input + .error-message {
+.error-input ~ .error-message {
   display: block;
 }
 
