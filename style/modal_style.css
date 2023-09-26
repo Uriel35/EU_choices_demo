@@ -61,7 +61,7 @@
     padding: 0;
 }
 
-#readme-ctn p, #readme-ctn li {
+#readme-ctn p, #readme-ctn li, #readme-ctn a {
     font-size: calc(var(--font-size) * 1.2);
 }
 
@@ -70,7 +70,7 @@
 }
 
 #readme-ctn .readme-dark {
-    background: #a8a8a8;
+    background: #d9d9d9;
 }
 
 #readme-ctn ul {

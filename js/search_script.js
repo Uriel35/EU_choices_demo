@@ -45,9 +45,9 @@ function copyEmailHandler(e) {
         }
 }
 
-emailLinks.forEach(e => {
-    e.addEventListener('click', copyEmailHandler)
-    e.addEventListener('touchstart', copyEmailHandler)
+emailLinks.forEach(element => {
+    element.addEventListener('click', copyEmailHandler)
+    element.addEventListener('touchstart', copyEmailHandler)
 });
 
 function displayPage(data){
