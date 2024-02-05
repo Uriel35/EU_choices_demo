@@ -3,6 +3,9 @@ function defineModal(openButton=undefined, modal, ctn, closeButton=undefined) {
     modal.addEventListener('click', (e) => {
         if (e.target.contains(ctn)) modal.classList.remove('flex-active')
     })
+    document.addEventListener('keydown', (e) => {
+        if (e.key === "Escape") modal.classList.remove("flex-active")
+    })
     if(closeButton) closeButton.addEventListener('click', () => modal.classList.remove('flex-active'))
 }
 

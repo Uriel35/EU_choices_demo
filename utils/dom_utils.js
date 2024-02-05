@@ -167,6 +167,7 @@ function addPath(value, formCtn, resetQuestionCounterFx) {
     let radio = document.createElement('input')
     let trash = document.createElement('i')
     trash.className = 'fas fa-trash'
+    trash.tabIndex = 0
     radio.type = 'radio'
     radio.id = value
     radio.name = 'path-radio-inputs'
@@ -182,6 +183,14 @@ function addPath(value, formCtn, resetQuestionCounterFx) {
     trash.addEventListener('click', (e) => {
         ctn.remove()
         resetQuestionCounterFx()
+    })
+    trash.addEventListener('keydown', (e) => {
+        if (e.key == "Enter") {
+            console.log("Es enter")
+            ctn.remove()
+            resetQuestionCounterFx()
+        }
+        console.log("NO es Enter")
     })
 }
 

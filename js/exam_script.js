@@ -117,38 +117,43 @@ function showQuestion(index, disable, choosen=undefined){
     const contenidoWidth = circlesCtn.scrollWidth;
     const contenedorWidth = circlesCtn.clientWidth;
     const barrasDeslizadorasActivas = contenidoWidth > contenedorWidth;
-    if (barrasDeslizadorasActivas) { circlesCtn.scrollLeft = circleActual.offsetLeft - contenedorWidth / 2 }
+    if (barrasDeslizadorasActivas) {
+        circlesCtn.scrollLeft = circleActual.offsetLeft - contenedorWidth / 2
+    }
+
+    function optionClickHandler(e) {
+        doneQuestions.push({
+            'index': indexNum,
+            'choosen': e.target.id,
+            'correct': PREGUNTAS[index]['answer'].toLowerCase()
+        })
+        if (PREGUNTAS[index]['answer'].toLowerCase() == e.target.id){
+            e.target.classList.add('option-correct')
+            document.getElementById(indexNum).classList.add('circle-correct')
+            document.getElementById(`modal-${indexNum}`).classList.add('circle-correct')
+            customMarker(true)
+        }
+        else {
+            e.target.classList.add('option-error');
+            document.getElementById(PREGUNTAS[index]['answer'].toLowerCase()).classList.add('option-correct');
+            document.getElementById(`${indexNum}`).classList.add('circle-error');
+            document.getElementById(`modal-${indexNum}`).classList.add('circle-error')
+            customMarker(false)
+        }
+        createBlackOut()
+    }
     
     for (let letter of ['a', 'b', 'c', 'd']){
         let option = document.createElement('div')
         option.className = 'option'
         option.id = letter
         option.textContent = `${letter}) ${PREGUNTAS[index]['options'][letter]}`
-        function optionClickHandler(e) {
-            doneQuestions.push({
-                'index': indexNum,
-                'choosen': e.target.id,
-                'correct': PREGUNTAS[index]['answer'].toLowerCase()
-            })
-            if (PREGUNTAS[index]['answer'].toLowerCase() == e.target.id){
-                e.target.classList.add('option-correct')
-                document.getElementById(indexNum).classList.add('circle-correct')
-                document.getElementById(`modal-${indexNum}`).classList.add('circle-correct')
-                customMarker(true)
-            }
-            else {
-                e.target.classList.add('option-error');
-                document.getElementById(PREGUNTAS[index]['answer'].toLowerCase()).classList.add('option-correct');
-                document.getElementById(`${indexNum}`).classList.add('circle-error');
-                document.getElementById(`modal-${indexNum}`).classList.add('circle-error')
-                customMarker(false)
-            }
-            createBlackOut()
-        }
         option.addEventListener('touchstart', optionClickHandler) // Para la version 'Mobile'
         option.addEventListener('click', optionClickHandler)
         optionsCtn.appendChild(option)
     }
+
+
     questionErrorMessage.textContent = ''
     if (PREGUNTAS[index]['answer'] == 'invalid') {
         createBlackOut('Pregunta oficialmente invalidada')
@@ -183,6 +188,7 @@ function customMarker(correctBool, reset=false) {
 function createBlackOut(message=undefined){
         const optionBlackOut = document.createElement('div')
         optionBlackOut.className = 'option-blackout'
+        optionBlackOut.id = 'option-blackout'
         optionsCtn.appendChild(optionBlackOut)
         if (message) questionErrorMessage.textContent = message
         else questionErrorMessage.textContent = ""
@@ -299,6 +305,13 @@ reportQuestionButton.addEventListener('click', (e) => {
     let currentQ = PREGUNTAS[counter]
     reportedQuestionSpan.textContent = `[ Examen unico ${currentQ['origin']['exam']}, pregunta ${currentQ['index']}) ]`
     reportedQuestionInfo.value = `${currentQ['id']} \n EU ${currentQ['origin']['exam']}, ${currentQ['index']}).\n\nPaths:${path}`
+})
+
+// Option key binding 
+document.addEventListener("keydown", (e) => {
+    if (!examModal.classList.contains("flex-active") || document.getElementById("option-blackout") || document.activeElement.tagName == "INPUT" || document.activeElement.tagName == "TEXTAREA") return;
+    let optionSelected = document.getElementById(e.key)
+    if (optionSelected)  optionSelected.click()
 })
 
 export default {

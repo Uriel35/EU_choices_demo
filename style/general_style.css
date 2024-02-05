@@ -16,6 +16,8 @@
     --icon-button-bg: #090909;
     --footer-bg: #262626;
     --footer-fg: #eee;
+    --header-heigth: 10vh;
+    --nav-button-bg: #ff8c00;
 }
 
 *, *::after, *::before {

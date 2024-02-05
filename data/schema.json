@@ -9032,8 +9032,8 @@
                     "image": ""
                 },
                 {
-                    "question_complete": "\n36) \u00bfCu\u00e1l es la prevalencia de diabetes en personas =65 a\u00f1os de edad? \n a) Cercana al 7% \n b) Cercana al 12% \n c) Cercana al 2% \n d) Cercana al 5% \n",
-                    "question": "\u00bfCu\u00e1l es la prevalencia de diabetes en personas =65 a\u00f1os de edad? ",
+                    "question_complete": "\n36) \u00bfCu\u00e1l es la prevalencia de diabetes en personas > 65 a\u00f1os de edad? \n a) Cercana al 7% \n b) Cercana al 12% \n c) Cercana al 2% \n d) Cercana al 5% \n",
+                    "question": "\u00bfCu\u00e1l es la prevalencia de diabetes en personas > 65 a\u00f1os de edad? ",
                     "options": {
                         "a": "Cercana al 7%",
                         "b": "Cercana al 12%",

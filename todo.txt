@@ -1,9 +1,10 @@
 To Do's:
 --- Modern Custom
 --- make a HELP ME section
---- Create logo
+--- 
 
 Done:
+--- Create logo
 --- All year inputs fixed
 --- Search error message position
 --- Circle bar scroll handler

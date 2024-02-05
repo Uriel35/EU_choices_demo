@@ -2,40 +2,68 @@
 
 /* ------------- HEADER ---------------- */
 header {
-    background-color: #ddd;
-    width: 100%;
-    height: 7vh;
-    position: fixed;
-    display: flex;
-    padding-inline: 1rem;
-    z-index: 100;
+  background-color: #ddd;
+  color: black;
+  width: max-content;
+  height: var(--header-heigth);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  padding-inline: 1rem;
+  z-index: 100;
+  border-radius: 10px;
 }
 
 .header-container {
   width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-  min-width: 50%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-nav button {
+.header-container img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: .3rem;
+  margin-inline: 1rem;
+}
+
+header button {
+  width: 100%;
   border: none;
   box-shadow: none;
   background-color: inherit;
-  color: var(--background);
-  transition: .5s;
+  transition: 0.5s;
+  color: transparent; 
 }
 
-nav button:hover {
+header button i {
+  transition: .5s;
+  color: var(--nav-button-bg);
+  font-size: 2rem;
+}
+
+header button i:hover {
   transform: scale(1.2);
+}
+
+header button i span {
+  display: none;
+}
+
+header button i:hover .tooltip {
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: max-content;
+  padding: 4px;
+  border-radius: 4px;
+  right: 0px;
+  font-size: .7rem;
+  transform: none;
 }
 
 /* --------------- MAIN -------------------- */
@@ -53,7 +81,7 @@ main {
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  padding: 5rem 2rem;
+  padding: calc(var(--header-heigth) + 1rem) 2rem;
 }
 
 #formulario {
@@ -255,9 +283,14 @@ input[type="checkbox"]:checked + label {
   text-align: center;
   color: var(--error-color);
   cursor: pointer;
+
 }
 
 .path-ctn i:hover {
+  color: #555;
+}
+
+.path-ctn i:focus {
   color: #555;
 }
 

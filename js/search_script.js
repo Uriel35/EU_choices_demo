@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function() {
 const EMAIL = 'euchoices@gmail.com'
 let emailLinks = document.querySelectorAll('.copy-email-button')
 function copyEmailHandler(e) {
-        try {
-            navigator.clipboard.writeText(EMAIL);
-            alert("Copiaste el email: " + EMAIL);
-        } catch (err) {
-            alert(`Se intento copiar el email en el portapapeles pero hubo un error:\n${err}`)
-        }
+    try {
+        navigator.clipboard.writeText(EMAIL);
+        alert("Copiaste el email: " + EMAIL);
+    } catch (err) {
+        alert(`Se intento copiar el email en el portapapeles pero hubo un error:\n${err}`)
+    }
 }
 
 emailLinks.forEach(element => {
