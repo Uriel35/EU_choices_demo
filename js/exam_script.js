@@ -22,6 +22,7 @@ const closeImageModalButton = document.getElementById('img-modal-close-button')
 const questionOriginText = document.getElementById('origin-text')
 const getBackButton = document.getElementById('get-back-button')
 const questionErrorMessage = document.getElementById('question-error-message')
+let percentageMarker = document.getElementById("percentage-marker")
 
 let TOTAL = 0
 let CORRECTAS = 0
@@ -29,6 +30,7 @@ let ERRORES = 0
 let PREGUNTAS = []
 let doneQuestions = []
 let counter = 0
+let PERCENTAGE = 0
 
 function displayExam(allQuestions) {
     while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
@@ -172,6 +174,7 @@ function customMarker(correctBool, reset=false) {
         correctMarker.textContent = CORRECTAS
         errorMarker.textContent = ERRORES
         totalMarker.textContent = TOTAL
+        percentageMarker.textContent = "0%"
         return;
     }
     if (correctBool) {
@@ -183,6 +186,11 @@ function customMarker(correctBool, reset=false) {
     }
     TOTAL++
     totalMarker.textContent = TOTAL
+    if (TOTAL == 0) PERCENTAGE = 0
+    else {
+        PERCENTAGE = (CORRECTAS / TOTAL) * 100
+    }
+    percentageMarker.textContent = PERCENTAGE.toFixed(1) + "%"
 }
 
 function createBlackOut(message=undefined){
@@ -284,6 +292,11 @@ remakeButton.addEventListener('click', () => {
         }
         TOTAL--
         totalMarker.textContent = TOTAL
+        if (TOTAL == 0) PERCENTAGE = 0
+        else {
+           PERCENTAGE = (CORRECTAS / TOTAL) * 100
+        }
+        percentageMarker.textContent = PERCENTAGE.toFixed(1) + "%"
         removeBlackOut()
         document.getElementById(indexNum).className = 'circle-neutral-ctn'
         document.querySelectorAll('.option-error').forEach(elemento => elemento.classList.remove('option-error'));

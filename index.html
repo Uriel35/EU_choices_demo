@@ -79,7 +79,9 @@
             </form>
             <div class="paths-ctn">
                 <form id="paths-form"></form>
-                <i id="clean-all-paths-button" class="fas fa-broom icon-button"></i>
+                <div class="clean-all-paths-button-ctn">
+                    <i id="clean-all-paths-button" class="fas fa-broom icon-button"></i>
+                </div>
             </div>
     
             <div class="footer-buttons-ctn">
@@ -100,7 +102,10 @@
         <div class="exam-modal" id="exam-modal">
             <div class="exam-ctn" id="exam-ctn">
                 <div class="get-back-button-ctn">
-                    <button id="get-back-button"><span>&#x2190;</span> Volver</button>
+                    <button id="get-back-button">
+                        <i class="fas fa-caret-left"></i>
+                        Volver
+                    </button>
                 </div>
                 <div class="circle-bar-ctn">
                     <div id="circles-ctn"></div>
@@ -126,6 +131,7 @@
                     <div class="score-marker">
                         <p id="correct-marker">0</p> / <p id="error-marker">0</p> / <p id="total-marker">0</p>
                     </div>
+                    <p id="percentage-marker">0%</p>
                 </div>
             </div>
             <div id="img-modal" class="modal">

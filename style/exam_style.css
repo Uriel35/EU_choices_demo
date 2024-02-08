@@ -28,9 +28,16 @@
 }
 
 #get-back-button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     cursor: pointer;
     border: none;
     background: var(--button-background);
+}
+
+#get-back-button i {
+    font-size: 2rem;
 }
 
 .circle-bar-ctn {
@@ -81,6 +88,10 @@
     color:#222
 }
 
+#show-circle-modal-button {
+    font-size: 2rem;
+}
+
 .questions-ctn {
     display: flex;
     flex-direction: column;
@@ -115,14 +126,6 @@
     align-items: start;
 }
 
-/* #display-img-modal-button {
-    text-align: left;
-    cursor: pointer;
-    font-size: calc(var(--font-size) * 1.4);
-    text-transform: uppercase;
-    border: none;
-} */
-
 .img-ctn {
     margin: auto;
     width: max-content;
@@ -153,7 +156,7 @@
     cursor: pointer;
     text-align: left;
     padding: 0.5rem;
-    background-color: var(--option-button-background);
+    background-color: var(--button-background);
     font-size: calc(var(--font-size) * 1.2);
     font-weight: 600;
     width: 100%;
@@ -236,6 +239,7 @@
     width: 100%;
     display: flex;
     justify-content: end;
+    gap: .3rem;
 }
 
 .score-marker {
@@ -263,6 +267,19 @@
 
 #total-marker {
     color: #fff;
+}
+
+#percentage-marker {
+    width: calc(font-size) * 4;
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: var(--icon-button-fg);
+    font-weight: bold;
+    box-shadow: 0 0 4px 1px black;
 }
 
 #circle-modal span {
