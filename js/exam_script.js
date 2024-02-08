@@ -1,5 +1,6 @@
 import schema_utils from "../utils/schema_utils.js";
 import dom_utils from "../utils/dom_utils.js";
+import modal_script from "./modal_script.js";
 
 const examModal = document.getElementById('exam-modal')
 const questionCtn = document.getElementById('question-ctn') 
@@ -252,18 +253,8 @@ getBackButton.addEventListener('click', () => {
     }
 })
 
-questionImageButton.addEventListener('click', (e) => {
-    imageModal.classList.add('flex-active')
-})
-
-closeImageModalButton.addEventListener('click', (e) => {
-    imageModal.classList.remove('flex-active')
-})
-
-imageModal.addEventListener('click', (e) => {
-    e.preventDefault()
-    if (e.target !== questionImage) imageModal.classList.remove('flex-active')
-})
+// Image Modal functions
+modal_script.defineModal(questionImageButton, imageModal, questionImage, closeImageModalButton)
 
 document.addEventListener('keydown', (e) => {
     const allModals = document.querySelectorAll('.modal')
@@ -304,6 +295,7 @@ remakeButton.addEventListener('click', () => {
     } 
     doneQuestions = doneQuestions.filter((e) => e.index != indexNum)
 })
+
 
 const reportQuestionButton = document.getElementById('report-question-button')
 const reportedQuestionSpan = document.getElementById('reported-question-span')

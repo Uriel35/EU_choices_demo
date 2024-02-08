@@ -17,6 +17,12 @@ footer .footer-suggestions-form {
     gap: .5rem;
 }
 
+.footer-suggestions-form div input {
+    text-transform: lowercase;
+    font-size: calc(var(--font-size) * 1.3);
+    
+}
+
 .footer-suggestions-form textarea {
     width: 100%;
     height: 10rem;

@@ -207,6 +207,7 @@
         <div class="modal" id="report-question-modal">
             <div class="modal-ctn" id="report-question-modal-ctn">
                 <form action="https://formspree.io/f/mgejkpgw" method="post">
+                    <input type="hidden" name="_subject" value="Question report">
                     <div>
                         <h2>Reportar pregunta</h2>
                         <p>Enviame un mensaje explicando el error de esta pregunta <span id="reported-question-span"></span>, ya sea que esta mal redactada o mal archivada.
@@ -221,7 +222,7 @@
                         <label for="report-question-message">Mensaje</label>
                         <textarea name="message" id="report-question-message" class="formspree-textarea" required></textarea>
                     </div>
-                    <p>El formulario te redireccionara a otra pagina que me permite enviarme el mail.<br>podras volver normalmente a la pagina.</p>
+                    <p id="report-question-alert-p">El formulario te redireccionara a la pagina de <span>Formspree</span> que me permite enviarme el mail.<br>Podras volver normalmente a la pagina.</p>
                     <button type="submit" class="formspree-submit-buttons">Enviar</button>
                 </form>
             </div>
@@ -230,8 +231,15 @@
     </main>
     <footer>
         <form action="https://formspree.io/f/mgejkpgw" class="footer-suggestions-form" method="post">
+            <input type="hidden" name="_subject" value="Suggestion">
             <h2>Dame tu opinion</h2>
-            <textarea name="suggestion" class="formspree-textarea" id="" placeholder="Es anonimo si asi lo deseas.&#10;Te va a redireccionar a otra pagina para enviarme el email." required></textarea>
+            <div>
+                <input type="emai" name="email" id="footer-suggestion-email" placeholder="Email (opcional)">
+            </div>
+            <div>
+                <input type="text" name="name" id="footer-suggestion-name" placeholder="Nombre (opcional)">
+            </div>
+            <textarea name="suggestion" class="formspree-textarea" id="" placeholder="Escribe tu opinion.&#10;Te va a redireccionar a otra pagina para enviarme el email." required></textarea>
             <button id="submit-suggestion" class="formspree-submit-buttons" type="submit">Enviar</button>
         </form>
         <div class="footer-contact-ctn">
@@ -256,6 +264,6 @@
     <script type="module" src="js/search_script.js"></script>
     <script type="module" src="./utils/schema_utils.js"></script>
     <script type="module" src="js/exam_script.js"></script>
-    <script src="js/modal_script.js"></script>
+    <script type="module" src="js/modal_script.js"></script>
 </body>
 </html>

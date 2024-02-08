@@ -54,6 +54,8 @@
     animation: modal-active 1s ease-out;
 }
 
+/* READ ME  */
+
 #readme-ctn {
     display: flex;
     flex-direction: column;
@@ -85,6 +87,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+/* ESTADISTICAS */
 
 #statistics-ctn {
     flex-direction: column;
@@ -129,6 +133,9 @@
     box-shadow: 0 0 6px 5px #222;
 }
 
+
+/*  REPORT QUESTION */
+
 #report-question-modal-ctn {
     max-width: 90%;
     height: max-content;
@@ -162,6 +169,7 @@
     font-size: calc(var(--font-size) * 1.2);
 }
 #report-question-modal-ctn form div p span {
+    background-color: var(--icon-button-fg);
     font-weight: 700;
 }
 
@@ -200,6 +208,19 @@
 
 #report-question-modal-ctn form #reported-question-info {
     display: none;
+}
+
+#report-question-alert-p {
+    background-color: var(--button-background);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#report-question-alert-p span {
+    color: yellow;
+    font-weight: 600;
 }
 
 @keyframes modal-active {

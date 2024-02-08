@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
+// COPIAR EMAIL
+
 const EMAIL = 'euchoices@gmail.com'
 let emailLinks = document.querySelectorAll('.copy-email-button')
 function copyEmailHandler(e) {

@@ -135,6 +135,10 @@ i {
   right: calc(var(--font-size) * -2.5);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   :root {
       --font-size: 10px
