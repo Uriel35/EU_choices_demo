@@ -18,9 +18,9 @@ footer .footer-suggestions-form {
 }
 
 .footer-suggestions-form div input {
-    text-transform: lowercase;
+    text-transform: none;
     font-size: calc(var(--font-size) * 1.3);
-    
+    font-family: monospace;
 }
 
 .footer-suggestions-form textarea {

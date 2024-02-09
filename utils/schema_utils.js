@@ -165,8 +165,30 @@ function getQuestions(paths, schema, years) {
     return allQuestions
 }
 
+async function getPaths(question) {
+    let SCHEMA
+    let allPaths = []
+    await fetch('./data/schema.json')
+        .then(response => response.json())
+        .then(data => {
+            SCHEMA = data
+        })
+        .catch(error => {
+            console.error('Error al obtener los datos JSON:', error);
+        });
+    for (let speciality of Object.keys(SCHEMA)) {
+        for (let theme of Object.keys(SCHEMA[speciality])){
+            SCHEMA[speciality][theme]["array"].forEach(q => {
+                if (q.id === question.id) allPaths.push({"speciality": speciality, "theme": theme});
+            })
+        }
+    }
+    return allPaths
+}
+
 export default {
     searchInputHandler,
     confirmIfPathExists,
-    getQuestions
+    getQuestions,
+    getPaths
 }

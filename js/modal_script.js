@@ -26,4 +26,6 @@ defineModal(undefined, document.getElementById('error-modal'), document.getEleme
 defineModal(document.getElementById('show-circle-modal-button'), document.getElementById('circle-modal'), document.getElementById('circles-modal-ctn'), document.getElementById('close-circles-modal'))
 defineModal(document.getElementById('report-question-button'), document.getElementById('report-question-modal'), document.getElementById('report-question-modal-ctn'), document.getElementById('close-report-question-modal'))
 
+// defineModal(document.getElementById("paths-list-modal-button"), document.getElementById("paths-list-modal"), document.getElementById("paths-list-modal-ctn"), document.getElementById("close-paths-list-modal"))
+
 export default {defineModal}

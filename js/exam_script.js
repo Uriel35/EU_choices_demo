@@ -33,6 +33,9 @@ let doneQuestions = []
 let counter = 0
 let PERCENTAGE = 0
 
+
+
+
 function displayExam(allQuestions) {
     while (circlesCtn.firstChild) circlesCtn.removeChild(circlesCtn.firstChild)
     while (circlesModalCtn.firstChild) circlesModalCtn.removeChild(circlesModalCtn.firstChild)
@@ -297,6 +300,7 @@ remakeButton.addEventListener('click', () => {
 })
 
 
+
 const reportQuestionButton = document.getElementById('report-question-button')
 const reportedQuestionSpan = document.getElementById('reported-question-span')
 const reportedQuestionInfo = document.getElementById('reported-question-info')
@@ -310,6 +314,37 @@ reportQuestionButton.addEventListener('click', (e) => {
     let currentQ = PREGUNTAS[counter]
     reportedQuestionSpan.textContent = `[ Examen unico ${currentQ['origin']['exam']}, pregunta ${currentQ['index']}) ]`
     reportedQuestionInfo.value = `${currentQ['id']} \n EU ${currentQ['origin']['exam']}, ${currentQ['index']}).\n\nPaths:${path}`
+})
+
+
+// QUESTION PATH LIST MODAL 
+const pathsListModalButton = document.getElementById("paths-list-modal-button")
+const pathsListModal = document.getElementById("paths-list-modal")
+const pathsListModalCtn = document.getElementById("paths-list-modal-ctn")
+const pathsListModalUl = document.getElementById("paths-list-result-modal")
+const pathsListModalQuestion = document.getElementById("paths-list-modal-question")
+const reportQuestionInPathsListButton = document.getElementById("report-question-in-paths-list-button")
+const closePathsListModalButton = document.getElementById("close-paths-list-modal")
+
+// defineModal(document.getElementById("paths-list-modal-button"), document.getElementById("paths-list-modal"), document.getElementById("paths-list-modal-ctn"), document.getElementById("close-paths-list-modal"))
+modal_script.defineModal(pathsListModalButton, pathsListModal, pathsListModalCtn, closePathsListModalButton)
+reportQuestionInPathsListButton.addEventListener("click", (e) => {
+    const eventClick = new Event("click")
+    closePathsListModalButton.dispatchEvent(eventClick)
+    reportQuestionButton.dispatchEvent(eventClick)
+
+})
+
+pathsListModalButton.addEventListener("click", async (e) => {
+    e.stopPropagation()
+    let currentQ = PREGUNTAS[counter]
+    pathsListModalQuestion.textContent = `[ Examen unico ${currentQ['origin']['exam']}, pregunta ${currentQ['index']}) ]`
+    let result = await schema_utils.getPaths(currentQ)
+    for (let path of result) {
+        let li = document.createElement("LI")
+        li.textContent = `${path.speciality} / ${path.theme}`
+        pathsListModalUl.appendChild(li)
+    }
 })
 
 // Option key binding 

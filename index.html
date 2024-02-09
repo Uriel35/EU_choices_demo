@@ -106,6 +106,7 @@
                         <i class="fas fa-caret-left"></i>
                         Volver
                     </button>
+                    <img src="logo/eu-choice_logo_sin_letra_fondo_blanco.png" alt="">
                 </div>
                 <div class="circle-bar-ctn">
                     <div id="circles-ctn"></div>
@@ -126,12 +127,13 @@
                     <button id="remake-q-btn" class="buttons">Deshacer</button>
                     <i class="fas fa-arrow-right arrow-buttons" id="next-btn"></i>
                     <i class="fas fa-exclamation icon-button" id="report-question-button"></i>
+                    <i class="fas fa-list icon-button" id="paths-list-modal-button"></i>
                 </div>
+
                 <div class="score-marker-ctn">
                     <div class="score-marker">
-                        <p id="correct-marker">0</p> / <p id="error-marker">0</p> / <p id="total-marker">0</p>
+                        <p id="correct-marker">0</p> / <p id="error-marker">0</p> / <p id="total-marker">0</p> / <p id="percentage-marker">0%</p>
                     </div>
-                    <p id="percentage-marker">0%</p>
                 </div>
             </div>
             <div id="img-modal" class="modal">
@@ -167,10 +169,6 @@
                     </p>
                 </div>
                 <div class="readme-ligth">
-                    <h3>Seguridad</h3>
-                    <p> Esta pagina no te va a pedir ningun dato tuyo.</p>
-                </div>
-                <div class="readme-dark">
                     <h3>Contacto</h3>
                     <a class="copy-email-button">euchoices@gmail.com <i class="far fa-copy"></i></a>
                 </div>
@@ -228,7 +226,18 @@
             </div>
             <span id="close-report-question-modal" class="close-modal-button">&#215;</span>
         </div>
+
+        <div class="modal" id="paths-list-modal">
+            <div class="modal-ctn" id="paths-list-modal-ctn">
+                <h2 class="modal-title">Info</h2>
+                <p>La pregunta del <span id="paths-list-modal-question"></span> se encuentra archivada en las siguientes especialidades/temas</p>
+                <ul id="paths-list-result-modal"></ul>
+                <p>Si ves que esta mal archivada, <span id="report-question-in-paths-list-button">REPORTA</span> la pregunta.</p>
+            </div>
+            <span class="close-modal-button" id="close-paths-list-modal">&#215</span>
+        </div>
     </main>
+
     <footer>
         <form action="https://formspree.io/f/mgejkpgw" class="footer-suggestions-form" method="post">
             <input type="hidden" name="_subject" value="Suggestion">
