@@ -15,7 +15,12 @@ function defineModal(openButton=undefined, modal, ctn, closeButton=undefined) {
             document.body.classList.remove("modal-open");
         }
     })
-    if(closeButton) closeButton.addEventListener('click', () => modal.classList.remove('flex-active'))
+    if(closeButton) {
+        closeButton.addEventListener('click', () => {
+            modal.classList.remove('flex-active')
+            document.body.classList.remove("modal-open");
+        })
+    }
 }
 
 defineModal(document.getElementById('readme-button'), document.getElementById('readme-modal'), document.getElementById('readme-ctn'), document.getElementById('close-readme-modal'))
