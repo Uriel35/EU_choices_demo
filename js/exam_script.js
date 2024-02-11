@@ -299,8 +299,6 @@ remakeButton.addEventListener('click', () => {
     doneQuestions = doneQuestions.filter((e) => e.index != indexNum)
 })
 
-
-
 const reportQuestionButton = document.getElementById('report-question-button')
 const reportedQuestionSpan = document.getElementById('reported-question-span')
 const reportedQuestionInfo = document.getElementById('reported-question-info')
@@ -340,9 +338,11 @@ pathsListModalButton.addEventListener("click", async (e) => {
     let currentQ = PREGUNTAS[counter]
     pathsListModalQuestion.textContent = `[ Examen unico ${currentQ['origin']['exam']}, pregunta ${currentQ['index']}) ]`
     let result = await schema_utils.getPaths(currentQ)
-    for (let path of result) {
+    while (pathsListModalUl.firstChild) pathsListModalUl.removeChild(pathsListModalUl.firstChild)
+    for (let path in result) {
         let li = document.createElement("LI")
-        li.textContent = `${path.speciality} / ${path.theme}`
+        if (path % 2 == 0) li.className = "path-dark"
+        li.textContent = `${result[0].speciality} / ${result[path].theme}`
         pathsListModalUl.appendChild(li)
     }
 })

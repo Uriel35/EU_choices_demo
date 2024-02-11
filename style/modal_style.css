@@ -141,8 +141,12 @@
 /*  REPORT QUESTION */
 
 #report-question-modal-ctn {
-    max-width: 90%;
+    /* max-width: 90%; */
     height: max-content;
+}
+
+.modal-ctn {
+    max-width: 60%;
 }
 
 #report-question-modal-ctn form {
@@ -227,7 +231,6 @@
 
 /* PATH LIST MODAL  */
 #paths-list-modal-ctn {
-    max-width: 60%;
     padding: 1rem;
 }
 
@@ -244,7 +247,7 @@
 #paths-list-modal-ctn p #report-question-in-paths-list-button {
     cursor: pointer;
     transition: .2s;
-    padding: .2rem;
+    padding: .1rem;
     border-radius: 10px;
 }
 
@@ -254,15 +257,24 @@
 }
 
 #paths-list-modal-ctn ul {
-    padding: 1rem;
+    padding: 0;
+    overflow: hidden;
     margin: auto;
     box-shadow: 0 0 4px 1px #444;
     background-color: #ddd;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
     font-size: calc(var(--font-size) * 1.3);
+}
+
+#paths-list-modal-ctn ul li {
+    padding: 1rem;
+    text-align: center;
+}
+
+#paths-list-modal-ctn ul .path-dark {
+    background-color: #bbb;
 }
 
 @keyframes exam-active {
@@ -282,14 +294,15 @@
 }
 
 @media (max-width: 767px) {
-    #statistics-ctn {
-        width: 80%;
-    }
     #statistics-ctn a {
         width: inherit;
     }
 
     #report-question-modal-ctn form div input {
         width: 100%;
+    }
+
+    .modal-ctn {
+        max-width: 90%;
     }
 }

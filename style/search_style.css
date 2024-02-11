@@ -81,7 +81,7 @@ main {
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  padding: calc(var(--header-heigth) + 1rem) 2rem;
+  padding: calc(var(--header-heigth) + 1rem) 2rem 2rem 2rem;
 }
 
 #formulario {
@@ -265,6 +265,8 @@ input[type="checkbox"]:checked + label {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #000;
+  animation-name: path-animation;
+  animation-duration: 0.5s;
 }
 
 .paths-ctn form .path-ctn label {
@@ -283,7 +285,6 @@ input[type="checkbox"]:checked + label {
   text-align: center;
   color: var(--error-color);
   cursor: pointer;
-
 }
 
 .path-ctn i:hover {
@@ -292,6 +293,11 @@ input[type="checkbox"]:checked + label {
 
 .path-ctn i:focus {
   color: #555;
+}
+
+@keyframes path-animation {
+  0% {opacity: 0; transform: translateY(+100px);}
+  100% {opacity: 1; transform: translateY(0px);}
 }
 
 .icon-button {
