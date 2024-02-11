@@ -2,7 +2,8 @@
     --error-color: #FF331F;
     --correct-color: #4CAF50;
     --button-background: #28587B;
-    --background: linear-gradient(135deg, rgba(4,21,31,1) 55%, rgba(18,80,92,1) 100%); 
+    /* --background: linear-gradient(135deg, rgba(4,21,31,1) 55%, rgba(18,80,92,1) 100%);  */
+    --background: rgba(10,50,70,1); 
     --focus-path: red;
     --font-family: 'Open sans', sans-serif;
     --foreground-color: #eee;
@@ -80,7 +81,7 @@ button {
     cursor: pointer;
     font-size: calc(var(--font-size) * 1.5);
     border-radius: 5px;
-    box-shadow: 0 0 6px 2px #111;
+    box-shadow: 0 0 3px 3px #222;
     background-color: var(--button-background);
     color: var(--foreground-color);
     font-weight: 600;
