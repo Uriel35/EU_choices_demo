@@ -434,6 +434,8 @@ input:checked + .slider::before {
 @media (max-width: 767px) {
   .form-ctn {
     flex-direction: column;
+    padding: calc(var(--header-heigth) + .5rem) .5rem .3rem .5rem;
+    gap: 1rem;
   }
 
   #formulario {
@@ -448,8 +450,15 @@ input:checked + .slider::before {
     flex-direction: row;
     gap: 1rem;
   }
+
+  #cafecito_link_search {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+
   #cafecito_link_search img {
     width: 10rem;
   }
-
 }

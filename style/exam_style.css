@@ -27,11 +27,13 @@
     text-align: left;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #get-back-button {
     display: flex;
     align-items: center;
+    height: max-content;
     gap: .5rem;
     cursor: pointer;
     border: none;
