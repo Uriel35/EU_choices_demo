@@ -340,6 +340,17 @@ input[type="checkbox"]:checked + label {
   color: #fff;
 }
 
+#cafecito_link_search {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: max-content;
+}
+
+#cafecito_link_search img {
+  width: 15rem;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -436,6 +447,9 @@ input:checked + .slider::before {
   .footer-buttons-ctn {
     flex-direction: row;
     gap: 1rem;
+  }
+  #cafecito_link_search img {
+    width: 10rem;
   }
 
 }
