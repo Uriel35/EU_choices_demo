@@ -111,6 +111,9 @@ function showQuestion(index, disable, choosen=undefined){
     addDiscussionButton.href = `https://docs.google.com/forms/d/e/1FAIpQLSdczRXGVjr2uXwJGFOnNhqsfPqt2Zd6Zyx_BSSvFv5XyywYpQ/viewform?usp=pp_url&entry.277666932=${PREGUNTAS[index].origin.exam}&entry.1839069604=${PREGUNTAS[index].index}`
     discussionFormLink.href = `https://docs.google.com/forms/d/e/1FAIpQLSdczRXGVjr2uXwJGFOnNhqsfPqt2Zd6Zyx_BSSvFv5XyywYpQ/viewform?usp=pp_url&entry.277666932=${PREGUNTAS[index].origin.exam}&entry.1839069604=${PREGUNTAS[index].index}`
 
+    const pdfButton = document.getElementById("pdf-button")
+    pdfButton.href = `./data/choices/examen_unico_${PREGUNTAS[index]["origin"]["exam"]}.pdf`
+
 
     let indexNum = index + 1
     questionCtn.textContent = ''
@@ -214,7 +217,7 @@ function createBlackOut(message=undefined){
         if (message) questionErrorMessage.textContent = message
         else questionErrorMessage.textContent = ""
 
-        discussionsCtn.classList.add("flex-active")
+        // discussionsCtn.classList.add("flex-active")
         
 }
 

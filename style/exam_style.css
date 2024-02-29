@@ -207,9 +207,24 @@
     font-weight: 600;
 }
 
-#origin-text {
+.pdf-and-origin-ctn {
+    display: flex;
     width: 100%;
-    text-align: right;
+    justify-content: space-between;
+    height: min-content;
+}
+
+.pdf-and-origin-ctn a {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: calc(var(--font-size) * 1.2);
+}
+
+.pdf-and-origin-ctn a:hover {
+    color: var(--button-background);
+}
+
+#origin-text {
     font-weight: 600;
     font-size: calc(var(--font-size) * 1.2);
 }
