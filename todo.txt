@@ -1,9 +1,8 @@
 To Do's:
 --- Modern Custom
---- make a HELP ME section
---- Add discussion forum
+--- Add discussion forum and manage
 --- Customize report question
---- Customzie Statistics
+--- Customize Statistics
 
 Done:
 --- Create logo

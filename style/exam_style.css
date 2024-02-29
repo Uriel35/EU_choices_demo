@@ -214,6 +214,79 @@
     font-size: calc(var(--font-size) * 1.2);
 }
 
+.discussions-ctn {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+.discussions-title-ctn {
+    font-size: calc(var(--font-size) * 1.5);
+    display: flex;
+    justify-content: center;
+    background-color: var(--button-background);
+    color: white;
+}
+
+.discussions {
+    border: solid 2px #222;
+    border-top: none;
+}
+
+.discussion {
+    border-bottom: 2px solid #222;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.discussion .discussion-about-ctn {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+.discussion .discussion-bibliography-ctn p {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.discussion .discussion-bibliography-ctn ul {
+    list-style: inherit;
+    padding: 0 1rem;
+} 
+
+.empty-discussion-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#discussion-form-link {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.discussion:last-child {
+    border-bottom: none;
+}
+
+.discussion-dark {
+    background-color: #bbb;
+}
+
+.add-discussion-button-ctn {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+
+
 .buttons-ctn {
     max-width: 90%;
     padding: 1rem;

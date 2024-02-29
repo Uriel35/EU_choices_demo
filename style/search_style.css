@@ -41,8 +41,12 @@ header button {
 
 header button i {
   transition: .5s;
-  color: var(--nav-button-bg);
-  font-size: 2rem;
+  background-color: #222;
+  /* color: var(--nav-button-bg); */
+  color: var(--icon-button-fg);
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: calc(var(--font-size) * 2);
 }
 
 header button i:hover {
@@ -57,11 +61,14 @@ header button i:hover .tooltip {
   display: block;
   position: absolute;
   left: 0;
+  right: 0px;
+  margin: auto;
   background-color: white;
+  color: #000;
+  border: 2px solid #888;
   width: max-content;
   padding: 4px;
   border-radius: 4px;
-  right: 0px;
   font-size: .7rem;
   transform: none;
 }
@@ -76,7 +83,7 @@ main {
 
 .form-ctn {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -298,25 +305,6 @@ input[type="checkbox"]:checked + label {
 @keyframes path-animation {
   0% {opacity: 0; transform: translateY(+100px);}
   100% {opacity: 1; transform: translateY(0px);}
-}
-
-.icon-button {
-  color: var(--icon-button-fg);
-  background-color: var(--icon-button-bg);
-  padding: .5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: .5s;
-  font-size: calc(var(--font-size) * 1.7);
-  display: flex !important;
-  align-items: center;
-  justify-items: center;
-  height: 100%;
-}
-
-.icon-button:hover {
-  background-color: white;
-  color: var(--icon-button-fg);
 }
 
 .footer-buttons-ctn {

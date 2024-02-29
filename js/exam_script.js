@@ -7,7 +7,7 @@ const questionCtn = document.getElementById('question-ctn')
 const questionsCtn = document.querySelector('.questions-ctn')
 const optionsCtn = document.getElementById('options-ctn') 
 const circlesCtn = document.getElementById('circles-ctn') 
-const ciclesModal = document.getElementById('circle-modal')
+const circlesModal = document.getElementById('circle-modal')
 const circlesModalCtn = document.getElementById('circles-modal-ctn')
 const nextButton = document.getElementById('next-btn') 
 const previousButton = document.getElementById('previous-btn') 
@@ -23,6 +23,7 @@ const closeImageModalButton = document.getElementById('img-modal-close-button')
 const questionOriginText = document.getElementById('origin-text')
 const getBackButton = document.getElementById('get-back-button')
 const questionErrorMessage = document.getElementById('question-error-message')
+const discussionsCtn = document.getElementById("discussions-ctn")
 let percentageMarker = document.getElementById("percentage-marker")
 
 let TOTAL = 0
@@ -73,7 +74,7 @@ function displayExam(allQuestions) {
         MODAL_CIRCLE.addEventListener('click', (e) => {
             counter = parseInt(e.target.textContent) - 1
             checkIfDonned(counter)
-            ciclesModal.classList.remove('flex-active')
+            circlesModal.classList.remove('flex-active')
         })
         circlesModalCtn.appendChild(MODAL_CIRCLE);
     }
@@ -103,6 +104,14 @@ function manageCounter(counter, nextBool){
 }
 
 function showQuestion(index, disable, choosen=undefined){
+    document.body.classList.remove("modal-open"); // Para que se pueda scrollear la pagina despues de cerrar un modal.
+    discussionsCtn.classList.remove("flex-active")
+    const addDiscussionButton = document.getElementById("add-discussion-btn")
+    const discussionFormLink = document.getElementById("discussion-form-link")
+    addDiscussionButton.href = `https://docs.google.com/forms/d/e/1FAIpQLSdczRXGVjr2uXwJGFOnNhqsfPqt2Zd6Zyx_BSSvFv5XyywYpQ/viewform?usp=pp_url&entry.277666932=${PREGUNTAS[index].origin.exam}&entry.1839069604=${PREGUNTAS[index].index}`
+    discussionFormLink.href = `https://docs.google.com/forms/d/e/1FAIpQLSdczRXGVjr2uXwJGFOnNhqsfPqt2Zd6Zyx_BSSvFv5XyywYpQ/viewform?usp=pp_url&entry.277666932=${PREGUNTAS[index].origin.exam}&entry.1839069604=${PREGUNTAS[index].index}`
+
+
     let indexNum = index + 1
     questionCtn.textContent = ''
     optionsCtn.textContent = ''
@@ -204,11 +213,15 @@ function createBlackOut(message=undefined){
         optionsCtn.appendChild(optionBlackOut)
         if (message) questionErrorMessage.textContent = message
         else questionErrorMessage.textContent = ""
+
+        discussionsCtn.classList.add("flex-active")
+        
 }
 
 function removeBlackOut(){
     const divEliminar = document.querySelector('.option-blackout');
     divEliminar.remove();
+    discussionsCtn.classList.remove("flex-active")
 }
 
 function checkIfDonned(index){
