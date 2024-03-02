@@ -1,3 +1,6 @@
+import schema_utils from "./schema_utils.js"
+import utils from "./main_utils.js"
+
 const pathOptionsCtn = document.getElementById('matched-search-list')
 
 function clean_string_spaces(value){
@@ -199,6 +202,65 @@ function keyDownSearcher(){
 }
 
 
+function elementCreate(type, content="", classes=[], element_id="", childs=[], appendToCtn=false) {
+    let element = document.createElement(type)
+    if (content != "") element.textContent = content
+    if (classes != []) {
+        for (let clase of classes) element.classList.add(clase)
+    } 
+    if (element_id != "") element.id = element_id
+
+    if (childs != []) {
+        for (let child of childs) element.appendChild(child)
+    } 
+    if (appendToCtn != false) appendToCtn.appendChild(element)
+
+    return element
+}
+
+
+function discussionsHandler(discussionList, discussionsCtn) {
+
+    discussionList.forEach((disc, i) => {
+
+        let explication = elementCreate("p", disc["explication"], "explication", "", [], false)
+
+        let bibliographyCtn = document.createElement("div")
+        if (disc["bibliography"] != "") {
+            bibliographyCtn.classList.add("discussion-bibliography-ctn")
+            let bibliographyTitle = elementCreate("p", "Bibliografia", [], "", [], bibliographyCtn)
+            bibliographyCtn.appendChild(bibliographyTitle)
+            let bibliographyUl = elementCreate("ul", "", ["bibliography-ul"], "", [], bibliographyCtn)
+
+            let bibliographyItems = disc["bibliography"].split("\n") 
+            for (let biblioItem of bibliographyItems) {
+                if (biblioItem == "") {
+                    continue;
+                } else {
+                    elementCreate("li", biblioItem, [], "", [], bibliographyUl)
+                }
+            }
+        }
+
+        let authorDateCtn = document.createElement("div")
+        authorDateCtn.classList.add("discussion-about-ctn")
+        let author = elementCreate("p", "", ["author"], "", [], authorDateCtn)
+        if (disc["name"] == "") author.textContent = "Anonimo"
+        else author.textContent = disc["name"]
+
+        let aboutDate = elementCreate("p", "", ["discussion-date"], "", [], authorDateCtn)
+        let fecha = new Date(disc["date"])
+        aboutDate.textContent = utils.formateDateFx(fecha)
+
+
+        let discussionItemCtn = elementCreate("div", "", ["discussion"], "", [explication, bibliographyCtn, authorDateCtn], discussionsCtn)
+
+        if (i % 2 == 0) discussionItemCtn.classList.add("discussion-ligth")
+        else discussionItemCtn.classList.add("discussion-dark")
+    })
+}
+
+
 export default {
     addItemsToSearchList,
     invalidateInput,
@@ -206,5 +268,7 @@ export default {
     validateYears,
     checkIfPathAllreadyAdded,
     clean_string_spaces,
-    keyDownSearcher
+    keyDownSearcher,
+    elementCreate,
+    discussionsHandler
 }

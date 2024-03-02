@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             displayPage(data);
         })
         .catch(error => {
-            console.error('Error al obtener los datos JSON:', error);
+            console.error('Error al obtener los datos JSON: \n', error);
         });
 });
 

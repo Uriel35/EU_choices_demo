@@ -6010,7 +6010,18 @@
                     "answer": "a",
                     "index": 1,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-03-01 13:26:01",
+                            "name": "Uriel Espada",
+                            "email": "uriespada@gmail.com",
+                            "year": 2023,
+                            "index": 1,
+                            "explication": "Cuadro compatible con neumonia, asociado a derrame pleural.\nEl resultado bioquimico de dicho derrame es compatible con un derrame pleural complicado (por el pH < 7.20, LDH > 1000 UI/l, consumo de glucosa), por lo cual la indicacion es drenarlo.",
+                            "bibliography": "",
+                            "id": "8644aa7b-c673-42bd-936c-f38bc3d090e2"
+                        }
+                    ]
                 },
                 {
                     "question_complete": "16) En un paciente con derrame pleural en tratamiento con diur\u00e9ticos, \u00bfqu\u00e9 criterios diagn\u00f3sticos \ndebemos utilizar para evaluar el l\u00edquido? \n a) Relaci\u00f3n prote\u00ednas totales en l\u00edquido pleural/s\u00e9ricas mayor de 0,5mg/dl \n b) Relaci\u00f3n colesterol en el l\u00edquido pleural/s\u00e9rico mayor de 0.3mg/dl \n c) Relaci\u00f3n LDH en l\u00edquido pleural/s\u00e9rico mayor de 0.6 UI \n d) Alb\u00famina s\u00e9rica - alb\u00famina en el l\u00edquido pleural menor o igual a 1.2 y relaci\u00f3n \u00e1cido l\u00e1ctico en l\u00edquido \npleural/serio mayor a 2",
@@ -17599,7 +17610,18 @@
                     "answer": "a",
                     "index": 1,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-03-01 13:26:01",
+                            "name": "Uriel Espada",
+                            "email": "uriespada@gmail.com",
+                            "year": 2023,
+                            "index": 1,
+                            "explication": "Cuadro compatible con neumonia, asociado a derrame pleural.\nEl resultado bioquimico de dicho derrame es compatible con un derrame pleural complicado (por el pH < 7.20, LDH > 1000 UI/l, consumo de glucosa), por lo cual la indicacion es drenarlo.",
+                            "bibliography": "",
+                            "id": "8644aa7b-c673-42bd-936c-f38bc3d090e2"
+                        }
+                    ]
                 },
                 {
                     "question_complete": "\n80. \u00bfQu\u00e9 observa en la radiograf\u00eda de t\u00f3rax? Ver imagen 4 del anexo\na. Derrame pleural izquierdo.\nb. Atelectasia del l\u00f3bulo inferior izquierdo.\nc. Consolidaci\u00f3n del l\u00f3bulo inferior izquierdo.\nd. Hidroneumot\u00f3rax izquierdo.",
@@ -18646,7 +18668,18 @@
                     "answer": "a",
                     "index": 4,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-03-01 18:43:45",
+                            "name": "Uriel Espada",
+                            "email": "uriespada@gmail.com",
+                            "year": 2023,
+                            "index": 4,
+                            "explication": "Principalmente se debe descartar tuberculosis, para prevenir el sindrome de reconstitucion inmune (SIRI).\nBasicamente, en un paciente con inmudepresion severa/SIDA (< 200 CD4) y con tuberculosis, si yo inicio el tratamiento antirretroviral, provoca una disminucion de la carga viral y aumento de los CD4 (efecto deseado), pero desenmascara otras patologias, entre ellas la tuberculosis. Se vio que si reestablezco la inmunidad rapidamente (con el TARV), se dispara una gran respuesta inmune contra la tuberculosis, de forma exacerbada, lo que se vio que aumenta la mortalidad.\nPor eso eso se debe primero iniciar tratamiento anti tuberculoso por semanas antes de iniciar el TARV. Otra patologia que puede provocar SIRI es la criptococosis meningea.",
+                            "bibliography": "http://www.neumo-argentina.org/images/guias_consensos/guia_tuberculosis_del_hospital_muniz_2011.pdf (Pagina 14)",
+                            "id": "af9a9256-11d7-451d-a938-f9349aee6b87"
+                        }
+                    ]
                 },
                 {
                     "question_complete": "8) Mujer trans de 26 a\u00f1os de edad con diagn\u00f3stico de VIH hace 2 a\u00f1os. Est\u00e1 bajo tratamiento \nantirretroviral con buena adherencia y tolerancia, su \u00faltimo control de carga viral, hecho el mes \npasado, fue no detectable y no ha tenido ninguna complicaci\u00f3n relacionada al VIH. Ella desea \ncomenzar a hormonizarse como parte de su transici\u00f3n, pero teme por la posibilidad de que las \nhormonas interfieran y hagan menos efectivo su tratamiento antirretroviral. \u00bfQu\u00e9 informaci\u00f3n debe \nbrind\u00e1rsele? \n a) Que no podr\u00e1 realizar tratamiento de hormonizaci\u00f3n, dado que est\u00e1 contraindicado junto con el tratamiento \nantirretroviral. \n b) Que para poder recibir terapia de reemplazo hormonal la carga viral debe estar indetectable durante al \nmenos un a\u00f1o.\nc) Que debe interrumpir su tratamiento antirretroviral mientras realiza la hormonizaci\u00f3n. \n d) Que podr\u00e1 realizar el tratamiento de hormonizaci\u00f3n teniendo en cuenta posibles interacciones entre el \ntratamiento antirretroviral y las hormonas administradas.",

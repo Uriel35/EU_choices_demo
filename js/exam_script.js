@@ -1,6 +1,7 @@
 import schema_utils from "../utils/schema_utils.js";
 import dom_utils from "../utils/dom_utils.js";
 import modal_script from "./modal_script.js";
+import utils from "../utils/main_utils.js"
 
 const examModal = document.getElementById('exam-modal')
 const questionCtn = document.getElementById('question-ctn') 
@@ -33,8 +34,6 @@ let PREGUNTAS = []
 let doneQuestions = []
 let counter = 0
 let PERCENTAGE = 0
-
-
 
 
 function displayExam(allQuestions) {
@@ -108,12 +107,27 @@ function showQuestion(index, disable, choosen=undefined){
     discussionsCtn.classList.remove("flex-active")
     const addDiscussionButton = document.getElementById("add-discussion-btn")
     const discussionFormLink = document.getElementById("discussion-form-link")
-    addDiscussionButton.href = `https://docs.google.com/forms/d/e/1FAIpQLSdczRXGVjr2uXwJGFOnNhqsfPqt2Zd6Zyx_BSSvFv5XyywYpQ/viewform?usp=pp_url&entry.277666932=${PREGUNTAS[index].origin.exam}&entry.1839069604=${PREGUNTAS[index].index}`
-    discussionFormLink.href = `https://docs.google.com/forms/d/e/1FAIpQLSdczRXGVjr2uXwJGFOnNhqsfPqt2Zd6Zyx_BSSvFv5XyywYpQ/viewform?usp=pp_url&entry.277666932=${PREGUNTAS[index].origin.exam}&entry.1839069604=${PREGUNTAS[index].index}`
+    addDiscussionButton.href = `https://docs.google.com/forms/d/e/1FAIpQLSckutbAadPXsxUmPeWHaI3J7dBYnqgxb-QGtzVDyee4TnJPLQ/viewform?usp=pp_url&entry.1641804022=${PREGUNTAS[index].origin.exam}&entry.432963879=${PREGUNTAS[index].index}`
+    discussionFormLink.href = `https://docs.google.com/forms/d/e/1FAIpQLSckutbAadPXsxUmPeWHaI3J7dBYnqgxb-QGtzVDyee4TnJPLQ/viewform?usp=pp_url&entry.1641804022=${PREGUNTAS[index].origin.exam}&entry.432963879=${PREGUNTAS[index].index}`
+
+    const discussions = document.getElementById("discussions")
+
+    const emptyDiscussion = document.getElementById("empty-discussion-ctn")
+    let discussionList = PREGUNTAS[index]["discussion"]
+
+    let allDiscussions = discussionsCtn.querySelectorAll(".discussion")
+    allDiscussions.forEach((elemento) => {
+        elemento.parentNode.removeChild(elemento);
+    });
+    if (discussionList.length == 0) {
+        emptyDiscussion.classList.add("flex-active")
+    } else {
+        emptyDiscussion.classList.remove("flex-active")
+        dom_utils.discussionsHandler(discussionList, discussions)
+    }
 
     const pdfButton = document.getElementById("pdf-button")
     pdfButton.href = `./data/choices/examen_unico_${PREGUNTAS[index]["origin"]["exam"]}.pdf`
-
 
     let indexNum = index + 1
     questionCtn.textContent = ''
@@ -217,8 +231,7 @@ function createBlackOut(message=undefined){
         if (message) questionErrorMessage.textContent = message
         else questionErrorMessage.textContent = ""
 
-        // discussionsCtn.classList.add("flex-active")
-        
+        discussionsCtn.classList.add("flex-active")
 }
 
 function removeBlackOut(){
@@ -346,7 +359,6 @@ reportQuestionInPathsListButton.addEventListener("click", (e) => {
     const eventClick = new Event("click")
     closePathsListModalButton.dispatchEvent(eventClick)
     reportQuestionButton.dispatchEvent(eventClick)
-
 })
 
 pathsListModalButton.addEventListener("click", async (e) => {

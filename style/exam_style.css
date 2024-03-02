@@ -274,7 +274,7 @@
 } 
 
 .empty-discussion-ctn {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 1rem;
@@ -308,7 +308,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    overflow: auto;
 }
 
 .arrow-buttons {
@@ -326,6 +325,7 @@
 
 #remake-q-btn {
     background-color: var(--error-color);
+    color: #fff;
 }
 
 #remake-q-btn:hover {
@@ -414,5 +414,6 @@
 
     .buttons-ctn {
         gap: .3rem;
+        overflow: auto;
     }
 }

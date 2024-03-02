@@ -80,7 +80,9 @@
             <div class="paths-ctn">
                 <form id="paths-form"></form>
                 <div class="clean-all-paths-button-ctn">
-                    <i id="clean-all-paths-button" class="fas fa-broom icon-button"></i>
+                    <i id="clean-all-paths-button" class="fas fa-broom icon-button">
+                        <span class="tooltip">Limpiar lista</span>
+                    </i>
                 </div>
             </div>
     
@@ -111,7 +113,9 @@
                 </div>
                 <div class="circle-bar-ctn">
                     <div id="circles-ctn"></div>
-                    <i class="far fa-eye icon-button" id="show-circle-modal-button"></i>
+                    <i class="far fa-eye icon-button" id="show-circle-modal-button">
+                        <span class="tooltip">Mostrar todo</span>
+                    </i>
                 </div>
                 <div class="questions-ctn">
                     <div id="question-ctn" class="scroll-item"></div>
@@ -137,7 +141,7 @@
                             <h2>Foro de discusión</h2>
                         </div>
                         <div class="discussions" id="discussions">
-                            <div class="empty-discussion-ctn">
+                            <div class="empty-discussion-ctn" id="empty-discussion-ctn">
                                 <p>
                                     Esta pregunta NO tiene ninguna explicacion. <br>
                                     Si deseas agregar una, llena el <a href="#" target="_blank" id="discussion-form-link">formulario</a>.
@@ -186,10 +190,16 @@
             
                 <div class="buttons-ctn">
                     <i class="fas fa-arrow-left arrow-buttons" id="previous-btn"></i>
-                    <button id="remake-q-btn" class="buttons">Deshacer</button>
-                    <i class="fas fa-arrow-right arrow-buttons" id="next-btn"></i>
-                    <i class="fas fa-exclamation icon-button" id="report-question-button"></i>
-                    <i class="fas fa-list icon-button" id="paths-list-modal-button"></i>
+                    <i class="fas fa-arrow-right arrow-buttons" id="next-btn"> </i>
+                    <i id="remake-q-btn" class="icon-button fas fa-ban">
+                        <span class="tooltip">Deshacer</span>
+                    </i>
+                    <i class="fas fa-exclamation icon-button" id="report-question-button">
+                        <span class="tooltip">Reportar pregunta</span>
+                    </i>
+                    <i class="fas fa-list icon-button" id="paths-list-modal-button">
+                        <span class="tooltip">Ver informacion</span>
+                    </i>
                 </div>
 
                 <div class="score-marker-ctn">
@@ -332,8 +342,10 @@
             </a> -->
         </div>
     </footer>
+    <script type="module" src="utils/schema_utils.js"></script>
+    <script type="module" src="utils/dom_utils.js"></script>
+    <script type="module" src="utils/main_utils.js"></script>
     <script type="module" src="js/search_script.js"></script>
-    <script type="module" src="./utils/schema_utils.js"></script>
     <script type="module" src="js/exam_script.js"></script>
     <script type="module" src="js/modal_script.js"></script>
 </body>
