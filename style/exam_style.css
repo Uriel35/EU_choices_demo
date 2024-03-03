@@ -301,13 +301,12 @@
 }
 
 
-
 .buttons-ctn {
     max-width: 90%;
     padding: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .arrow-buttons {
@@ -340,8 +339,20 @@
 .score-marker-ctn {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    height: max-content;
     gap: .3rem;
+}
+
+.exam-cafecito-ctn {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.exam-cafecito-ctn img {
+  max-width: 100%;
+  height: auto;
 }
 
 .score-marker {
@@ -414,6 +425,5 @@
 
     .buttons-ctn {
         gap: .3rem;
-        overflow: auto;
     }
 }

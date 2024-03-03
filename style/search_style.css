@@ -328,15 +328,17 @@ input[type="checkbox"]:checked + label {
   color: #fff;
 }
 
-#cafecito_link_search {
+.search-cafecito-ctn {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  width: max-content;
+  display: flex;
+  align-items: center;
 }
 
-#cafecito_link_search img {
-  width: 15rem;
+.search-cafecito-ctn img {
+  width: max-content;
+  height: max-content;
 }
 
 .switch {
@@ -439,14 +441,4 @@ input:checked + .slider::before {
     gap: 1rem;
   }
 
-  #cafecito_link_search {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-  }
-
-  #cafecito_link_search img {
-    width: 10rem;
-  }
 }

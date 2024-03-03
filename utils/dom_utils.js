@@ -220,7 +220,6 @@ function elementCreate(type, content="", classes=[], element_id="", childs=[], a
 
 
 function discussionsHandler(discussionList, discussionsCtn) {
-
     discussionList.forEach((disc, i) => {
 
         let explication = elementCreate("p", disc["explication"], "explication", "", [], false)
