@@ -548,7 +548,18 @@
                     "answer": "a",
                     "index": 65,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-03-06 12:21:05",
+                            "name": "Santiago San Blas",
+                            "email": "santiagosanblas@gmail.com",
+                            "year": 2017,
+                            "index": 65,
+                            "explication": "Signos de alarma s/ Nelson: \u201c Ausencia del habla a los 18 meses, sobre todo si el ni\u00f1o no intenta comunicarse por otros medios, como gestos (derivaci\u00f3n simult\u00e1nea para una prueba urgente de audici\u00f3n)\u201d",
+                            "bibliography": "Nelson - Tratado de Pedatria - P\u00e1gina 158 - Tabla 28.2",
+                            "id": "42592286-8b43-44af-a865-9f3597f951b1"
+                        }
+                    ]
                 },
                 {
                     "question_complete": "\n82. \u00bfQu\u00e9 edad tiene un ni\u00f1o que sabe su nombre completo, dibuja algunas formas, y puede saltar\nen un pie pero a\u00fan no dibuja una figura humana completa?\na. 6 a\u00f1os.\nb. 4 a\u00f1os.\nc. 3 a\u00f1os.\nd. 2 a\u00f1os.",

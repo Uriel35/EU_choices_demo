@@ -340,7 +340,7 @@ reportQuestionButton.addEventListener('click', (e) => {
     }
     let currentQ = PREGUNTAS[counter]
     reportedQuestionSpan.textContent = `[ Examen unico ${currentQ['origin']['exam']}, pregunta ${currentQ['index']}) ]`
-    reportedQuestionInfo.value = `${currentQ['id']} \n EU ${currentQ['origin']['exam']}, ${currentQ['index']}).\n\nPaths:${path}`
+    reportedQuestionInfo.value = `${currentQ['id']} \n EU ${currentQ['origin']['exam']}, ${currentQ['index']}).\n\nChosen paths:${path}`
 })
 
 
