@@ -256,6 +256,10 @@
     gap: .4rem;
 }
 
+.discussion p {
+    font-size: calc(var(--font-size) * 1.2);
+}
+
 .discussion .discussion-about-ctn {
     width: 100%;
     display: flex;
@@ -271,6 +275,10 @@
 .discussion .discussion-bibliography-ctn ul {
     list-style: inherit;
     padding: 0 1rem;
+} 
+
+.discussion .discussion-bibliography-ctn ul li {
+    font-size: calc(var(--font-size) * 1.1);
 } 
 
 .empty-discussion-ctn {
