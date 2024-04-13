@@ -19046,7 +19046,7 @@
                     "discussion": []
                 },
                 {
-                    "questio]]n_complete": "\n29)  Una  paciente  joven  concurre  al  consultorio  por  presentar  prurito  y  dolor  de  tipo  fulgurante  en  la \nregi\u00f3n del pubis, introito y horquilla vulvar. Al examen f\u00edsico se comprueba un \u00e1rea extensa de la regi\u00f3n \nvulvar  bilateral  cubierta  por  peque\u00f1as  ulceras  coalescentes  en  ramillete.  \u00bfEn  qu\u00e9  tipo  de  infecci\u00f3n \npensar\u00eda? \n a) Virus del papilloma humano. \n b) Escabiosis. \n c) Primoinfeccion por virus Herpes Simplex. \n d) Chancro sifil\u00edtico. ",
+                    "question_complete": "\n29)  Una  paciente  joven  concurre  al  consultorio  por  presentar  prurito  y  dolor  de  tipo  fulgurante  en  la \nregi\u00f3n del pubis, introito y horquilla vulvar. Al examen f\u00edsico se comprueba un \u00e1rea extensa de la regi\u00f3n \nvulvar  bilateral  cubierta  por  peque\u00f1as  ulceras  coalescentes  en  ramillete.  \u00bfEn  qu\u00e9  tipo  de  infecci\u00f3n \npensar\u00eda? \n a) Virus del papilloma humano. \n b) Escabiosis. \n c) Primoinfeccion por virus Herpes Simplex. \n d) Chancro sifil\u00edtico. ",
                     "question": "Una paciente joven concurre al consultorio por presentar prurito y dolor de tipo fulgurante en la regi\u00f3n del pubis, introito y horquilla vulvar. Al examen f\u00edsico se comprueba un \u00e1rea extensa de la regi\u00f3n vulvar bilateral cubierta por peque\u00f1as ulceras coalescentes en ramillete. \u00bfEn qu\u00e9 tipo de infecci\u00f3n pensar\u00eda? ",
                     "options": {
                         "a": "Virus del papilloma humano.",
@@ -20401,7 +20401,25 @@
                     "image": "",
                     "discussion": []
                 },
-                null,
+                {
+                    "question_complete": "\n52) Pregunta: \nUsted se encuentra en un Centro de Atenci\u00f3n Primaria, atiende por demanda espont\u00e1nea a Carlos \nde 38 a\u00f1os por una contractura muscular, en su historia cl\u00ednica se registra que es fumador. \u00bfCu\u00e1l \nes su intervenci\u00f3n en relaci\u00f3n al tabaquismo? \nA. Realiza derivaci\u00f3n para intervenci\u00f3n breve, ya que es un abordaje altamente \nefectivo si es brindado por m\u00e9dico especialistas en el contexto de la atenci\u00f3n habitual \nB. Realiza intervenci\u00f3n breve, ya que es un abordaje integrado a la atenci\u00f3n habitual \nsin importar el motivo de consulta y puede ser realizado por distintos miembros del \nequipo de salud \nC. Realiza derivaci\u00f3n para tto intensivo con cualquier integrante del equipo ya que es \nun abordaje altamente efectivo en contexto de la atenci\u00f3n habitual\nD. Realiza intervenci\u00f3n intensiva, ya que es un enfoque integrado a la atenci\u00f3n \nhabitual sin importar el motivo de consulta \nB ",
+                    "question": "Usted se encuentra en un Centro de Atenci\u00f3n Primaria, atiende por demanda espont\u00e1nea a Carlos de 38 a\u00f1os por una contractura muscular, en su historia cl\u00ednica se registra que es fumador. \u00bfCu\u00e1l es su intervenci\u00f3n en relaci\u00f3n al tabaquismo? ",
+                    "options": {
+                        "a": "Realiza derivaci\u00f3n para intervenci\u00f3n breve, ya que es un abordaje altamente  efectivo si es brindado por m\u00e9dico especialistas en el contexto de la atenci\u00f3n habitual",
+                        "b": "Realiza intervenci\u00f3n breve, ya que es un abordaje integrado a la atenci\u00f3n habitual  sin importar el motivo de consulta y puede ser realizado por distintos miembros del  equipo de salud",
+                        "c": "Realiza derivaci\u00f3n para tto intensivo con cualquier integrante del equipo ya que es  un abordaje altamente efectivo en contexto de la atenci\u00f3n habitual",
+                        "d": "Realiza intervenci\u00f3n intensiva, ya que es un enfoque integrado a la atenci\u00f3n  habitual sin importar el motivo de consulta  "
+                    },
+                    "id": "68810d54-3eaa-46cb-953f-ef9d425e61e9",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2021"
+                    },
+                    "answer": "b",
+                    "index": 52,
+                    "image": "",
+                    "discussion": []
+                },
                 {
                     "question_complete": "\n63) \u00bfCu\u00e1l de las siguientes personas tiene mayor dependencia al tabaco? \n a) Juan prende el primer cigarrillo a los quince minutos de levantarse mientras prepara el mate. \n b) Mar\u00eda fuma 5 cigarrillos diarios fuera de su casa. \n c) Jorge prende el primer cigarrillo despu\u00e9s de darse una ducha de 20 minutos y desayunar a la ma\u00f1ana. \n d) Betina fuma 5 cigarrillos diarios (2 luego del almuerzo y 3 tomando mate con amigas) e hizo varios intentos \nfallidos de dejar de fumar. ",
                     "question": "\u00bfCu\u00e1l de las siguientes personas tiene mayor dependencia al tabaco? ",
@@ -24112,7 +24130,7 @@
                             "email": "jhonvizcainob@gmail.com",
                             "year": 2023,
                             "index": 32,
-                            "explication": "B) Cap\u00edtulo V\n\nModalidad de abordaje\n\nARTICULO 8\u00b0 \u2014 Debe promoverse que la atenci\u00f3n en salud mental est\u00e9 a cargo de un equipo interdisciplinario integrado por profesionales, t\u00e9cnicos y otros trabajadores capacitados con la debida acreditaci\u00f3n de la autoridad competente. Se incluyen las \u00e1reas de psicolog\u00eda, psiquiatr\u00eda, trabajo social, enfermer\u00eda, terapia ocupacional y otras disciplinas o campos pertinentes.\n\nARTICULO 9\u00b0 \u2014 El proceso de atenci\u00f3n debe realizarse preferentemente fuera del \u00e1mbito de internaci\u00f3n hospitalario y en el marco de un abordaje interdisciplinario e intersectorial, basado en los principios de la atenci\u00f3n primaria de la salud. Se orientar\u00e1 al reforzamiento, restituci\u00f3n o promoci\u00f3n de los lazos sociales.",
+                            "explication": "B) Cap\u00edtulo V\nModalidad de abordaje\nARTICULO 8\u00b0 \u2014 Debe promoverse que la atenci\u00f3n en salud mental est\u00e9 a cargo de un equipo interdisciplinario integrado por profesionales, t\u00e9cnicos y otros trabajadores capacitados con la debida acreditaci\u00f3n de la autoridad competente. Se incluyen las \u00e1reas de psicolog\u00eda, psiquiatr\u00eda, trabajo social, enfermer\u00eda, terapia ocupacional y otras disciplinas o campos pertinentes.\nARTICULO 9\u00b0 \u2014 El proceso de atenci\u00f3n debe realizarse preferentemente fuera del \u00e1mbito de internaci\u00f3n hospitalario y en el marco de un abordaje interdisciplinario e intersectorial, basado en los principios de la atenci\u00f3n primaria de la salud. Se orientar\u00e1 al reforzamiento, restituci\u00f3n o promoci\u00f3n de los lazos sociales.",
                             "bibliography": "Ley 26.657- Cap V",
                             "id": "b9a6b315-e192-4211-b645-9a719c3f27ee"
                         }
@@ -24518,7 +24536,25 @@
                     "image": "",
                     "discussion": []
                 },
-                null,
+                {
+                    "question_complete": "\n52) Pregunta: \nUsted se encuentra en un Centro de Atenci\u00f3n Primaria, atiende por demanda espont\u00e1nea a Carlos \nde 38 a\u00f1os por una contractura muscular, en su historia cl\u00ednica se registra que es fumador. \u00bfCu\u00e1l \nes su intervenci\u00f3n en relaci\u00f3n al tabaquismo? \nA. Realiza derivaci\u00f3n para intervenci\u00f3n breve, ya que es un abordaje altamente \nefectivo si es brindado por m\u00e9dico especialistas en el contexto de la atenci\u00f3n habitual \nB. Realiza intervenci\u00f3n breve, ya que es un abordaje integrado a la atenci\u00f3n habitual \nsin importar el motivo de consulta y puede ser realizado por distintos miembros del \nequipo de salud \nC. Realiza derivaci\u00f3n para tto intensivo con cualquier integrante del equipo ya que es \nun abordaje altamente efectivo en contexto de la atenci\u00f3n habitual\nD. Realiza intervenci\u00f3n intensiva, ya que es un enfoque integrado a la atenci\u00f3n \nhabitual sin importar el motivo de consulta \nB ",
+                    "question": "Usted se encuentra en un Centro de Atenci\u00f3n Primaria, atiende por demanda espont\u00e1nea a Carlos de 38 a\u00f1os por una contractura muscular, en su historia cl\u00ednica se registra que es fumador. \u00bfCu\u00e1l es su intervenci\u00f3n en relaci\u00f3n al tabaquismo? ",
+                    "options": {
+                        "a": "Realiza derivaci\u00f3n para intervenci\u00f3n breve, ya que es un abordaje altamente  efectivo si es brindado por m\u00e9dico especialistas en el contexto de la atenci\u00f3n habitual",
+                        "b": "Realiza intervenci\u00f3n breve, ya que es un abordaje integrado a la atenci\u00f3n habitual  sin importar el motivo de consulta y puede ser realizado por distintos miembros del  equipo de salud",
+                        "c": "Realiza derivaci\u00f3n para tto intensivo con cualquier integrante del equipo ya que es  un abordaje altamente efectivo en contexto de la atenci\u00f3n habitual",
+                        "d": "Realiza intervenci\u00f3n intensiva, ya que es un enfoque integrado a la atenci\u00f3n  habitual sin importar el motivo de consulta  "
+                    },
+                    "id": "68810d54-3eaa-46cb-953f-ef9d425e61e9",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2021"
+                    },
+                    "answer": "b",
+                    "index": 52,
+                    "image": "",
+                    "discussion": []
+                },
                 {
                     "question_complete": "\n30) \u00bfCu\u00e1l es la funci\u00f3n del cuestionario CAGE en relaci\u00f3n al tratamiento del alcoholismo? \n a) Cuantificar la cantidad de alcohol que consume un paciente. \n b) Diagnosticar a un paciente alcoh\u00f3lico grave. \n c) Distinguir entre pacientes ex alcoh\u00f3licos y alcoh\u00f3licos activos. \n d) Rastrear el consumo de alcohol de un paciente. ",
                     "question": "\u00bfCu\u00e1l es la funci\u00f3n del cuestionario CAGE en relaci\u00f3n al tratamiento del alcoholismo? ",
@@ -25718,7 +25754,7 @@
                             "email": "jhonvizcainob@gmail.com",
                             "year": 2023,
                             "index": 32,
-                            "explication": "B) Cap\u00edtulo V\n\nModalidad de abordaje\n\nARTICULO 8\u00b0 \u2014 Debe promoverse que la atenci\u00f3n en salud mental est\u00e9 a cargo de un equipo interdisciplinario integrado por profesionales, t\u00e9cnicos y otros trabajadores capacitados con la debida acreditaci\u00f3n de la autoridad competente. Se incluyen las \u00e1reas de psicolog\u00eda, psiquiatr\u00eda, trabajo social, enfermer\u00eda, terapia ocupacional y otras disciplinas o campos pertinentes.\n\nARTICULO 9\u00b0 \u2014 El proceso de atenci\u00f3n debe realizarse preferentemente fuera del \u00e1mbito de internaci\u00f3n hospitalario y en el marco de un abordaje interdisciplinario e intersectorial, basado en los principios de la atenci\u00f3n primaria de la salud. Se orientar\u00e1 al reforzamiento, restituci\u00f3n o promoci\u00f3n de los lazos sociales.",
+                            "explication": "B) Cap\u00edtulo V\nModalidad de abordaje\nARTICULO 8\u00b0 \u2014 Debe promoverse que la atenci\u00f3n en salud mental est\u00e9 a cargo de un equipo interdisciplinario integrado por profesionales, t\u00e9cnicos y otros trabajadores capacitados con la debida acreditaci\u00f3n de la autoridad competente. Se incluyen las \u00e1reas de psicolog\u00eda, psiquiatr\u00eda, trabajo social, enfermer\u00eda, terapia ocupacional y otras disciplinas o campos pertinentes.\nARTICULO 9\u00b0 \u2014 El proceso de atenci\u00f3n debe realizarse preferentemente fuera del \u00e1mbito de internaci\u00f3n hospitalario y en el marco de un abordaje interdisciplinario e intersectorial, basado en los principios de la atenci\u00f3n primaria de la salud. Se orientar\u00e1 al reforzamiento, restituci\u00f3n o promoci\u00f3n de los lazos sociales.",
                             "bibliography": "Ley 26.657- Cap V",
                             "id": "b9a6b315-e192-4211-b645-9a719c3f27ee"
                         }
