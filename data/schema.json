@@ -12632,7 +12632,18 @@
                     "answer": "d",
                     "index": 23,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-04-10 18:23:56",
+                            "name": "",
+                            "email": "",
+                            "year": 2017,
+                            "index": 23,
+                            "explication": "La respuesta \"D\" est\u00e1 mal redactada, dice \"Cultivo de secreci\u00f3n cervical, tratamiento con ceftriaxona o azitromicina a ambos\" y la redacci\u00f3n correcta ser\u00eda \"Cultivo de secreci\u00f3n cervical, tratamiento con ceftriaxona y azitromicina a ambos\"",
+                            "bibliography": "",
+                            "id": "538667bc-edc1-4e8e-960a-fea626c75e1b"
+                        }
+                    ]
                 },
                 {
                     "question_complete": "\n35. \u00bfCu\u00e1l de los siguientes estudios solicitar\u00eda una paciente de 40 a\u00f1os, obesa, sin antecedentes\npatol\u00f3gicos, que fue tratada hace un mes por candidiasis vaginal y que ahora nuevamente\npresenta el mismo cuadro? La paciente realiz\u00f3 tratamiento con \u00f3vulos vaginales con\nantimic\u00f3ticos en forma adecuada y no recibi\u00f3 ning\u00fan otro tratamiento.\na. Orina completa.\nb. Hormonas tiroideas.\nc. Glucemia.\nd. Hemograma.",
@@ -18253,7 +18264,18 @@
                     "answer": "b",
                     "index": 8,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-04-27 11:14:53",
+                            "name": "",
+                            "email": "",
+                            "year": 2022,
+                            "index": 8,
+                            "explication": "Calendario nacional de vacunaci\u00f3n 2023: 65 a\u00f1os o mas, antigripal, neumococo y doble bacteriana",
+                            "bibliography": "https://www.argentina.gob.ar/sites/default/files/2024-03-infografia-calendario-vacunas.pdf",
+                            "id": "0444e2bc-e786-4b40-9595-f57a679a0764"
+                        }
+                    ]
                 },
                 {
                     "question_complete": "\n73) \u00bfCu\u00e1l es la recomendaci\u00f3n que debe hacerse a una persona de 30 a\u00f1os de edad que la \u00faltima dosis \nde doble adulto fue a los 16 a\u00f1os y a partir de ese momento no recibi\u00f3 ning\u00fan refuerzo? \n a) Indicar una dosis ahora y continuar refuerzos cada 10 a\u00f1os \n b) Reiniciar el esquema, indicando tres dosis (1\u00ba dosis: ahora, 2\u00ba dosis en un mes y 3\u00ba dosis en seis meses) \n c) Indicar dos dosis con diferencia de un mes \n d) Indicar primera dosis ahora y refuerzo en un a\u00f1o\n",
