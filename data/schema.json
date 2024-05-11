@@ -6267,27 +6267,7 @@
             ]
         },
         "biliar maligno": {
-            "array": [
-                {
-                    "question_complete": "\n74)  Una  paciente  mujer  de  50  a\u00f1os  se  queja  de  prurito  que  la  mantiene  despierta  por  las  noches.  El \nexamen f\u00edsico es normal excepto por una hepatomegalia palpable de 7 cm. por debajo del reborde costal. \nEl  laboratorio  muestra  hemoglobina  12.8  g/dL,  alb\u00famina  4.2  g/dL,  fosfatasa  alcalina  (FAL)  750  U/L, \nbilirrubina 0.6mg/dL, transaminasa glut\u00e1mico oxalac\u00e9tica (GOT) 35 U/L y transaminasa glut\u00e1mico-pir\u00favica \n(GPT) 40 U/L,  gama glutamil trasnpetidasa (GGT)  elevada \u00bfCu\u00e1l de los siguientes  estudios recomendar\u00eda \npara llegar al diagn\u00f3stico? \n a) Electroforesis de prote\u00ednas. \n b) Anticuerpo antim\u00fasculo liso. \n c) Colangiopacreatograf\u00eda endosc\u00f3pica retrograda. \n d) Anticuerpo antimitocondrial. ",
-                    "question": "Una paciente mujer de 50 a\u00f1os se queja de prurito que la mantiene despierta por las noches. El examen f\u00edsico es normal excepto por una hepatomegalia palpable de 7 cm. por debajo del reborde costal. El laboratorio muestra hemoglobina 12.8 g/dL, alb\u00famina 4.2 g/dL, fosfatasa alcalina (FAL) 750 U/L, bilirrubina 0.6mg/dL, transaminasa glut\u00e1mico oxalac\u00e9tica (GOT) 35 U/L y transaminasa glut\u00e1mico-pir\u00favica (GPT) 40 U/L, gama glutamil trasnpetidasa (GGT) elevada \u00bfCu\u00e1l de los siguientes estudios recomendar\u00eda para llegar al diagn\u00f3stico? ",
-                    "options": {
-                        "a": "Electroforesis de prote\u00ednas.",
-                        "b": "Anticuerpo antim\u00fasculo liso.",
-                        "c": "Colangiopacreatograf\u00eda endosc\u00f3pica retrograda.",
-                        "d": "Anticuerpo antimitocondrial."
-                    },
-                    "id": "2d73577f-dfa0-4922-a359-e505fcec5192",
-                    "origin": {
-                        "course": "examen unico",
-                        "exam": "2019"
-                    },
-                    "answer": "d",
-                    "index": 74,
-                    "image": "",
-                    "discussion": []
-                }
-            ],
+            "array": [],
             "aclaracion": "Biliar maligno: Va cualquier tipo de cancer de vias biliares",
             "analogos": [
                 "cancer vesicular",
@@ -8401,6 +8381,30 @@
                 "diarrea cronica",
                 "diarrea intermitente"
             ]
+        },
+        "hepatitis autoinmune": {
+            "array": [
+                {
+                    "question_complete": "\n74)  Una  paciente  mujer  de  50  a\u00f1os  se  queja  de  prurito  que  la  mantiene  despierta  por  las  noches.  El \nexamen f\u00edsico es normal excepto por una hepatomegalia palpable de 7 cm. por debajo del reborde costal. \nEl  laboratorio  muestra  hemoglobina  12.8  g/dL,  alb\u00famina  4.2  g/dL,  fosfatasa  alcalina  (FAL)  750  U/L, \nbilirrubina 0.6mg/dL, transaminasa glut\u00e1mico oxalac\u00e9tica (GOT) 35 U/L y transaminasa glut\u00e1mico-pir\u00favica \n(GPT) 40 U/L,  gama glutamil trasnpetidasa (GGT)  elevada \u00bfCu\u00e1l de los siguientes  estudios recomendar\u00eda \npara llegar al diagn\u00f3stico? \n a) Electroforesis de prote\u00ednas. \n b) Anticuerpo antim\u00fasculo liso. \n c) Colangiopacreatograf\u00eda endosc\u00f3pica retrograda. \n d) Anticuerpo antimitocondrial. ",
+                    "question": "Una paciente mujer de 50 a\u00f1os se queja de prurito que la mantiene despierta por las noches. El examen f\u00edsico es normal excepto por una hepatomegalia palpable de 7 cm. por debajo del reborde costal. El laboratorio muestra hemoglobina 12.8 g/dL, alb\u00famina 4.2 g/dL, fosfatasa alcalina (FAL) 750 U/L, bilirrubina 0.6mg/dL, transaminasa glut\u00e1mico oxalac\u00e9tica (GOT) 35 U/L y transaminasa glut\u00e1mico-pir\u00favica (GPT) 40 U/L, gama glutamil trasnpetidasa (GGT) elevada \u00bfCu\u00e1l de los siguientes estudios recomendar\u00eda para llegar al diagn\u00f3stico? ",
+                    "options": {
+                        "a": "Electroforesis de prote\u00ednas.",
+                        "b": "Anticuerpo antim\u00fasculo liso.",
+                        "c": "Colangiopacreatograf\u00eda endosc\u00f3pica retrograda.",
+                        "d": "Anticuerpo antimitocondrial."
+                    },
+                    "id": "2d73577f-dfa0-4922-a359-e505fcec5192",
+                    "origin": {
+                        "course": "examen unico",
+                        "exam": "2019"
+                    },
+                    "answer": "d",
+                    "index": 74,
+                    "image": "",
+                    "discussion": []
+                }
+            ],
+            "aclaracion": ""
         }
     },
     "medio interno": {
@@ -18769,7 +18773,18 @@
                     "answer": "d",
                     "index": 76,
                     "image": "",
-                    "discussion": []
+                    "discussion": [
+                        {
+                            "date": "2024-05-08 18:15:03",
+                            "name": "Rocio",
+                            "email": "",
+                            "year": 2023,
+                            "index": 76,
+                            "explication": "Diagnostico diferencial entre toxoplasmosis cerebral y tumor.\nPrimero se inicia tratamiento para toxoplasmosis por dos semanas, si hay mejor\u00eda cl\u00ednica y radiol\u00f3gica se asume el diagnostico de toxoplasmosis. En cambio, si no mejora o empeora se hace biopsia cerebral.",
+                            "bibliography": "https://www.revistamultidisciplinardelsida.com/download/lesiones-cerebrales-ocupantes-de-espacio-con-efecto-de-masa-en-los-pacientes-con-infeccion-por-vih-diagnostico-diferencial-entre-la-toxoplasmosis-cerebral-y-el-linfoma-cerebral-primario/",
+                            "id": "108bdb1f-a960-4f90-a550-cb067aa7f841"
+                        }
+                    ]
                 }
             ],
             "aclaracion": "Virus de inmunodeficiencia humana (HIV): Tanto su enfermedad como sus infecciones oportunistas.",
